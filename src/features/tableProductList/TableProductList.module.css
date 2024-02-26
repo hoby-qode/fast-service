@@ -1,0 +1,97 @@
+.table {
+    max-width: 800px;
+    margin: 30px auto 80px auto;
+}
+.table table {
+    border: 1px solid hsl(var(--border));
+    margin-bottom: 3rem;
+    border-radius: var(--radius);
+    padding: 2rem;
+}
+
+.cartTotal_item {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-size: 2rem;
+    font-family: var(--poppins);
+    justify-content: space-between;
+}
+.cartTotal_item p {
+    margin: 0;
+}
+.cartTotal {
+    border: 1px solid hsl(var(--border));
+    border-radius: var(--radius);
+    max-width: 400px;
+    margin-left: auto;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.table_header {
+    margin-top: 10rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+.table_header h1 {
+    margin: 0;
+    color: hsl(var(--primary));
+}
+
+.table_td_card {
+    vertical-align: baseline;
+}
+.table_td_card > div {
+    align-items: flex-start;
+}
+.table_th_close {
+    width: 10%;
+}
+.table_th_product {
+    width: 65%;
+}
+.table_th_category {
+    width: 10%;
+}
+
+.table_th_subtotal {
+    width: 15%;
+}
+.table_td_close {
+    vertical-align: top;
+}
+.table_td_close_btn_container {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.table_td_close_btn_container button {
+    background-color: hsl(var(--destructive));
+    border: 0;
+    outline: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    color: hsl(var(--light));
+}
+.table_td_category {
+    vertical-align: top;
+}
+@media screen and (max-width:767px) {
+    .table_th_category , .table_td_category{
+        display: none;
+    }
+    .table_th_close , .table_th_product, .table_th_category {
+        padding: 5px;
+    }
+    .table_td_close {
+        padding: 0;
+    }
+    .table table { 
+        padding: 5px;
+    }
+}

@@ -1,0 +1,59 @@
+.filter_item input {
+    display: none;
+}
+.filter_item input + label {
+    position: relative;
+    margin-left: 25px;
+    display: block;
+}
+.filter_item input + label::before {
+    content: '';
+    position: absolute;
+    left: -25px;
+    top: -3px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid hsl(var(--muted));
+    border-radius: 3px;
+}
+.filter_item input:checked + label::before {
+    background-color: hsl(var(--primary));
+}
+.filter input {
+    display: none;
+}
+
+@media screen and (max-width:767px) {
+    .filter_content {
+        position: absolute;
+        top: 97%;
+        left: 0;
+        width: 100%;
+        background-color: hsl(var(--background));
+        z-index: 999;
+        padding: 2rem 3rem;
+        display: none;
+        height: 50vh;
+    }
+    .filter h3 {
+        position: relative;
+        text-align: center;
+    }
+    .filter input:checked + h3::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -15px;
+        width: 15px;
+        height: 4px;
+        background-color: hsl(var(--primary));
+        border-radius: 0 0 5px 5px;
+        transform: translateX(-50%);
+    }
+    .filter input:checked + h3 + .filter_content {
+        display: block;
+    }
+}
+.filter label {
+    cursor: pointer;
+}

@@ -1,0 +1,66 @@
+
+.modal_backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal {
+    width: 90%;
+    min-height: 400px;
+    max-width: 991px;
+    border: none;
+    border-radius: 12px;
+    background-color: hsl(var(--background));
+    padding: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close_button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 48px;
+    height: 48px;
+    background-color: transparent;
+    border: none;
+    border-radius: 15px; /* Circular shape */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    justify-content: center;
+    z-index: 999;
+    background-color: hsl(var(--tertiary));
+    box-shadow: var(--shadow);
+}
+
+.close_button:hover {
+    background-color: #eee;
+}
+
+.close_button:after {
+    content: 'x';
+    color: black;
+    font-size: 2rem;
+}
+
+.modal .container {
+    margin: 0!important ;
+}
+.modal main > div {
+    margin-top: 0;
+}
+.modal::backdrop {
+    height: 100vh;
+}

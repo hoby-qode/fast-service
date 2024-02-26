@@ -1,0 +1,52 @@
+.bgprimary {
+    background-color: hsl(var(--primary));
+}
+.bgsecondary {
+    background-color: hsl(var(--secondary));
+}
+.colorwhite {
+    color: hsl(var(--background));
+}
+.colornblack {
+    color: hsl(var(--foreground));
+}
+.colorprimary {
+    color: hsl(var(--primary));
+}
+.colorSecondary {
+    color: hsl(var(--secondary));
+}
+.radiusrounded {
+    border-radius: 50%;
+}
+.radiusmedium {
+    border-radius: 10px;
+}
+
+.btnIcon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    outline: 0;
+    border: 0;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+}
+.btnIcon svg {
+    font-size: 2rem;
+}
+.notifaction {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background-color: hsl(var(--tertiary));
+    color: hsl(var(--foreground));
+    font-size: 1.2rem;
+    border-radius: 50%;
+    text-align: center;
+}

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <filter id="F" x="95.69" y="94.221" width="269.792" height="215.779" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#1e1e1b" flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="S" x="174.548" y="254.855" width="213.61" height="174.492" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-color="#1e1e1b" flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Groupe_1" data-name="Groupe 1" transform="translate(-2310 -454)">
+    <rect id="Rectangle_3" data-name="Rectangle 3" width="512" height="512" rx="39" transform="translate(2310 454)" fill="#7c78fc"/>
+    <g id="Groupe_1-2" data-name="Groupe 1" transform="translate(2398 448.746)">
+      <g transform="matrix(1, 0, 0, 1, -88, 5.25)" filter="url(#F)">
+        <path id="F-2" data-name="F" d="M-8.31,0H76.175L89.748-51.8h114.4l15.512-57.893H105.537l5.817-22.714h114.4l17.728-65.372H42.658Z" transform="translate(113 298)" fill="#f1ea1b"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, -88, 5.25)" filter="url(#S)">
+        <path id="S-2" data-name="S" d="M-7.452-2.484c27.531,4.968,55.683,6.831,88.8,6.831,40.779,0,61.479-3.933,74.313-24.633,4.347-7.038,9.729-23.184,9.729-34.776,0-31.05-20.7-32.085-44.3-32.085-32.5,0-36.639-1.656-36.639-7.659,0-7.038,5.8-10.557,30.429-10.557,20.286,0,40.158,2.07,60.237,4.554l13.041-45.747c-30.222-4.554-63.549-5.589-84.249-5.589-15.318,0-35.4.414-49.266,4.347-24.84,7.038-41.4,32.913-41.4,64.791,0,23.184,20.907,29.6,39.951,29.6,37.053,0,40.779,1.449,40.779,8.694,0,9.729-14.49,9.729-21.321,9.729a578.155,578.155,0,0,1-70.789-4.76Z" transform="translate(191 413)" fill="#f1ea1b"/>
+      </g>
+    </g>
+  </g>
+</svg>

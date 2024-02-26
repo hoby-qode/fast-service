@@ -1,0 +1,64 @@
+.cardInline:not(:last-child) {
+    margin-bottom: 3rem;
+}
+.cardInline_picture {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: var(--radius);
+    overflow: hidden;
+    position: relative;
+    box-shadow: var(--shadow);
+}
+.cardInline_picture a {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    transform: scale(.93);
+    border-radius: 9px;
+    overflow: hidden;
+}
+.cardInline_content {
+    flex: 1;
+}
+.cardInline_bgpicture {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(334deg, hsl(var(--secondary)), hsl(var(--tertiary)));
+    z-index: -1;
+}
+.cardInline {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.cardInline_key {
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    color: hsl(var(--secondary));
+    font-weight: 700;
+}
+.cardInline__title {
+    font-size: 1.6rem;
+    margin: 0;
+}
+.cardInlne__date {
+    margin: 0 0 5px 0;
+}
+@media screen and (min-width:991px) {
+    .cardInline_picture {
+        width: 75px;
+        height: 75px;
+    }
+    .cardInline_key {
+        font-size: 2.4rem;
+    }
+}

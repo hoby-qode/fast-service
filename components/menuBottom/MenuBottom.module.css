@@ -1,0 +1,18 @@
+.menuBottom {
+    width: 100%;
+    background-color: hsl(var(--primary));
+    padding: 10px 0;
+}
+.menuBottom ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0 ;
+    justify-content: space-between;
+}
+.menuBottom ul li {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}

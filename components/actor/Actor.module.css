@@ -1,0 +1,39 @@
+.actor_picture {
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+    position: relative;
+}
+.actor {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.actor_content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    min-height: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    backdrop-filter: blur(20px) brightness(1.5);
+}
+.actor_name {
+    font-size: 1.6rem;
+    color: hsl(var(--foreground));
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.actor_actorName {
+    margin: 0;
+    font-size: 1.2rem;
+    color: hsl(var(--foreground)/50%);
+}
+@media screen and (min-width:991px) {
+    .actor_name {
+        font-size: 1.8rem;
+    }
+    .actor_actorName {
+        font-size: 1.4rem;
+    }
+}

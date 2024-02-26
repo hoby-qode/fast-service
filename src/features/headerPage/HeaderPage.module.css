@@ -1,0 +1,40 @@
+.headerPage {
+    background: linear-gradient(180deg,hsl(var(--primary)),hsl(var(--background)));
+}
+.headerPage h1 {
+    color: hsl(var(--tertiary));
+}
+.headerPage_container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 3rem;
+}
+.headerPage_toBack {
+    display: flex;
+    gap: 5px;
+    color: hsl(var(--light));
+}
+@media screen and (max-width:990px) {
+    .headerPage {
+        height: 150px!important;
+    }
+}
+@media screen and (min-width:991px) {
+    .headerPage_toBack {
+        display: none;
+    }
+    .headerPage {
+        background: hsl(var(--primary));
+    }
+    .headerPage h1 {
+        text-shadow:none;
+    }
+    .headerPage_container { 
+        align-items: center;
+        padding-top: 0;
+        justify-content: center;
+    }
+}
+
+

@@ -1,0 +1,21 @@
+.rating {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid hsl(var(--secondary));
+    background-color: hsl(var(--light));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: hsl(var(--secondary));
+    box-shadow: var(--shadow);
+    font-weight: 700;
+}
+@media screen and (min-width:991px) {
+    .rating {
+        width: 50px;
+        height: 50px;
+        font-size: 1.6rem;
+    }
+}

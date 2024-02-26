@@ -1,0 +1,32 @@
+.categories {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.categoriesLists {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 12px;
+    list-style: none;
+    margin-left: 20px;
+    padding: 5px;
+    position: relative;
+    overflow-x: auto;
+    align-items: center;
+}
+.categoriesLists li {
+    text-wrap: nowrap;
+}
+@media screen and (min-width:991px) {
+    .categories {
+        margin: 40px 0 20px 0;
+        align-items: flex-start;
+    }
+    .categoriesLists {
+        gap: 20px;
+        flex: 1;
+    }
+    .categoriesLists {
+        flex-wrap: wrap;
+    }
+}

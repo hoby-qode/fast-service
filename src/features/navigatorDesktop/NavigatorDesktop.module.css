@@ -1,0 +1,16 @@
+.navigatorDesktop {
+    display: none;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+@media screen and (min-width:991px) {
+    .navigatorDesktop {
+        display: flex;
+    }
+}
+.navLink {
+    color: hsl(var(--light)); /* TODO: Ajout du couleur mode Dark */
+    font-weight: 500;
+    font-size: 1.6rem;
+}

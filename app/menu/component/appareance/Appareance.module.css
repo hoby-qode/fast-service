@@ -1,0 +1,9 @@
+.appareance_darkmode {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.appareance_darkmode label {
+    font-size: 1.6rem;
+    font-weight: 500;
+}

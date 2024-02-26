@@ -1,0 +1,36 @@
+.menuItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 5px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1;
+    transition: color .3s ease-in;
+}
+.menuItemActive, .menuItem:hover {
+    color: hsl(var(--tertiary));
+    transition: color .3s ease-out;
+}
+.menuItemPicto {
+    margin-bottom: 3px;
+}
+.menuPicto {
+    position: absolute;
+    z-index: 1;
+}
+.menuItemName {
+    color: hsl(var(--background));
+}
+.menuItemActive .menuItemName, .menuItem:hover .menuItemName{
+    color: hsl(var(--tertiary));
+}
+.menuPictoHover {
+    opacity: 0;
+}
+.menuItemActive .menuPictoHover, .menuItem:hover .menuPictoHover {
+    opacity: 1;
+}
+.menuItemActive .menuPicto, .menuItem:hover .menuPicto {
+    opacity: 0;
+}

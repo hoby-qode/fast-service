@@ -1,0 +1,81 @@
+.btnPrimary, .btnSecondary, .btnTertiary, .btnSuccess, .btnDanger {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: 0;
+    outline: 0;
+    line-height: 1;
+    margin: 0 0 5px 0;
+    box-shadow: 0 3px 6px rgb(23 12 66 / 16%);
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-family: var(--raleway);
+    cursor: pointer;
+    min-height: 40px;
+    transition: .3s ease-in;
+}
+@media screen and (min-width:991px) {
+    .btnPrimary, .btnSecondary, .btnTertiary, .btnSuccess, .btnDanger {
+        padding: 15px 20px;
+        font-size: 1.6rem;   
+        box-shadow: 0 3px 10px rgb(23 12 66 / 16%);
+    }
+}
+.btnPrimary:active, .btnSecondary:active, .btnTertiary:active, .btnSuccess:active, .btnDanger:active {
+    transform: scale(.95);
+    transition: .3s ease-in;
+}
+.btnPrimary {
+    background-color: hsl(var(--primary));
+    color: hsl(var(--background));
+}
+    .btnPrimary:hover {
+        background-color: hsl(var(--primary-foreground));
+        color: hsl(var(--background));
+        transition: .3s ease-out;
+    }
+    
+.btnSecondary {
+    background-color: hsl(var(--secondary));
+    color: hsl(var(--background));
+}
+    .btnSecondary:hover {
+        background-color: hsl(var(--secondary-foreground));
+        color: hsl(var(--background));
+        transition: .3s ease-out;
+    }
+.btnTertiary {
+    background-color: hsl(var(--light));
+    color: hsl(var(--primary));
+}
+    .btnTertiary:hover, .btnTertiary.active {
+        background-color: hsl(var(--primary));
+        color: hsl(var(--light));
+        transition: .3s ease-out;
+    }
+.btnSuccess {
+    background-color: hsl(var(--success));
+    color: hsl(var(--background));
+}
+    .btnSuccess:hover {
+        background-color: hsl(var(--success-foreground));
+        color: hsl(var(--background));
+    }
+.btnDanger {
+    background-color: hsl(var(--destructive));
+    color: hsl(var(--background));
+}
+    .btnDanger:hover {
+        background-color: hsl(var(--destructive-foreground));
+        color: hsl(var(--background));
+        transition: .3s ease-out;
+    }
+
+@media screen and (max-width:767px) {
+    .btnPrimary, .btnSecondary, .btnTertiary, .btnSuccess, .btnDanger {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+}    

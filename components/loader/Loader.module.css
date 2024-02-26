@@ -1,0 +1,28 @@
+.loaderAnimate {
+    display: block;
+    animation: loader .6s linear infinite;
+}
+@keyframes loader {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(1turn);
+        transform: rotate(1turn);
+    }
+}
+.loaderContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 9999999;
+    background-color: hsl(var(--primary));
+}

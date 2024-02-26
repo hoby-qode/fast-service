@@ -1,0 +1,16 @@
+.linkLogout {
+    background-color: hsl(var(--destructive));
+    padding: 10px 12px;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+    color: hsl(var(--light));
+}
+.title {
+    color: hsl(var(--primary));
+    margin: 20px 0px 20px 15px;
+}
+.page {
+    margin-bottom: 8rem;
+}
