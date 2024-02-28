@@ -49,7 +49,7 @@ const HeaderPage: FC = () => {
               <u>içi</u>
             </Link>
           </p>
-          <SearchBar />
+          <SearchBar isResultFloat={true}/>
         </div>
         <div
           className={styles.headerPage_picture_container}

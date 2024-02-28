@@ -11,18 +11,21 @@
     cursor: pointer;
 }
 .addCart.active {
-    background-color: hsl(var(--secondary));
+    background-color: hsl(var(--destructive));
 }
 .addCart span {
     transition: .5s;
     display: block;
     transform: rotate(0);
-    color: #fff;
+    color: hsl(var(--secondary));
+    font-size: 5.5rem;
 }
 .addCart.active span {
     line-height: 1;
     transform: rotate(312deg);
     transition: .5s;
+    color: hsl(var(--background));
+    line-height: 40px;
 }
 @media screen and (min-width:991px) {
     .addCart {

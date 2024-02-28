@@ -3,8 +3,6 @@ import React from 'react'
 import FontFamily from './fontFamily'
 import Theme from '@/src/theme/theme'
 import '@/styles/app.css'
-import CartProvider from '@/src/context/CartProvider'
-import AuthProvider from '@/src/context/AuthProvider'
 import Provider from './next-auth/Provider'
 
 export const metadata: Metadata = {

@@ -8,7 +8,7 @@ import styles from './searchBar.module.css'
 import CardInline from '@/components/cardInline'
 import Loading from '../cardInline/loading'
 
-const SearchBar = ({ isResultFloat }: { isSearchFloat?: boolean }) => {
+const SearchBar = (isResultFloat ?: boolean ) => {
   const [searchText, setSearchText] = useState('')
   const [searchResults, setSearchResults] = useState([])
   const [showContainerResult, setShowContainerResult] = useState(false)
@@ -48,8 +48,8 @@ const SearchBar = ({ isResultFloat }: { isSearchFloat?: boolean }) => {
           <BtnIcon
             icon={<IoSearchOutline />}
             style="rounded"
-            bgColor="primary"
-            color="white"
+            bgColor="secondary"
+            color="primary"
           />
         </div>
       </div>

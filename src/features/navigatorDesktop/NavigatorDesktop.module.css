@@ -10,7 +10,7 @@
     }
 }
 .navLink {
-    color: hsl(var(--light)); /* TODO: Ajout du couleur mode Dark */
+    color: hsl(var(--background));
     font-weight: 500;
     font-size: 1.6rem;
 }

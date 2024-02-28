@@ -34,7 +34,7 @@
 }
 
 .genre {
-    background-color: hsl(var(--primary));
+    background-color: hsl(var(--secondary));
     position: relative;
     padding: 45px 0;
 }
@@ -46,7 +46,7 @@
     width: calc(100% + 50px);
     height: 100%;
     z-index: -1;
-    background-color: hsl(var(--primary));
+    background-color: hsl(var(--secondary));
 }
 .genre h2 {
     color: hsl(var(--tertiary));

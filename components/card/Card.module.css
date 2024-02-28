@@ -21,13 +21,13 @@
     font-size: 1.4rem;
     margin: 0 0 5px 0;
     line-height: 1;
-    color: hsl(var(--light));
+    color: hsl(var(--background));
     max-width: calc(100% - 30px);
 }
 .cardInfo_date {
     margin: 0;
     font-size: 1.2rem;
-    color: hsl(var(--light), 80%);
+    color: hsla(var(--background)/ 50%);
 }
 .cardPicture {
     position: relative;

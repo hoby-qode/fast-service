@@ -12,14 +12,30 @@ import {
 import LinkIcon from '@/components/LinkIcon'
 import Link from 'next/link'
 import NavigatorDesktop from '../navigatorDesktop'
-import { CartContext } from '@/src/context/Mycontext'
 import { signIn, signOut, useSession } from "next-auth/react";
-import BtnIcon from '@/components/btnIcon'
 import { useShoppingCart } from '@/src/store/useShoppingCart'
+import { DropdownMenuCheckboxItemProps } from "@radix-ui/react-dropdown-menu"
+ 
+import { Button } from "@/components/ui/button"
+import {
+  DropdownMenu,
+  DropdownMenuCheckboxItem,
+  DropdownMenuContent,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
+ 
+type Checked = DropdownMenuCheckboxItemProps["checked"]
 
 const HeaderTop = () => {
   const { items } = useShoppingCart();
   const { data: session } = useSession();
+  type Checked = DropdownMenuCheckboxItemProps["checked"]
+  const [showStatusBar, setShowStatusBar] = React.useState<Checked>(true)
+  const [showActivityBar, setShowActivityBar] = React.useState<Checked>(false)
+  const [showPanel, setShowPanel] = React.useState<Checked>(false)
+  
   return (
     <header className={styles.header}>
       <div className="container">
@@ -29,8 +45,8 @@ const HeaderTop = () => {
               <Image
                 src="/images/logo/logo-fast-service.svg"
                 alt="fast service"
-                width={98}
-                height={38}
+                width={185}
+                height={51}
                 priority
                 sizes="(max-width:768px) 100vw, 33vw"
               />
@@ -62,17 +78,47 @@ const HeaderTop = () => {
               </li>
             )}
             <li>
-              {session?.user ? (
+              {/* {session?.user ? (
                 <BtnIcon icon={<IoLogOutOutline style={{width: '23px',height: '23px',position: 'relative',right: '2px'}}/>}
                 style="rounded"
                 bgColor="secondary"
-                color="white" onClick={() => signOut()} />
+                color="primary" onClick={() => signOut()} />
               ) : (
                 <BtnIcon icon={<IoLogInOutline style={{width: '23px',height: '23px',position: 'relative',right: '2px'}}/>}
                 style="rounded"
                 bgColor="secondary"
-                color="white" onClick={() => signIn()} />
-              )}
+                color="primary" onClick={() => signIn()} />
+              )} */}
+              <div className="position-relative">
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <Button variant="outline">Open</Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent className="w-56">
+                  <DropdownMenuLabel>Appearance</DropdownMenuLabel>
+                  <DropdownMenuSeparator />
+                  <DropdownMenuCheckboxItem
+                    checked={showStatusBar}
+                    onCheckedChange={setShowStatusBar}
+                  >
+                    Status Bar
+                  </DropdownMenuCheckboxItem>
+                  <DropdownMenuCheckboxItem
+                    checked={showActivityBar}
+                    onCheckedChange={setShowActivityBar}
+                    disabled
+                  >
+                    Activity Bar
+                  </DropdownMenuCheckboxItem>
+                  <DropdownMenuCheckboxItem
+                    checked={showPanel}
+                    onCheckedChange={setShowPanel}
+                  >
+                    Panel
+                  </DropdownMenuCheckboxItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
+              </div>
             </li>
             {/* <li className="d-none d-lg-block">
               <ToggleTheme />

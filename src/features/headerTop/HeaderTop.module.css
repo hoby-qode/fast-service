@@ -1,12 +1,12 @@
 .header {
-    padding: 0 16px;
+    padding: 16px;
     position: sticky;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 111;
     backdrop-filter: blur(17px) opacity(0.95) brightness(0.5);
-    background-color: hsl(var(--primary) /40%);
+    background-color: hsl(var(--secondary) /40%);
 }
 .headerPictos {
     display: flex;

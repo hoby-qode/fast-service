@@ -1,6 +1,6 @@
 .menuBottom {
     width: 100%;
-    background-color: hsl(var(--primary));
+    background-color: hsl(var(--secondary));
     padding: 10px 0;
 }
 .menuBottom ul {

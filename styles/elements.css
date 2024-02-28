@@ -9,7 +9,7 @@ h2, .like-h2 {
     font-size: 2.4rem;
     font-weight: 700;
     font-family: var(--poppins);
-    color: hsl(var(--primary));
+    color: hsl(var(--secondary));
 }
 @media screen and (min-width:991px) {
     h2, .like-h2 { 
@@ -65,7 +65,7 @@ input:not([type=radio]):not([type=checkbox]) {
     width: 100%;
 }
 input::placeholder {
-    color: hsl(var(--muted)/30%);
+    color: hsl(var(--foreground)/ 50%)!important;
 }
 label {
     font-size: 1.2rem;
