@@ -9,7 +9,7 @@ import placeholder from '@/public/images/placeholder.jpg'
 import Loading from './loading'
 
 import styles from './Card.module.css'
-import { useShoppingCart } from '@/src/store/useCartStore'
+import { useShoppingCart } from '@/src/store/useShoppingCart'
 interface CardProps {
   id: number
   title: string

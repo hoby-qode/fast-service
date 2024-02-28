@@ -8,8 +8,9 @@ import styles from './Content.module.css'
 import { MdSort } from "react-icons/md";
 import { motion, useAnimation } from 'framer-motion'
 import { TbArrowsSort } from "react-icons/tb";
+import InfiniteScroll from 'react-infinite-scroll-component'
 /* TODO: typage de variable products */
-const Content = ({ products, tags }: { products: any; tags: any }) => {
+const Content = ({ products, tags, pageInfo }: { products: any; tags: any;pageInfo:any }) => {
   const searchParams = useSearchParams()
   const [data, setData] = useState([...products])
   const [order, setOrder] = useState(searchParams.get('order'))
@@ -72,7 +73,63 @@ const Content = ({ products, tags }: { products: any; tags: any }) => {
       }),
     )
   }
+  console.log(pageInfo)
+  const [endCursor, setEndCursor] = useState(pageInfo.endCursor);
+  const fetchMoreData = async () => {
+    const query = `
+    query QueryProductByCat($slug: [String] = "films") {
+      categoriesProduct(where: {slug: $slug}) {
+        nodes {
+          id
+          name
+          products(first: 12, after: "${endCursor}") {
+            nodes {
+              acf_product {
+                dateDeSortie
+                rating
+              }
+              content
+              slug
+              status
+              title
+              databaseId
+              featuredImage {
+                node {
+                  sourceUrl
+                }
+              }
+              hqTags {
+                nodes {
+                  slug
+                  name
+                }
+              }
+            }
+            pageInfo {
+                endCursor
+                hasNextPage
+            }
+          }
+        }
+      }
+    }`;
 
+    const res = await fetch(`${process.env.NEXT_PUBLIC_GRAPHQL_ENDPOINT}?query=${encodeURIComponent(query)}`, {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        // next: {
+        //   revalidate: false,
+        // },
+        cache: 'no-store'
+    })
+
+    const { data } = await res.json()
+
+    setData(data)
+    setEndCursor(data.pageInfo.endCursor)
+  }
   return (
     <div className="container mt-0 mt-md-5">
       <div className="row">
@@ -81,7 +138,7 @@ const Content = ({ products, tags }: { products: any; tags: any }) => {
             <button onClick={() => setShowMenuFilter(!showMenuFilter)} className={styles.menuFilter}><TbArrowsSort />Trier par </button>
             <button onClick={() => setShowMenuFilter(!showMenuFilter)} className={styles.menuFilter}><MdSort />  filtre </button>
           </div>
-          {/* {showMenuFilter && ( */}
+           {showMenuFilter && ( 
             <motion.div
               className={`d-flex justify-content-between ${styles.formContainer}`}
               drag="y"
@@ -91,37 +148,44 @@ const Content = ({ products, tags }: { products: any; tags: any }) => {
               initial={{ opacity: 1, height: 'auto' }}
               animate={controls}
             >
-              {/* <div className="container d-flex flex-row flex-md-column">
+              <div className="container d-flex flex-row flex-md-column">
                 <OrderBy onChangeOrder={handleChangeOrder} order={order} />
                 <Filter
                   onChangeFilter={handleChangeFilter}
                   tags={tags}
                   genre={genre}
                 />
-              </div> */}
+              </div>
             </motion.div>
-          {/* )} */}
+           )} 
         </div>
         <div className="col-md-9">
           {data.length > 0 ? (
-            <div className="row">
-              {data.map((post: any, key: number) => (
-                <div className="col-6 col-md-3 mb-4" key={key}>
-                  <Card
-                    id={post.databaseId}
-                    title={post.title}
-                    slug={post.slug}
-                    date={
-                      post.acf_product?.dateDeSortie
-                        ? post.acf_product.dateDeSortie
-                        : null
-                    }
-                    featuredImage={post.featuredImage?.node.sourceUrl}
-                    rating={post.acf_product.rating}
-                  />
-                </div>
-              ))}
-            </div>
+            <InfiniteScroll
+                dataLength={120}
+                next={fetchMoreData}
+                hasMore={true}
+                loader={<h4>Loading...</h4>}
+              >
+              <div className="row">
+                {data.map((post: any, key: number) => (
+                  <div className="col-6 col-md-3 mb-4" key={key}>
+                    <Card
+                      id={post.databaseId}
+                      title={post.title}
+                      slug={post.slug}
+                      date={
+                        post.acf_product?.dateDeSortie
+                          ? post.acf_product.dateDeSortie
+                          : null
+                      }
+                      featuredImage={post.featuredImage?.node.sourceUrl}
+                      rating={post.acf_product.rating}
+                    />
+                  </div>
+                ))}
+              </div>
+            </InfiniteScroll>
           ) : (
             "Il n'y a pas d'éléments dans cette catégorie"
           )}

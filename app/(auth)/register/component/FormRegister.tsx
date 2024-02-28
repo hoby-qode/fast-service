@@ -2,11 +2,9 @@
 
 import loading from '@/app/loading'
 import Button from '@/components/button'
-import useAuth from '@/src/hooks/useAuth'
 import { signIn } from 'next-auth/react'
 import Link from 'next/link'
 import { useRouter, useSearchParams } from 'next/navigation'
-import { useState } from 'react'
 import { useForm, SubmitHandler } from 'react-hook-form'
 
 type Inputs = {

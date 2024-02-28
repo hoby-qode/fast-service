@@ -11,7 +11,7 @@ const Products = async () => {
   return (
     <div>
       <HeaderPage title="Produits" />
-      <Content products={products[0].products.nodes} tags={tags} />
+      <Content products={products[0].products.nodes} tags={tags} pageInfo={products[0].products.pageInfo} />
     </div>
   )
 }

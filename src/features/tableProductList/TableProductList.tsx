@@ -5,19 +5,17 @@ import styles from './TableProductList.module.css'
 import CardInline from '@/components/cardInline'
 import useCommande from '@/src/hooks/useCommande'
 import { TbInfoCircle } from 'react-icons/tb'
-import { validateCommande } from '@/src/actions/commande.action'
 import Button from '@/components/button'
-import useAuth from '@/src/hooks/useAuth'
 import { AuthContext } from '@/src/context/Mycontext'
 import AddCart from '@/components/addCart'
-import { useShoppingCart } from '@/src/store/useCartStore'
+import { useShoppingCart } from '@/src/store/useShoppingCart'
 import { useFormStatus, useFormState } from 'react-dom'
 import { validateCommandeApiRest } from '@/src/actions/commandeApiRest.action'
+import { toast } from 'react-toastify'
 
 const TableProductList = ({ products }: { products: any }) => {
   const { subTotal, total, reduction, infoReduction } = useCommande(products)
   const [showInfoReduction, setShowInfoReduction] = useState(false)
-  const { currentUser } = useContext(AuthContext)
   const { items,removeItem,clearCart } = useShoppingCart();
   let idsCart = [];
   if (items) {
@@ -25,12 +23,13 @@ const TableProductList = ({ products }: { products: any }) => {
         return element.id;
     });
   } 
-  const initialState = {
-    message: '',
-    formData : null,
-  }
   const [state, formAction] = useFormState(validateCommandeApiRest, null)
-  
+  useEffect(() => {
+    if (state) {
+      clearCart();
+      toast('Test');
+    }
+  }, [state, clearCart]);
   return (
     <div className={styles.table}>
       <div className={styles.table_header}>
@@ -133,8 +132,8 @@ const TableProductList = ({ products }: { products: any }) => {
       </div>
       <div className="text-right">
         <form action={formAction}>
-          <input type="hidden" name="data" value={[15, 5, 85]} />
-          <Submit />
+          <input type="hidden" name="data" value={idsCart} />
+            <Submit />
         </form>
       </div>
     </div>

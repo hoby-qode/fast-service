@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect, useState } from 'react';
 import Content from './Content';
-import { useShoppingCart } from '@/src/store/useCartStore';
+import { useShoppingCart } from '@/src/store/useShoppingCart';
 
 const Cart = () => {
   const [data, setData] = useState(null);
@@ -11,8 +11,7 @@ const Cart = () => {
       try {
         const query = `
         query QueryProductBySlug{
-          products(where: {in: [${Ids}]} 
-            last: 500) {
+          products(where: {in: [${Ids}]}) {
               nodes {
                   databaseId
                   title
@@ -51,7 +50,7 @@ const Cart = () => {
         }`
 
         const response = await fetch(
-          `${process.env.NEXT_PUBLIC_GRAPHQL_ENDPOINT}?query=${encodeURIComponent(query)}`
+          `${process.env.NEXT_PUBLIC_GRAPHQL_ENDPOINT}?query=${encodeURIComponent(query)}`, { cache: 'no-store' }
         );
 
         if (!response.ok) {
@@ -59,23 +58,17 @@ const Cart = () => {
         }
 
         const {data} = await response.json();
-        console.log(data);
-        
-        console.log(data)
         setData(data);
       } catch (error) {
         console.error('Une erreur est survenue :', error);
       }
     };
-
     if (items) {
-      // const idsCart = JSON.parse(cart)
       let idsCart = [];
-      // Utilisation de la méthode map pour extraire les IDs
       idsCart = items.map(function(element:any) {
           return element.id;
       });
-      
+
       if (idsCart.length > 0) {
         fetchData(idsCart);
       }
@@ -85,7 +78,7 @@ const Cart = () => {
   return (
     <div>
       <div className="container mw-100">
-        {data && <Content products={data.products.nodes}/>}
+        {data && <Content products={data?.products?.nodes}/>}
       </div>
     </div>
   );

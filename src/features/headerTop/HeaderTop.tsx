@@ -12,17 +12,13 @@ import {
 import LinkIcon from '@/components/LinkIcon'
 import Link from 'next/link'
 import NavigatorDesktop from '../navigatorDesktop'
-import ToggleTheme from '@/components/toggleTheme'
 import { CartContext } from '@/src/context/Mycontext'
-import useAuth from '@/src/hooks/useAuth'
 import { signIn, signOut, useSession } from "next-auth/react";
 import BtnIcon from '@/components/btnIcon'
-import { useShoppingCart } from '@/src/store/useCartStore'
+import { useShoppingCart } from '@/src/store/useShoppingCart'
 
 const HeaderTop = () => {
-  const { nbCart, setNbCart } = useContext(CartContext)
   const { items } = useShoppingCart();
-  // const { user, isLogged, logout, loading, loginError, setJwt } = useAuth()
   const { data: session } = useSession();
   return (
     <header className={styles.header}>

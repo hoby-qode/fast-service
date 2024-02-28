@@ -2,18 +2,16 @@ import { getSession } from "next-auth/react";
 
 export async function validateCommandeApiRest(prevState: any, formData: FormData ) {
   const session = await getSession()    
-
   if (!session) throw Error('Could not get user');
-
+  if(!formData.get('data')) throw Error("il n'y a pas d'élément dans votre panier");
+  const ids = formData?.get('data')?.split(',')
   const title = "#" + session?.user?.name ;
   const url = `${process.env.NEXT_PUBLIC_API_REST_ENDPOINT}/commande`;
   const data = {
     title: title,
-    content: JSON.stringify(session?.user),
-    status: 'publish',
+    status: 'draft',
     'acf': {
-      produits: [50],
-      ids_produits: "test"
+      produits: ids,
     }
   }
 

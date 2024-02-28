@@ -70,7 +70,7 @@ export async function findAllProductByCat(slug: string) {
         nodes {
           id
           name
-          products {
+          products(first: 12) {
             nodes {
               acf_product {
                 dateDeSortie
@@ -107,9 +107,10 @@ export async function findAllProductByCat(slug: string) {
         headers: {
             'Content-Type': 'application/json',
         },
-        next: {
-          revalidate: false,
-        },
+        // next: {
+        //   revalidate: false,
+        // },
+        cache: 'no-store'
     })
 
     const { data } = await res.json()
