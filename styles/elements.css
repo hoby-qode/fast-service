@@ -130,3 +130,9 @@ figure {
 .slick-track {
     display: flex;
 }
+
+.user-account {
+    background-color: hsl(var(--secondary));
+    padding: 0;
+    border-radius: 50%;
+}

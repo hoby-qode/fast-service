@@ -41,7 +41,7 @@ const Filter = ({
         {/* Order by title: */}
         {tags.map((tag: any, key: number) => (
           <div className={styles.filter_item} key={key}>
-            {/* <Input
+            <Input
               type="radio"
               name="genre"
               id={tag.node.slug}
@@ -50,7 +50,7 @@ const Filter = ({
               icon={''}
               className="input-filter"
               defaultChecked={genre === tag.node.slug}
-            /> */}
+            />
           </div>
         ))}
       </form>

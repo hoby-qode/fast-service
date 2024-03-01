@@ -15,7 +15,8 @@ import NavigatorDesktop from '../navigatorDesktop'
 import { signIn, signOut, useSession } from "next-auth/react";
 import { useShoppingCart } from '@/src/store/useShoppingCart'
 import { DropdownMenuCheckboxItemProps } from "@radix-ui/react-dropdown-menu"
- 
+import { createAvatar } from '@dicebear/core';
+import { notionists } from '@dicebear/collection';
 import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,
@@ -25,6 +26,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
  
 type Checked = DropdownMenuCheckboxItemProps["checked"]
 
@@ -36,6 +38,12 @@ const HeaderTop = () => {
   const [showActivityBar, setShowActivityBar] = React.useState<Checked>(false)
   const [showPanel, setShowPanel] = React.useState<Checked>(false)
   
+  const avatar = createAvatar(notionists, {
+    seed: session?.user ? session?.user.name :  undefined,
+    size: 128,
+  }).toDataUriSync();
+  const svg = avatar.toString();
+  console.log(svg);
   return (
     <header className={styles.header}>
       <div className="container">
@@ -89,35 +97,38 @@ const HeaderTop = () => {
                 bgColor="secondary"
                 color="primary" onClick={() => signIn()} />
               )} */}
-              <div className="position-relative">
-              <DropdownMenu>
-                <DropdownMenuTrigger asChild>
-                  <Button variant="outline">Open</Button>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent className="w-56">
-                  <DropdownMenuLabel>Appearance</DropdownMenuLabel>
-                  <DropdownMenuSeparator />
-                  <DropdownMenuCheckboxItem
-                    checked={showStatusBar}
-                    onCheckedChange={setShowStatusBar}
-                  >
-                    Status Bar
-                  </DropdownMenuCheckboxItem>
-                  <DropdownMenuCheckboxItem
-                    checked={showActivityBar}
-                    onCheckedChange={setShowActivityBar}
-                    disabled
-                  >
-                    Activity Bar
-                  </DropdownMenuCheckboxItem>
-                  <DropdownMenuCheckboxItem
-                    checked={showPanel}
-                    onCheckedChange={setShowPanel}
-                  >
-                    Panel
-                  </DropdownMenuCheckboxItem>
-                </DropdownMenuContent>
-              </DropdownMenu>
+              <div className="user-account">
+                <DropdownMenu>
+                  <DropdownMenuTrigger asChild>
+                    <Avatar style={{height: "40px", width: "40px"}}>
+                      <AvatarImage src={svg}  />
+                      <AvatarFallback>CN</AvatarFallback>
+                    </Avatar>
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent className="w-56">
+                    <DropdownMenuLabel>Appearance</DropdownMenuLabel>
+                    <DropdownMenuSeparator />
+                    <DropdownMenuCheckboxItem
+                      checked={showStatusBar}
+                      onCheckedChange={setShowStatusBar}
+                    >
+                      Status Bar
+                    </DropdownMenuCheckboxItem>
+                    <DropdownMenuCheckboxItem
+                      checked={showActivityBar}
+                      onCheckedChange={setShowActivityBar}
+                      disabled
+                    >
+                      Activity Bar
+                    </DropdownMenuCheckboxItem>
+                    <DropdownMenuCheckboxItem
+                      checked={showPanel}
+                      onCheckedChange={setShowPanel}
+                    >
+                      Panel
+                    </DropdownMenuCheckboxItem>
+                  </DropdownMenuContent>
+                </DropdownMenu>
               </div>
             </li>
             {/* <li className="d-none d-lg-block">
