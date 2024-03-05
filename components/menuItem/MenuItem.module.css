@@ -21,6 +21,7 @@
 }
 .menuItemName {
     color: hsl(var(--background));
+    margin-top: 5px;
 }
 .menuItemActive .menuItemName, .menuItem:hover .menuItemName{
     color: hsl(var(--tertiary));
@@ -33,4 +34,9 @@
 }
 .menuItemActive .menuPicto, .menuItem:hover .menuPicto {
     opacity: 0;
+}
+
+.menuPictoHover, .menuPicto {
+    width: 40px;
+    height: 40px;
 }

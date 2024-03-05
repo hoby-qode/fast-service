@@ -1,8 +1,8 @@
 'use client'
 import FormLogin from '@/app/(auth)/login/component/FormLogin'
-import Modal from '@/components/modal'
+import { useSession } from 'next-auth/react'
 import { useRouter } from 'next/navigation'
-import React, { useEffect } from 'react'
+import React from 'react'
 
 const LoginModal = () => {
   const { data: session } = useSession();

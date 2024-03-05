@@ -25,12 +25,15 @@
     transform: rotate(312deg);
     transition: .5s;
     color: hsl(var(--background));
-    line-height: 40px;
+    line-height: 19px;
 }
 @media screen and (min-width:991px) {
     .addCart {
         width: 40px;
         height: 40px;
         font-size: 3rem;
+    }
+    .addCart.active span {
+        line-height: 40px;
     }
 }

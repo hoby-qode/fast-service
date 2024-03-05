@@ -57,10 +57,10 @@ const FormLogin = () => {
           {errors.password && <span>Le mot de passe est obligatoire</span>}
         </div>
 
-        <Button type="submit" btn="secondary" disabled={!loading}>
+        <Button type="submit" btn="primary" disabled={!loading}>
           {!loading ? 'Loading...' : 'Se connecter'}
         </Button>
-        <p className="text-right" style={{color: '#fff'}}>
+        <p className="text-right mt-4 mb-3" style={{color: '#fff'}}>
           <Link href="/lost-password" style={{ textDecoration: 'underline' }}>
             Mot de passe oublié
           </Link>

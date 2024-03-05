@@ -9,7 +9,9 @@ h2, .like-h2 {
     font-size: 2.4rem;
     font-weight: 700;
     font-family: var(--poppins);
+    line-height: 120%;
     color: hsl(var(--secondary));
+    margin-bottom: 20px;
 }
 @media screen and (min-width:991px) {
     h2, .like-h2 { 
@@ -71,7 +73,7 @@ label {
     font-size: 1.2rem;
     margin-bottom: 10px;
     display: block;
-    background: hsl(var(--primary));
+    background: hsl(var(--secondary));
     display: inline-block;
     position: relative;
     top: 20px;
@@ -135,4 +137,57 @@ figure {
     background-color: hsl(var(--secondary));
     padding: 0;
     border-radius: 50%;
+    cursor: pointer;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 4px;
+    border-radius: 4px;
+}
+.menu-item:hover {
+    background: hsl(var(--foreground) / 5%)
+}
+.menu-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: hsl(var(--foreground) / 10%);
+}
+.user-account-container {
+    padding: 10px 5px!important;
+}
+@media screen and (max-width:767px) {
+    .user-account-container {
+        width: 100vw;
+    }
+}
+body[data-scroll-locked]::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    z-index: 100;
+    transition: .5s;
+}
+
+.scrolled-down {
+    backdrop-filter: blur(17px) opacity(1) brightness(0.8);
+}
+
+b, strong {
+    font-weight: 700!important;
+}
+
+.z-99999 {
+    z-index: 999999;
 }

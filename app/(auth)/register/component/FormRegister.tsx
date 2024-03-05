@@ -1,6 +1,5 @@
 'use client'
 
-import loading from '@/app/loading'
 import Button from '@/components/button'
 import { signIn } from 'next-auth/react'
 import Link from 'next/link'
@@ -88,10 +87,10 @@ const FormSignin = () => {
           {errors.password && <span>Le mot de passe est obligatoire</span>}
         </div>
 
-        <Button type="submit" btn="secondary" disabled={!loading}>
+        <Button type="submit" btn="primary" disabled={!loading}>
           S&apos;inscrire
         </Button>
-        <p className="text-center" style={{color: '#fff'}}>
+        <p className="text-center mt-4" style={{color: '#fff'}}>
           <Link
             href="/login"
             style={{ textDecoration: 'underline' }}

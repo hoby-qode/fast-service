@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import { AiOutlineArrowRight } from 'react-icons/ai'
 import Link from 'next/link'
+import FormAnonyme from './anonyme/FormAnonyme'
 
 export default function RootLayout({
   children,
@@ -13,13 +14,14 @@ export default function RootLayout({
       <main className="login-layout vh-100 mb-0 py-4 ">
         <div className="h-100 container d-flex justify-content-between flex-column">
           <div className='text-right' style={{color:'#fff', fontWeight: '500', display:'flex', alignItems: 'center', justifyContent:'flex-end'}}>
-            <Link href="/">
+            {/* <Link href="/anonyme" className='flex items-center'>
               Continuer en anonyme <AiOutlineArrowRight style={{marginLeft:'5px'}} />  
-            </Link>
+            </Link> */}
+            <FormAnonyme />
           </div>
           <div className="row">
             <div className="col-md-6 mt-5">
-              <div className="text-center">
+              <div className="text-center mb-4">
                 <Image src="/images/logo/logo-fast-service.svg" alt="logo fast service" width={211} height={60}/>
               </div>
             </div>

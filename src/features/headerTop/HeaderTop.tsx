@@ -1,5 +1,5 @@
 'use client'
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState, useRef } from 'react'
 import Image from 'next/image'
 
 import styles from './HeaderTop.module.css'
@@ -18,15 +18,18 @@ import { DropdownMenuCheckboxItemProps } from "@radix-ui/react-dropdown-menu"
 import { createAvatar } from '@dicebear/core';
 import { notionists } from '@dicebear/collection';
 import { Button } from "@/components/ui/button"
+import BtnIcon from '@/components/btnIcon'
 import {
   DropdownMenu,
-  DropdownMenuCheckboxItem,
   DropdownMenuContent,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
   DropdownMenuTrigger,
+  DropdownMenuItem,
+  DropdownMenuSeparator,
+  DropdownMenuLabel,
+  DropdownMenuGroup
 } from "@/components/ui/dropdown-menu"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { LogOut, Settings } from 'lucide-react'
  
 type Checked = DropdownMenuCheckboxItemProps["checked"]
 
@@ -43,9 +46,25 @@ const HeaderTop = () => {
     size: 128,
   }).toDataUriSync();
   const svg = avatar.toString();
-  console.log(svg);
+  const header = useRef(null)
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        // Scrolling down
+        header.current.classList.add('scrolled-down');
+      } else {
+        // At the top
+        header.current.classList.remove('scrolled-down');
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  })
   return (
-    <header className={styles.header}>
+    <header className={styles.header} ref={header}>
       <div className="container">
         <div className="d-flex justify-content-between align-items-center">
           <div className={styles.headerLogo}>
@@ -100,34 +119,65 @@ const HeaderTop = () => {
               <div className="user-account">
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
-                    <Avatar style={{height: "40px", width: "40px"}}>
-                      <AvatarImage src={svg}  />
-                      <AvatarFallback>CN</AvatarFallback>
-                    </Avatar>
+                    {session?.user ? (
+                      <div className="menu-icon">
+                        <Avatar style={{height: "40px", width: "40px"}}>
+                          <AvatarImage src={svg}  />
+                          <AvatarFallback>CN</AvatarFallback>
+                        </Avatar>
+                      </div>
+                    ) : (
+                      <BtnIcon icon={<IoLogInOutline style={{width: '23px',height: '23px',position: 'relative',right: '2px'}}/>}
+                      style="rounded"
+                      bgColor="secondary"
+                      color="primary" onClick={() => signIn()} />
+                    )} 
                   </DropdownMenuTrigger>
-                  <DropdownMenuContent className="w-56">
-                    <DropdownMenuLabel>Appearance</DropdownMenuLabel>
+                  {session?.user ? <DropdownMenuContent className="user-account-container">
+                    <DropdownMenuGroup>
+                      <DropdownMenuItem>
+                        <Link href="#" className="menu-item">
+                          <div className="menu-icon">
+                            <Avatar style={{height: "40px", width: "40px"}}>
+                              <AvatarImage src={svg}  />
+                              <AvatarFallback>CN</AvatarFallback>
+                            </Avatar>
+                          </div>
+                          <strong>{session?.user?.name}</strong>
+                        </Link>
+                      </DropdownMenuItem>
+                    </DropdownMenuGroup>
+
                     <DropdownMenuSeparator />
-                    <DropdownMenuCheckboxItem
-                      checked={showStatusBar}
-                      onCheckedChange={setShowStatusBar}
-                    >
-                      Status Bar
-                    </DropdownMenuCheckboxItem>
-                    <DropdownMenuCheckboxItem
-                      checked={showActivityBar}
-                      onCheckedChange={setShowActivityBar}
-                      disabled
-                    >
-                      Activity Bar
-                    </DropdownMenuCheckboxItem>
-                    <DropdownMenuCheckboxItem
-                      checked={showPanel}
-                      onCheckedChange={setShowPanel}
-                    >
-                      Panel
-                    </DropdownMenuCheckboxItem>
-                  </DropdownMenuContent>
+
+                    <DropdownMenuGroup>
+                      <DropdownMenuItem>
+                        <Link href="#" onClick={() => signOut()} className="menu-item">
+                          <div className="menu-icon">
+                            <Settings />
+                          </div>
+                          <strong>
+                            Paramètres et confidentialité
+                          </strong>
+                        </Link>
+                      </DropdownMenuItem>
+                    </DropdownMenuGroup>
+
+                    <DropdownMenuSeparator />
+
+                    <DropdownMenuGroup>
+                      <DropdownMenuItem>
+                        <Link href="#" onClick={() => signOut()} className="menu-item">
+                          <div className="menu-icon">
+                            <LogOut />
+                          </div>
+                          <strong>
+                            Déconnexion
+                          </strong>
+                        </Link>
+                      </DropdownMenuItem>
+                    </DropdownMenuGroup>
+                  </DropdownMenuContent> : ''}
                 </DropdownMenu>
               </div>
             </li>
