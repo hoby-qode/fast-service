@@ -191,3 +191,6 @@ b, strong {
 .z-99999 {
     z-index: 999999;
 }
+.anchor {
+    margin-top:8rem;
+}

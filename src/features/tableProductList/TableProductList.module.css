@@ -38,7 +38,7 @@
 }
 .table_header h1 {
     margin: 0;
-    color: hsl(var(--primary));
+    color: hsl(var(--secondary));
 }
 
 .table_td_card {

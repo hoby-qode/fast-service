@@ -58,6 +58,7 @@ const FormSignin = () => {
         password: data.password,
         callbackUrl: "/",
       });
+
       if (!loginResponse?.error) {
         router.push("/");
       } else {

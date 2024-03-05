@@ -2,11 +2,15 @@
 import React, { useEffect, useState } from 'react';
 import Content from './Content';
 import { useShoppingCart } from '@/src/store/useShoppingCart';
+import Link from 'next/link'
+import { buttonVariants } from "@/components/ui/button"
 
 const Cart = () => {
   const [data, setData] = useState(null);
-  const { items, addItem, removeItem } = useShoppingCart();
+  const { items } = useShoppingCart();
   useEffect(() => {
+    let isMounted = true;
+
     const fetchData = async (Ids: any) => {
       try {
         const query = `
@@ -48,37 +52,47 @@ const Cart = () => {
               }
           }
         }`
+        
+        const variables = { ids: Ids };
 
-        const response = await fetch(
-          `${process.env.NEXT_PUBLIC_GRAPHQL_ENDPOINT}?query=${encodeURIComponent(query)}`, { cache: 'no-store' }
-        );
+        const response = await fetch(`${process.env.NEXT_PUBLIC_GRAPHQL_ENDPOINT}`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ query, variables }),
+          cache: 'no-store',
+        });
 
         if (!response.ok) {
           throw new Error('Erreur lors de la récupération des données');
         }
 
         const {data} = await response.json();
-        setData(data);
+        if (isMounted) {
+          setData(data);
+        }
       } catch (error) {
         console.error('Une erreur est survenue :', error);
       }
     };
     if (items) {
-      let idsCart = [];
-      idsCart = items.map(function(element:any) {
-          return element.id;
-      });
-
+      const idsCart = items.map((element: any) => element.id);
       if (idsCart.length > 0) {
         fetchData(idsCart);
       }
-    }    
+    }
   }, [items]);
 
   return (
     <div>
       <div className="container mw-100">
-        {data && <Content products={data?.products?.nodes}/>}
+        {
+          data ? <Content products={data?.products?.nodes}/> 
+          : <div className="pasElement anchor">
+            Il n&apos;y a pas d&apos;élément dans votre panier, faites vos
+            achats içi. <Link href="/produits" className={buttonVariants({ variant: "primary" })}>Boutique</Link>
+          </div>}
       </div>
     </div>
   );
