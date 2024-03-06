@@ -104,13 +104,14 @@ const FormAnonyme = () => {
           <DialogHeader>
             <DialogTitle>
               <p style={{    color: "rgb(255, 255, 255)",
-              fontSize: "1.6rem",
-              fontWeight: "500",
+              fontSize: "1.4rem",
+              fontWeight: "400",
               fontFamily: "var(--raleway)",
-              lineHeight: "120%"}}>
-              Rejoignez-nous dès maintenant et profitez de notre promotion en vous inscrivant sur notre application.
+              lineHeight: "120%",
+              marginBottom: "20px"}}>
+              Entrez un pseudo pour votre commande. Il sera effacé après validation pour protéger votre anonymat.
               </p>
-              
+              <span style={{color:"#fff", fontSize: '1rem',  fontWeight: "100",lineHeight: "120%"}}>Pour profiter de nos promotions et suivre vos achats, inscrivez-vous ou connectez-vous. Merci ! </span>
             </DialogTitle>
             {error && <p style={{color: 'hsl(var(--destructive))'}}>{error}</p>}
           </DialogHeader>
