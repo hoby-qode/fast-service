@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useState } from 'react'
 
 import TableProductList from '@/src/features/tableProductList'
 
@@ -12,10 +12,7 @@ const Content = ({products}:{products:any}) => {
         products.length > 0 ? (
           <TableProductList products={products} />
         ) : (
-          <div className="pasElement">
-            Il n&apos;y a pas d&apos;élément dans votre panier, faites vos
-            achats içi
-          </div>
+          "Il n&apos;y a pas d&apos;élément dans votre panier, faites vos achats içi"
         )
       ) : (
         'loading..'

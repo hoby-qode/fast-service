@@ -131,9 +131,9 @@ const TableProductList = ({ products }: { products: any }) => {
         </div>
       </div>
       <div className="text-right">
-        <form action={formAction}>
+        <form action={formAction} >
           <input type="hidden" name="data" value={idsCart} />
-            <Submit />
+          <Submit />
         </form>
       </div>
     </div>

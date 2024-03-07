@@ -4,6 +4,8 @@ import Content from './Content';
 import { useShoppingCart } from '@/src/store/useShoppingCart';
 import Link from 'next/link'
 import { buttonVariants } from "@/components/ui/button"
+import styles from '@/src/features/tableProductList/TableProductList.module.css'
+import Button from '@/components/button'
 
 const Cart = () => {
   const [data, setData] = useState(null);
@@ -90,9 +92,17 @@ const Cart = () => {
         {
           data ? <Content products={data?.products?.nodes}/> 
           : <div className="pasElement anchor">
-            Il n&apos;y a pas d&apos;élément dans votre panier, faites vos
-            achats içi. <Link href="/produits" className={buttonVariants({ variant: "primary" })}>Boutique</Link>
-          </div>}
+              <div className={styles.table}>
+                <div className={styles.table_header}>
+                  <h1>Mon panier</h1>
+                  <div className="text-right">
+                    <Button btn="secondary" href="/produits" isLink={true}>Retour à la boutique</Button>
+                  </div>
+                </div>
+                <h3 style={{fontSize: '3rem', lineHeight: '140%'}}>Il n&apos;y a pas d&apos;élément dans votre panier. </h3>
+              </div>
+            </div>
+          }
       </div>
     </div>
   );
