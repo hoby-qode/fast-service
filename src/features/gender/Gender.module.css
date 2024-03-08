@@ -8,7 +8,7 @@
     text-align: center;
 }
 .cardPicto {
-    background-color: hsl(var(--tertiary));
+    background-color: hsl(var(--primary));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,7 +16,7 @@
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 3px 6px rgba(0,0,0,.18);
-    border: 1px solid hsl(var(--primary));
+    border: 1px solid hsl(var(--tertiary)/50%);
     position: relative;
 }
 .cardPicto::before {

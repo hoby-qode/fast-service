@@ -9,11 +9,10 @@ import { MdSort } from "react-icons/md";
 import { motion, useAnimation } from 'framer-motion'
 import { TbArrowsSort } from "react-icons/tb";
 import InfiniteScroll from 'react-infinite-scroll-component'
-import SearchForm from './SearchForm'
 /* TODO: typage de variable products */
 const Content = ({ products, tags, pageInfo }: { products: any; tags: any;pageInfo:any }) => {
   const searchParams = useSearchParams()
-  const [datas, setDatas] = useState([...products])
+  const [data, setData] = useState([...products])
   const [order, setOrder] = useState(searchParams.get('order'))
   const [genre, setGenre] = useState(searchParams.get('genre'))
   const [showMenuFilter, setShowMenuFilter] = useState(false)
@@ -42,33 +41,33 @@ const Content = ({ products, tags, pageInfo }: { products: any; tags: any;pageIn
     setOrder(orderBy)
     switch (orderBy) {
       case 'date_asc':
-        return datas.sort(
+        return data.sort(
           (a, b) =>
             new Date(a.acf_product.dateDeSortie).valueOf() -
             new Date(b.acf_product.dateDeSortie).valueOf(),
         )
       case 'date_desc':
-        return datas.sort(
+        return data.sort(
           (a, b) =>
             new Date(b.acf_product.dateDeSortie).valueOf() -
             new Date(a.acf_product.dateDeSortie).valueOf(),
         )
 
       case 'title_asc':
-        return datas.sort((a, b) => a.slug.localeCompare(b.slug))
+        return data.sort((a, b) => a.slug.localeCompare(b.slug))
       case 'title_desc':
-        return datas.sort((a, b) => b.slug.localeCompare(a.slug))
+        return data.sort((a, b) => b.slug.localeCompare(a.slug))
 
       case 'note_asc':
-        return datas.sort((a, b) => a.acf_product.rating - b.acf_product.rating)
+        return data.sort((a, b) => a.acf_product.rating - b.acf_product.rating)
       case 'note_desc':
-        return datas.sort((a, b) => b.acf_product.rating - a.acf_product.rating)
+        return data.sort((a, b) => b.acf_product.rating - a.acf_product.rating)
     }
   }
 
   function handleChangeFilter(genre: string) {
     setGenre(genre)
-    setDatas(
+    setData(
       products.filter((a: any) => {
         return a.hqTags.nodes.some((tag: any) => tag.slug === genre)
       }),
@@ -76,7 +75,6 @@ const Content = ({ products, tags, pageInfo }: { products: any; tags: any;pageIn
   }
   console.log(pageInfo)
   const [endCursor, setEndCursor] = useState(pageInfo.endCursor);
-  const [hasMore, setHasMore] = useState(true)
   const fetchMoreData = async () => {
     const query = `
     query QueryProductByCat($slug: [String] = "films") {
@@ -129,14 +127,12 @@ const Content = ({ products, tags, pageInfo }: { products: any; tags: any;pageIn
 
     const { data } = await res.json()
 
-    setDatas([...datas, ...data.categoriesProduct.nodes[0].products.nodes])
-    setEndCursor(data.categoriesProduct.nodes[0].products.pageInfo.endCursor)
-    setHasMore(data.categoriesProduct.nodes[0].products.pageInfo.hasNextPage)
+    setData(data)
+    setEndCursor(data.pageInfo.endCursor)
   }
   return (
     <div className="container mt-0 mt-md-5">
       <div className="row">
-        <SearchForm />
         {/* <div className="col-md-3">
           <div className='d-flex d-md-none justify-content-between container mb-5'>
             <button onClick={() => setShowMenuFilter(!showMenuFilter)} className={styles.menuFilter}><TbArrowsSort />Trier par </button>
@@ -164,15 +160,34 @@ const Content = ({ products, tags, pageInfo }: { products: any; tags: any;pageIn
            )} 
         </div> */}
         <div className="col-md-9">
-          {datas.length > 0 ? (
-            <InfiniteScroll
-                dataLength={datas.length}
-                next={fetchMoreData}
-                hasMore={hasMore}
-                loader={<h4>Loading...</h4>}
-              >
-              <div className="row">
-                {datas.map((post: any, key: number) => (
+          {data.length > 0 ? (
+            // <InfiniteScroll
+            //     dataLength={120}
+            //     next={fetchMoreData}
+            //     hasMore={true}
+            //     loader={<h4>Loading...</h4>}
+            //   >
+            //   <div className="row">
+            //     {data.map((post: any, key: number) => (
+            //       <div className="col-6 col-md-3 mb-4" key={key}>
+            //         <Card
+            //           id={post.databaseId}
+            //           title={post.title}
+            //           slug={post.slug}
+            //           date={
+            //             post.acf_product?.dateDeSortie
+            //               ? post.acf_product.dateDeSortie
+            //               : null
+            //           }
+            //           featuredImage={post.featuredImage?.node.sourceUrl}
+            //           rating={post.acf_product.rating}
+            //         />
+            //       </div>
+            //     ))}
+            //   </div>
+            // </InfiniteScroll>
+            <div className="row">
+                {data.map((post: any, key: number) => (
                   <div className="col-6 col-md-3 mb-4" key={key}>
                     <Card
                       id={post.databaseId}
@@ -189,7 +204,6 @@ const Content = ({ products, tags, pageInfo }: { products: any; tags: any;pageIn
                   </div>
                 ))}
               </div>
-            </InfiniteScroll>
           ) : (
             "Il n'y a pas d'éléments dans cette catégorie"
           )}

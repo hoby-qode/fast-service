@@ -27,7 +27,6 @@ const TableProductList = ({ products }: { products: any }) => {
   useEffect(() => {
     if (state) {
       clearCart();
-      toast('Test');
     }
   }, [state, clearCart]);
   return (
@@ -130,12 +129,12 @@ const TableProductList = ({ products }: { products: any }) => {
           </div>
         </div>
       </div>
-      <div className="text-right">
+      {/* <div className="text-right">
         <form action={formAction} >
           <input type="hidden" name="data" value={idsCart} />
           <Submit />
         </form>
-      </div>
+      </div> */}
     </div>
   )
 }
