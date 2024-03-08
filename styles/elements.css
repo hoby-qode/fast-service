@@ -11,7 +11,7 @@ h2, .like-h2 {
     font-family: var(--poppins);
     line-height: 120%;
     color: hsl(var(--secondary));
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 @media screen and (min-width:991px) {
     h2, .like-h2 { 

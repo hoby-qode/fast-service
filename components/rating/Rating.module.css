@@ -2,13 +2,13 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    border: 1px solid hsl(var(--secondary));
-    background-color: hsl(var(--light));
+    border: 1px solid hsl(var(--background));
+    background-color: hsl(var(--secondary));
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1rem;
-    color: hsl(var(--secondary));
+    color: hsl(var(--background));
     box-shadow: var(--shadow);
     font-weight: 700;
 }
