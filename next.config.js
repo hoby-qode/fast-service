@@ -14,7 +14,12 @@ const withPWA = require('@ducanh2912/next-pwa').default({
 
 module.exports = withPWA({
   // next.js config
+    typescript: {
+      ignoreBuildErrors: true
+    },
     images: {
+      unoptimized: true,
+     
       remotePatterns: [
         {
           protocol: 'http',

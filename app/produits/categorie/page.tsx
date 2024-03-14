@@ -12,8 +12,6 @@ const Category = async ({ params }: { params: { slug: string } }) => {
 
   return (
     <div>
-      <HeaderPage title="Page catégorie" />
-
       <div className="container">
         <CategoryFilter title="Genre" categories={tags} />
         <div className="row">

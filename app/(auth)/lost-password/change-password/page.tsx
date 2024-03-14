@@ -1,4 +1,4 @@
-import FormLostPassword from "./component/FormLostPassword"
+import FormLostPassword from "../component/FormLostPassword"
 
 const LostPassword = () => {
     return (

@@ -9,7 +9,6 @@ export default function RootLayout({
   return (
     <>
       <main className="menu-layout">
-        <Navigator />
         {children}
       </main>
     </>

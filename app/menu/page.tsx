@@ -7,11 +7,14 @@ import Link from 'next/link'
 import Password from './component/password/Password'
 import Logout from './component/logout/Logout'
 import Appareance from './component/appareance/Appareance'
+import { TbArrowLeft } from 'react-icons/tb'
 
 const Menu = () => {
   return (
     <div className={`container ${styles.page}`}>
-      <h1 className={styles.title}>Paramètres</h1>
+      <h1 className={styles.title}>
+        <Link href="/" className="flex space-x-2 font-smile"><TbArrowLeft />Paramètres</Link>
+      </h1>
 
       <fieldset>
         <legend>Apparence</legend>

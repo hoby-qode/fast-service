@@ -1,30 +1,29 @@
 'use client'
-import Card from '@/components/card'
-import Filter from '@/src/features/Filter'
-import OrderBy from '@/src/features/OrderBy'
 import { useSearchParams } from 'next/navigation'
-import React, { useCallback, useEffect, useReducer, useState } from 'react'
-import styles from './Content.module.css'
-import { MdSort } from "react-icons/md";
+import React, {  useEffect,  useState } from 'react'
 import { motion, useAnimation } from 'framer-motion'
-import { TbArrowsSort } from "react-icons/tb";
-import InfiniteScroll from 'react-infinite-scroll-component'
 import SearchForm from './SearchForm'
-/* TODO: typage de variable products */
+import InfiniteScrollContent from './InfiniteScrollContent'
+import OrderBy from '@/src/features/OrderBy'
+import Filter from '@/src/features/Filter'
+
 const Content = ({ products, tags, pageInfo }: { products: any; tags: any;pageInfo:any }) => {
   const searchParams = useSearchParams()
   const [datas, setDatas] = useState([...products])
   const [order, setOrder] = useState(searchParams.get('order'))
   const [genre, setGenre] = useState(searchParams.get('genre'))
+  const [searchText, setSearchText] = useState('')
   const [showMenuFilter, setShowMenuFilter] = useState(false)
   const controls = useAnimation()
+
+  
   useEffect(() => {
     if (order) {
       handleChangeOrder(order)
     } else if (genre) {
       handleChangeFilter(genre)
     }
-  }, [order])
+  }, [])
   
   const handleDragEnd = (_: any, info: any) => {
     // const distance = info.point.y - info.initialPoint.y
@@ -74,75 +73,17 @@ const Content = ({ products, tags, pageInfo }: { products: any; tags: any;pageIn
       }),
     )
   }
-  console.log(pageInfo)
-  const [endCursor, setEndCursor] = useState(pageInfo.endCursor);
-  const [hasMore, setHasMore] = useState(true)
-  const fetchMoreData = async () => {
-    const query = `
-    query QueryProductByCat($slug: [String] = "films") {
-      categoriesProduct(where: {slug: $slug}) {
-        nodes {
-          id
-          name
-          products(first: 12, after: "${endCursor}") {
-            nodes {
-              acf_product {
-                dateDeSortie
-                rating
-              }
-              content
-              slug
-              status
-              title
-              databaseId
-              featuredImage {
-                node {
-                  sourceUrl
-                }
-              }
-              hqTags {
-                nodes {
-                  slug
-                  name
-                }
-              }
-            }
-            pageInfo {
-                endCursor
-                hasNextPage
-            }
-          }
-        }
-      }
-    }`;
-
-    const res = await fetch(`${process.env.NEXT_PUBLIC_GRAPHQL_ENDPOINT}?query=${encodeURIComponent(query)}`, {
-        method: 'GET',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        // next: {
-        //   revalidate: false,
-        // },
-        cache: 'no-store'
-    })
-
-    const { data } = await res.json()
-
-    setDatas([...datas, ...data.categoriesProduct.nodes[0].products.nodes])
-    setEndCursor(data.categoriesProduct.nodes[0].products.pageInfo.endCursor)
-    setHasMore(data.categoriesProduct.nodes[0].products.pageInfo.hasNextPage)
-  }
+  
   return (
     <div className="container mt-0 mt-md-5">
       <div className="row">
-        <SearchForm />
-        {/* <div className="col-md-3">
+        <SearchForm searchText={searchText} onChangeSearchText={setSearchText} />
+        <div className="col-md-3">
           <div className='d-flex d-md-none justify-content-between container mb-5'>
-            <button onClick={() => setShowMenuFilter(!showMenuFilter)} className={styles.menuFilter}><TbArrowsSort />Trier par </button>
-            <button onClick={() => setShowMenuFilter(!showMenuFilter)} className={styles.menuFilter}><MdSort />  filtre </button>
+            {/* <button onClick={() => setShowMenuFilter(!showMenuFilter)} className={styles.menuFilter}><TbArrowsSort />Trier par </button>
+            <button onClick={() => setShowMenuFilter(!showMenuFilter)} className={styles.menuFilter}><MdSort />  filtre </button> */}
           </div>
-           {showMenuFilter && ( 
+           {/* {showMenuFilter && ( 
             <motion.div
               className={`d-flex justify-content-between ${styles.formContainer}`}
               drag="y"
@@ -161,35 +102,11 @@ const Content = ({ products, tags, pageInfo }: { products: any; tags: any;pageIn
                 />
               </div>
             </motion.div>
-           )} 
-        </div> */}
+           )}  */}
+        </div>
         <div className="col-md-9">
           {datas.length > 0 ? (
-            <InfiniteScroll
-                dataLength={datas.length}
-                next={fetchMoreData}
-                hasMore={hasMore}
-                loader={<h4>Loading...</h4>}
-              >
-              <div className="row">
-                {datas.map((post: any, key: number) => (
-                  <div className="col-6 col-md-3 mb-4" key={key}>
-                    <Card
-                      id={post.databaseId}
-                      title={post.title}
-                      slug={post.slug}
-                      date={
-                        post.acf_product?.dateDeSortie
-                          ? post.acf_product.dateDeSortie
-                          : null
-                      }
-                      featuredImage={post.featuredImage?.node.sourceUrl}
-                      rating={post.acf_product.rating}
-                    />
-                  </div>
-                ))}
-              </div>
-            </InfiniteScroll>
+            <InfiniteScrollContent datas={datas} pageInfo={pageInfo} onSetDatas={setDatas} />
           ) : (
             "Il n'y a pas d'éléments dans cette catégorie"
           )}

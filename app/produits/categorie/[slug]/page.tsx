@@ -10,7 +10,6 @@ const SingleCategory = async ({ params }: { params: { slug: string } }) => {
 
   return (
     <div>
-      <HeaderPage title={params.slug} />
       <Content products={products[0].products.nodes} tags={tags} pageInfo={products[0].products.pageInfo} />
     </div>
   )

@@ -1,20 +1,19 @@
 import styles from '@/components/SearchBar/searchBar.module.css'
+import {FC} from 'react'
 
-const SearchForm = () => {
+interface SearchFormPropsType {
+    searchText: string
+    onChangeSearchText: (text:string) => void
+}
+const SearchForm: FC<SearchFormPropsType> = ({searchText, onChangeSearchText}) => {
     return (
-        <div className={styles.searchBar_content}>
+        <div className={`${styles.searchBar_content} w-full`}>
             <input
             type="search"
             name="s"
-            onChange={(e) => setSearchText(e.target.value)}
+            onChange={(e) => onChangeSearchText(e.target.value)}
             className={styles.searchBar_input}
             placeholder="Faite vos recherches |"
-            onFocus={() => setShowContainerResult(true)}
-            onBlur={() =>
-                searchResults.length == 0
-                ? setShowContainerResult(false)
-                : setShowContainerResult(true)
-            }
             />
         </div>
     )
