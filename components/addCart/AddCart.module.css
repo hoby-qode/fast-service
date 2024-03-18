@@ -17,8 +17,9 @@
     transition: .5s;
     display: block;
     transform: rotate(0);
-    color: hsl(var(--secondary));
-    font-size: 5.5rem;
+    color: hsl(var(--background));
+    font-size: 3.5rem;
+    font-weight: 300;
 }
 .addCart.active span {
     line-height: 1;
@@ -35,5 +36,8 @@
     }
     .addCart.active span {
         line-height: 40px;
+    }
+    .addCart span {
+        font-size: 5.5rem;
     }
 }

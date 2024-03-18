@@ -12,9 +12,7 @@ import { TbArrowLeft } from 'react-icons/tb'
 const Menu = () => {
   return (
     <div className={`container ${styles.page}`}>
-      <h1 className={styles.title}>
-        <Link href="/" className="flex space-x-2 font-smile"><TbArrowLeft />Paramètres</Link>
-      </h1>
+      <Link href="/" className="flex space-x-4 text-2xl "><TbArrowLeft />Retour</Link>
 
       <fieldset>
         <legend>Apparence</legend>

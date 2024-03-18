@@ -6,6 +6,9 @@ import SearchForm from './SearchForm'
 import InfiniteScrollContent from './InfiniteScrollContent'
 import OrderBy from '@/src/features/OrderBy'
 import Filter from '@/src/features/Filter'
+import {Button} from '@/components/ui/button'
+import { MdSort } from "react-icons/md";
+import { FilterIcon } from 'lucide-react'
 
 const Content = ({ products, tags, pageInfo }: { products: any; tags: any;pageInfo:any }) => {
   const searchParams = useSearchParams()
@@ -77,11 +80,12 @@ const Content = ({ products, tags, pageInfo }: { products: any; tags: any;pageIn
   return (
     <div className="container mt-0 mt-md-5">
       <div className="row">
-        <SearchForm searchText={searchText} onChangeSearchText={setSearchText} />
+        
         <div className="col-md-3">
-          <div className='d-flex d-md-none justify-content-between container mb-5'>
-            {/* <button onClick={() => setShowMenuFilter(!showMenuFilter)} className={styles.menuFilter}><TbArrowsSort />Trier par </button>
-            <button onClick={() => setShowMenuFilter(!showMenuFilter)} className={styles.menuFilter}><MdSort />  filtre </button> */}
+          <div className='d-flex d-md-none justify-content-between mb-5 space-x-4'>
+            {/* <button onClick={() => setShowMenuFilter(!showMenuFilter)} className={styles.menuFilter}><TbArrowsSort />Trier par </button>*/}
+            <SearchForm searchText={searchText} onChangeSearchText={setSearchText} />
+            <Button onClick={() => setShowMenuFilter(!showMenuFilter)} style={{minHeight: '45px',boxShadow: "var(--shadow)"}} className='bg-background'><FilterIcon color="hsl(var(--primary))"/></Button> 
           </div>
            {/* {showMenuFilter && ( 
             <motion.div

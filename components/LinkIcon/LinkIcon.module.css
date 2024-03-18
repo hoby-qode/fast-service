@@ -36,7 +36,7 @@
     /* font-size: 2.1rem; */
     width: 20px;
     height: 20px;
-    color: hsl(var(--primary));
+    color: hsl(var(--background));
 }
 .notifaction {
     position: absolute;

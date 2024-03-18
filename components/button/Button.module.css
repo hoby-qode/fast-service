@@ -47,10 +47,10 @@
     }
 .btnTertiary {
     background-color: hsl(var(--background));
-    color: hsl(var(--secondary));
+    color: hsl(var(--primary));
 }
     .btnTertiary:hover, .btnTertiary.active {
-        background-color: hsl(var(--secondary));
+        background-color: hsl(var(--primary));
         color: hsl(var(--background));
         transition: .3s ease-out;
     }

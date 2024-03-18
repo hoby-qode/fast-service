@@ -2,9 +2,9 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    box-shadow: 0 -30px 10px hsl(var(--background) / 90%);
+    box-shadow: 0 -30px 10px hsl(var(--background));
     z-index: 9999;
-    background-color: hsl(var(--secondary));
+    background-color: hsl(var(--primary));
     display: block;
 }
 @media screen and (min-width:991px) {

@@ -5,6 +5,7 @@
 }
 .searchBar_content {
     position: relative;
+    margin-bottom: 3rem;
 }
 .searchBar_input {
     background-color: hsl(var(--background));

@@ -46,9 +46,9 @@ const SearchBar = (isResultFloat ?: boolean ) => {
         />
         <div className={styles.searchBar_submit}>
           <BtnIcon
-            icon={<IoSearchOutline />}
+            icon={<IoSearchOutline color='hsl(var(--background))' />}
             style="rounded"
-            bgColor="secondary"
+            bgColor="primary"
             color="primary"
           />
         </div>

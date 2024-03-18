@@ -10,7 +10,7 @@ h2, .like-h2 {
     font-weight: 700;
     font-family: var(--poppins);
     line-height: 120%;
-    color: hsl(var(--secondary));
+    color: hsl(var(--primary));
     margin: 20px 0;
 }
 @media screen and (min-width:991px) {
@@ -29,8 +29,8 @@ h2, .like-h2 {
 .gap-10 {
     gap: 10px;
 }
-.color-light {
-    color: hsl(var(--light));/* TODO: Ajout du couleur en theme dark */
+.color-text {
+    color: hsl(var(--background));/* TODO: Ajout du couleur en theme dark */
 }
 .overflow-hidden {
     overflow: hidden;
@@ -159,6 +159,7 @@ figure {
     justify-content: center;
     border-radius: 50%;
     background: hsl(var(--foreground) / 10%);
+    box-shadow: var(--shadow);
 }
 .user-account-container {
     padding: 10px 5px!important;
@@ -193,4 +194,28 @@ b, strong {
 }
 .anchor {
     margin-top:8rem;
+}
+
+.products-layout {
+    margin-top: 72px;
+    padding-top: 1rem;
+    position: relative;
+}
+.products-layout::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 280px;
+    background-image: linear-gradient(0deg, hsl(var(--primary)/0%) 0%, hsl(var(--primary)) 100%);
+}
+@media screen and (min-width:768px) {
+    .products-layout {
+        margin-top: 84px;
+    }
+}
+.home-layout > header:first-child{
+    background: none;
+    backdrop-filter: none;
 }
