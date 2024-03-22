@@ -51,16 +51,6 @@ const OrderBy = ({
   }
   return (
     <section className={styles.orderBy}>
-      <input
-        type="radio"
-        id="menu_sort"
-        name="filter_sort"
-        value="menu_sort"
-        defaultChecked
-      />
-      <h3>
-        <label htmlFor="menu_sort">Trier :</label>
-      </h3>
       <form
         className={`${styles.orderBy_content}`}
         onChange={(e) => handleChange(e)}

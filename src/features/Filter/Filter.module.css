@@ -22,19 +22,14 @@
 .filter input {
     display: none;
 }
-
+.filter_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.filter label {
+    background: none;
+}
 @media screen and (max-width:767px) {
-    .filter_content {
-        position: absolute;
-        top: 97%;
-        left: 0;
-        width: 100%;
-        background-color: hsl(var(--background));
-        z-index: 999;
-        padding: 2rem 3rem;
-        display: none;
-        height: 50vh;
-    }
     .filter h3 {
         position: relative;
         text-align: center;

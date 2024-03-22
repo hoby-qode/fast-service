@@ -6,20 +6,29 @@ import SearchForm from './SearchForm'
 import InfiniteScrollContent from './InfiniteScrollContent'
 import OrderBy from '@/src/features/OrderBy'
 import Filter from '@/src/features/Filter'
-import {Button} from '@/components/ui/button'
 import { MdSort } from "react-icons/md";
 import { FilterIcon } from 'lucide-react'
-
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Button } from "@/components/ui/button"
+import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerDescription,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer"
 const Content = ({ products, tags, pageInfo }: { products: any; tags: any;pageInfo:any }) => {
   const searchParams = useSearchParams()
   const [datas, setDatas] = useState([...products])
-  const [order, setOrder] = useState(searchParams.get('order'))
-  const [genre, setGenre] = useState(searchParams.get('genre'))
+  const [order, setOrder] = useState(searchParams.get('order') ?? null)
+  const [genre, setGenre] = useState(searchParams.get('genre') ?? null)
   const [searchText, setSearchText] = useState('')
   const [showMenuFilter, setShowMenuFilter] = useState(false)
-  const controls = useAnimation()
-
-  
+  const [isOpen, setIsOpen] = useState(false)
+  console.log(tags)
   useEffect(() => {
     if (order) {
       handleChangeOrder(order)
@@ -28,17 +37,7 @@ const Content = ({ products, tags, pageInfo }: { products: any; tags: any;pageIn
     }
   }, [])
   
-  const handleDragEnd = (_: any, info: any) => {
-    // const distance = info.point.y - info.initialPoint.y
-
-    if (info.offset.y > 30) {
-      controls.start({ opacity: 0, height: 0 })
-      setShowMenuFilter(false)
-    } else {
-      controls.start({ y: 0 })
-      setShowMenuFilter(true)
-    }
-  }
+  
   /* TODO: il manque la gestion du filtre au moment ou l'utilisateur actualise la page */
   function handleChangeOrder(orderBy: string) {
     setOrder(orderBy)
@@ -68,13 +67,123 @@ const Content = ({ products, tags, pageInfo }: { products: any; tags: any;pageIn
     }
   }
 
-  function handleChangeFilter(genre: string) {
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const searchTerm = event.target.s.value;
+    if (searchTerm !== '') {
+      try {
+        const query = `
+        query products($searchTerm: String) {
+          products(first: 12, where: {search: $searchTerm}) {
+            nodes {
+              acf_product {
+                dateDeSortie
+                rating
+              }
+              content
+              slug
+              status
+              title
+              databaseId
+              featuredImage {
+                node {
+                  sourceUrl
+                }
+              }
+              hqTags {
+                nodes {
+                  slug
+                  name
+                }
+              }
+            }
+          }
+        }`;
+        const response = await fetch(`${process.env.NEXT_PUBLIC_GRAPHQL_ENDPOINT}`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json',
+          },
+          body: JSON.stringify({
+            query,
+            variables: {
+              searchTerm: searchTerm
+            }
+          }),
+          cache: 'no-store'
+        });
+        const responseData = await response.json();
+        const products = responseData.data.products.nodes;
+        setDatas(products);
+        pageInfo.hasNextPage = false;
+      } catch (error) {
+        console.error('Erreur lors de la requête AJAX :', error);
+      }
+    } else {
+      // Remettre les données initiales si le champ de recherche est vide
+      setDatas(products);
+    }
+  };
+  const handleChangeFilter = async (genre: string) => {
     setGenre(genre)
-    setDatas(
-      products.filter((a: any) => {
-        return a.hqTags.nodes.some((tag: any) => tag.slug === genre)
-      }),
-    )
+    if (genre) {
+      try {
+        const query = `
+        query products{
+          hqTags(where: {slug: "${genre}"}) {
+            nodes {
+              products {
+                nodes {
+                  acf_product {
+                    dateDeSortie
+                    rating
+                  }
+                  content
+                  slug
+                  status
+                  title
+                  databaseId
+                  featuredImage {
+                    node {
+                      sourceUrl
+                    }
+                  }
+                  hqTags {
+                    nodes {
+                      slug
+                      name
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }`;
+  
+        const response = await fetch(`${process.env.NEXT_PUBLIC_GRAPHQL_ENDPOINT}`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json',
+          },
+          body: JSON.stringify({
+            query,
+          }),
+          cache: 'no-store'
+        });
+  
+        const responseData = await response.json();
+        const filteredProducts = responseData.data.hqTags.nodes[0].products.nodes;
+        setDatas(filteredProducts);
+        pageInfo.hasNextPage = false;
+      } catch (error) {
+        console.error('Erreur lors de la requête AJAX :', error);
+      }
+    } else {
+      // Remettre les données initiales si le champ de recherche est vide
+      setDatas(products);
+    }
   }
   
   return (
@@ -82,31 +191,42 @@ const Content = ({ products, tags, pageInfo }: { products: any; tags: any;pageIn
       <div className="row">
         
         <div className="col-md-3">
-          <div className='d-flex d-md-none justify-content-between mb-5 space-x-4'>
+          <div className='d-flex justify-content-between mb-5 space-x-4'>
             {/* <button onClick={() => setShowMenuFilter(!showMenuFilter)} className={styles.menuFilter}><TbArrowsSort />Trier par </button>*/}
-            <SearchForm searchText={searchText} onChangeSearchText={setSearchText} />
-            <Button onClick={() => setShowMenuFilter(!showMenuFilter)} style={{minHeight: '45px',boxShadow: "var(--shadow)"}} className='bg-background'><FilterIcon color="hsl(var(--primary))"/></Button> 
+            <SearchForm handleSubmit={handleSubmit}  />
+            <Drawer open={isOpen} onOpenChange={setIsOpen}>
+              <DrawerTrigger asChild>
+                <Button style={{minHeight: '45px',boxShadow: "var(--shadow)"}} className='bg-background'><FilterIcon color="hsl(var(--primary))"/></Button> 
+              </DrawerTrigger>
+              <DrawerContent>
+                <div className="mx-auto w-full mt-5">
+                  <div className="container mb-5">
+                    <Tabs defaultValue="filter">
+                      <TabsList className="w-full">
+                        <TabsTrigger value="filter" className="w-50">Filtrer : </TabsTrigger>
+                        <TabsTrigger value="order" className="w-50">Trier: </TabsTrigger>
+                      </TabsList>
+                      <TabsContent value="filter">
+                        <Filter
+                        onChangeFilter={handleChangeFilter}
+                        tags={tags}
+                        genre={genre}/>
+                      </TabsContent>
+                      <TabsContent value="order">
+                        <OrderBy onChangeOrder={handleChangeOrder} order={order} />
+                      </TabsContent>
+                    </Tabs>
+                  </div>
+                  <DrawerFooter>
+                    <DrawerClose asChild>
+                      <Button variant="outline">Fermer</Button>
+                    </DrawerClose>
+                  </DrawerFooter>
+                </div>
+              </DrawerContent>
+            </Drawer>
           </div>
-           {/* {showMenuFilter && ( 
-            <motion.div
-              className={`d-flex justify-content-between ${styles.formContainer}`}
-              drag="y"
-              dragElastic={0.3}
-              dragConstraints={{ top: 0, bottom: 0 }}
-              onDragEnd={handleDragEnd}
-              initial={{ opacity: 1, height: 'auto' }}
-              animate={controls}
-            >
-              <div className="container d-flex flex-row flex-md-column">
-                <OrderBy onChangeOrder={handleChangeOrder} order={order} />
-                <Filter
-                  onChangeFilter={handleChangeFilter}
-                  tags={tags}
-                  genre={genre}
-                />
-              </div>
-            </motion.div>
-           )}  */}
+          
         </div>
         <div className="col-md-9">
           {datas.length > 0 ? (

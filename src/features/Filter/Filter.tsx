@@ -24,16 +24,6 @@ const Filter = ({
   }
   return (
     <section className={styles.filter}>
-      <input
-        type="radio"
-        id="menu_filter"
-        name="filter_sort"
-        value="menu_filter"
-      />
-      <h3>
-        <label htmlFor="menu_filter">Filtre :</label>
-      </h3>
-
       <form
         className={`${styles.filter_content}`}
         onChange={(e) => handleChange(e)}
@@ -44,12 +34,12 @@ const Filter = ({
             <Input
               type="radio"
               name="genre"
-              id={tag.node.slug}
-              value={tag.node.slug}
-              label={tag.node.name}
+              id={tag.slug}
+              value={tag.slug}
+              label={tag.name}
               icon={''}
               className="input-filter"
-              defaultChecked={genre === tag.node.slug}
+              defaultChecked={genre === tag.slug}
             />
           </div>
         ))}

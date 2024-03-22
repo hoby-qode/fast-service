@@ -23,17 +23,6 @@
     display: none;
 }
 @media screen and (max-width:767px) {
-    .orderBy_content {
-        position: absolute;
-        top: 97%;
-        left: 0;
-        width: 100%;
-        background-color: hsl(var(--background));
-        z-index: 999;
-        padding: 2rem 3rem;
-        display: none;
-        height: 50vh;
-    }
     .orderBy h3 {
         position: relative;
         text-align: center;
@@ -55,6 +44,9 @@
 }
 .orderBy label {
     cursor: pointer;
+    background:none;
+    position: relative;
+    user-select: none;
 }
 
 
