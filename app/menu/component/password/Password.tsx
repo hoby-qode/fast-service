@@ -1,5 +1,5 @@
 'use client'
-import Button from '@/components/button'
+import {Button} from '@/components/ui/button'
 import React from 'react'
 import styles from './Password.module.css'
 import { TbLoader } from 'react-icons/tb'
@@ -32,7 +32,7 @@ const Password = () => {
         />
       </div>
       <div className={styles.password_state}>
-        <Button btn="success" onClick={() => alert('TODO')}>
+        <Button onClick={() => alert('TODO')} className='w-full'>
           <TbLoader style={{ marginRight: '5px' }} />
           Changer votre mot de passe
         </Button>

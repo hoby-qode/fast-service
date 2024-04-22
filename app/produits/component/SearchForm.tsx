@@ -1,5 +1,6 @@
 import styles from '@/components/SearchBar/searchBar.module.css'
 import {FC} from 'react'
+import { TbSearch } from 'react-icons/tb'
 
 interface SearchFormPropsType {
     handleSubmit: (text:string) => void
@@ -13,7 +14,10 @@ const SearchForm: FC<SearchFormPropsType> = ({handleSubmit}) => {
             className={styles.searchBar_input}
             placeholder="Faite vos recherches |"
             />
-            <button type="submit">Search</button>
+            <button type="submit" 
+            className={styles.searchBar_content_icon}>
+                <TbSearch />
+            </button>
         </form>
     )
 }

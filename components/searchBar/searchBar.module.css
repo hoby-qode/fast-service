@@ -50,3 +50,17 @@
     border-radius: var(--radius);
     box-shadow: var(--shadow);
 }
+.searchBar_content_icon {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: hsl(var(--primary) / 40%);
+    border: 0;
+    outline: 0;
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

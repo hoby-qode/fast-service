@@ -8,13 +8,7 @@ export async function getProductBySlug(slug: string) {
             acf_product {
                 dateDeSortie
                 rating
-                acteurs {
-                    picture {
-                      sourceUrl
-                    }
-                    actorname
-                    name
-                }
+                
             }
             featuredImage {
                 node {
@@ -58,7 +52,8 @@ export async function getProductBySlug(slug: string) {
     if (responseBody && responseBody.data) {
         return responseBody.data.productBy
     }else {
-        throw new Error('Erreur lors de la récupération des données')
+        // throw new Error('Erreur lors de la récupération des données')
+        console.log(responseBody)
     }
 }
 
