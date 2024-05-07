@@ -79,6 +79,9 @@ const Content = ({ products, tags, pageInfo }: { products: any; tags: any;pageIn
               acf_product {
                 dateDeSortie
                 rating
+                saisons {
+                  saison
+                }
               }
               content
               slug
@@ -94,6 +97,12 @@ const Content = ({ products, tags, pageInfo }: { products: any; tags: any;pageIn
                 nodes {
                   slug
                   name
+                }
+              }
+              categoriesProduct {
+                nodes {
+                  name
+                  slug
                 }
               }
             }
@@ -138,6 +147,9 @@ const Content = ({ products, tags, pageInfo }: { products: any; tags: any;pageIn
                   acf_product {
                     dateDeSortie
                     rating
+                    saisons {
+                      saison
+                    }
                   }
                   content
                   slug
@@ -153,6 +165,12 @@ const Content = ({ products, tags, pageInfo }: { products: any; tags: any;pageIn
                     nodes {
                       slug
                       name
+                    }
+                  }
+                  categoriesProduct {
+                    nodes {
+                      name
+                      slug
                     }
                   }
                 }

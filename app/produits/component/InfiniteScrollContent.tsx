@@ -21,6 +21,9 @@ const InfiniteScrollContent = ({datas, pageInfo, onSetDatas}) => {
                 acf_product {
                   dateDeSortie
                   rating
+                  saisons {
+                    saison
+                  }
                 }
                 content
                 slug
@@ -36,6 +39,12 @@ const InfiniteScrollContent = ({datas, pageInfo, onSetDatas}) => {
                   nodes {
                     slug
                     name
+                  }
+                }
+                categoriesProduct {
+                  nodes {
+                    name
+                    slug
                   }
                 }
               }
@@ -57,7 +66,7 @@ const InfiniteScrollContent = ({datas, pageInfo, onSetDatas}) => {
       })
   
       const { data } = await res.json()
-  
+      console.log(data)
       onSetDatas([...datas, ...data.categoriesProduct.nodes[0].products.nodes])
       setEndCursor(data.categoriesProduct.nodes[0].products.pageInfo.endCursor)
       setHasMore(data.categoriesProduct.nodes[0].products.pageInfo.hasNextPage)
@@ -76,6 +85,8 @@ const InfiniteScrollContent = ({datas, pageInfo, onSetDatas}) => {
           <Card
             id={post.databaseId}
             title={post.title}
+            nbSaison={post.acf_product?.saisons && post.acf_product?.saisons.length}
+            category={post.categoriesProduct.nodes[0].slug}
             slug={post.slug}
             date={
               post.acf_product?.dateDeSortie

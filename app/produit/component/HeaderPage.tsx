@@ -1,3 +1,4 @@
+"use client"
 import React, { FC } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -6,6 +7,7 @@ import styles from './HeaderPage.module.css'
 import Rating from '@/components/rating'
 import AddCart from '@/components/addCart'
 import placeholder from '@/public/images/placeholder.jpg'
+import { useShoppingCart } from '@/src/store/useShoppingCart'
 
 interface HeaderPageProps {
   picture: string | null
@@ -32,6 +34,8 @@ const HeaderPage: FC<HeaderPageProps> = ({
   tags,
   id,
 }) => {
+  const { items, addItem, removeItem } = useShoppingCart();
+  const cart = {id, title}
   return (
     <div className={styles.headerPage}>
       <div className={`container ${styles.headerPage_container}`}>
@@ -90,7 +94,11 @@ const HeaderPage: FC<HeaderPageProps> = ({
               Ajouter <br />
               au panier
             </span>
-            <AddCart id={id} />
+            <AddCart 
+              item={cart}
+              isInCart={items.some((i) => i.id === id)}
+              onAdd={() => addItem(cart)}
+              onRemove={() => removeItem(id)} />
           </div>
         </div>
       </div>

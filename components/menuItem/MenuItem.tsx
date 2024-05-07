@@ -22,7 +22,6 @@ const MenuItem = ({
           alt={menu.name}
           width={50}
           height={30}
-          sizes="(max-width:768px) 100vw, 33vw"
           className={styles.menuPicto}
         />
         <Image

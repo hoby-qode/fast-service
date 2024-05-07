@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 import styles from './HeaderPage.module.css'
-import SearchBar from '@/components/searchBar'
+import SearchBar from '@/components/search-bar'
 import headerPage from '@/public/images/headerpage/headerpage.jpg'
 
 const HeaderPage: FC = () => {

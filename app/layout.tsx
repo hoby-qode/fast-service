@@ -19,7 +19,7 @@ export default function RootLayout({
   modal: React.ReactNode
 }) {
   return (
-    <html lang="fr">
+    <html>
       <FontFamily />
       <body>
         <Theme>

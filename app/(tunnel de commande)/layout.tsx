@@ -9,7 +9,7 @@ export default function RootLayout({
 }) {
   return (
     <>
-      <main className="products-layout">
+      <main className="tunnel-commande-layout">
         <HeaderTop />
         <Navigator />
         {children}

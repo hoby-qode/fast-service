@@ -13,6 +13,8 @@ import { useShoppingCart } from '@/src/store/useShoppingCart'
 interface CardProps {
   id: number
   title: string
+  category: string
+  nbSaison?: number
   date: String
   slug: string
   featuredImage: string
@@ -21,13 +23,15 @@ interface CardProps {
 const Card: FC<CardProps> = ({
   id,
   title,
+  category,
+  nbSaison,
   date,
   slug,
   featuredImage,
   rating,
 }) => {
   const { items, addItem, removeItem } = useShoppingCart();
-  const cart = {id, title}
+  const cart = {id, title, category, nbSaison}
   const [isMobile, setIsMobile] = useState(false)
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -65,7 +69,8 @@ const Card: FC<CardProps> = ({
               alt={title}
               fill={true}
               style={{ objectFit: 'cover' }}
-              sizes="(max-width:768px) 100vw, 33vw"
+              sizes="(max-width:768px) 100vw, 20vw"
+              quality={5}
             />
           </Link>
         </div>

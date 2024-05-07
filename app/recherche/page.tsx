@@ -1,6 +1,6 @@
 import React from 'react'
 import HeaderPage from '@/src/features/headerPage'
-import SearchBar from '@/components/searchBar'
+import SearchBar from '@/components/search-bar/SearchBar'
 
 const Search = () => {
   return (

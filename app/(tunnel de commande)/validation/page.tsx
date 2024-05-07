@@ -7,7 +7,7 @@ import { buttonVariants } from "@/components/ui/button"
 import styles from '@/src/features/tableProductList/TableProductList.module.css'
 import Button from '@/components/button'
 
-const Cart = () => {
+const Commande = () => {
   const [data, setData] = useState(null);
   const { items } = useShoppingCart();
   useEffect(() => {
@@ -25,9 +25,6 @@ const Cart = () => {
                   acf_product {
                       dateDeSortie
                       rating
-                      saisons {
-                        saison
-                      }
                       acteurs {
                           actorname
                           name
@@ -48,8 +45,6 @@ const Cart = () => {
                   }
                   categoriesProduct {
                     nodes {
-                      name
-                      slug
                       slug
                       prix {
                         prix
@@ -99,7 +94,7 @@ const Cart = () => {
           : <div className="pasElement anchor">
               <div className={styles.table}>
                 <div className={styles.table_header}>
-                  <h1>Mon panier</h1>
+                  <h1>Mes commandes</h1>
                   <div className="text-right">
                     <Button btn="secondary" href="/produits" isLink={true}>Retour à la boutique</Button>
                   </div>
@@ -113,4 +108,4 @@ const Cart = () => {
   );
 };
 
-export default Cart;
+export default Commande;

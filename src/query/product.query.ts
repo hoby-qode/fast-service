@@ -70,6 +70,9 @@ export async function findAllProductByCat(slug: string) {
               acf_product {
                 dateDeSortie
                 rating
+                saisons {
+                    saison
+                }
               }
               content
               slug
@@ -85,6 +88,12 @@ export async function findAllProductByCat(slug: string) {
                 nodes {
                   slug
                   name
+                }
+              }
+              categoriesProduct {
+                nodes {
+                  name
+                  slug
                 }
               }
             }

@@ -29,6 +29,8 @@ const TableProductList = ({ products }: { products: any }) => {
       clearCart();
     }
   }, [state, clearCart]);
+
+  console.log("products", products)
   return (
     <div className={styles.table}>
       <div className={styles.table_header}>
@@ -58,8 +60,14 @@ const TableProductList = ({ products }: { products: any }) => {
               >
                 <div className={styles.table_td_close_btn_container}>
                   <AddCart 
-                  isInCart={true}
-                  onRemove={() => removeItem(post.databaseId)} />
+                    item={{
+                      id: post.databaseId,
+                      title: post.title,
+                      category: post.categoriesProduct.nodes[0].slug,
+                      nbSaison: post.acf_product.saisons && post.acf_product.saisons.length
+                    }}
+                    isInCart={true}
+                    onRemove={() => removeItem(post.databaseId)} />
                 </div>
               </td>
               <td className={styles.table_td_card}>

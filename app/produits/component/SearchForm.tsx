@@ -1,4 +1,4 @@
-import styles from '@/components/SearchBar/searchBar.module.css'
+import styles from '@/components/search-bar/searchBar.module.css'
 import {FC} from 'react'
 import { TbSearch } from 'react-icons/tb'
 
@@ -15,7 +15,7 @@ const SearchForm: FC<SearchFormPropsType> = ({handleSubmit}) => {
             placeholder="Faite vos recherches |"
             />
             <button type="submit" 
-            className={styles.searchBar_content_icon}>
+            className={styles.searchsBar_content_icon}>
                 <TbSearch />
             </button>
         </form>
