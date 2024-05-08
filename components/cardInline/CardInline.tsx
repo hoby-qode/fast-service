@@ -14,6 +14,7 @@ interface CardInlineProps {
   date: string
   slug: string
   rating: number
+  saisons?: number[]
 }
 const CardInline: FC<CardInlineProps> = ({
   idkey,
@@ -22,6 +23,7 @@ const CardInline: FC<CardInlineProps> = ({
   date,
   slug,
   rating,
+  saisons
 }) => {
   const totalCountByRating = (rating * 5) / 100
   return (
@@ -51,6 +53,11 @@ const CardInline: FC<CardInlineProps> = ({
           </Link>
         </h3>
         <p className={styles.cardInlne__date}>{date}</p>
+        {
+          saisons && <p>
+            <div className={styles.cardInline__serie}>Saisons : {saisons.join(', ')}</div>
+          </p>
+        }
         <div className={styles.cardInline__stars}>
           <Stars count={totalCountByRating} />
         </div>

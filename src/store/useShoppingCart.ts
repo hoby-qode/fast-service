@@ -3,12 +3,14 @@ import { create } from "zustand";
 interface CartItem {
   id: number,
   title: string,
+  saisons: number[]
 }
 interface CartStoreInterface {
-  items: CartItem[] 
-  addItem: (item: CartItem) => void 
-  removeItem: (itemId: number) => void 
-  clearCart: () => void
+  items: CartItem[];
+  addItem: (item: CartItem) => void;
+  removeItem: (itemId: number) => void;
+  updateItem: (itemId: number, newValue: { key: string; value: string }[]) => void;
+  clearCart: () => void;
 }
 export const useShoppingCart = create<CartStoreInterface>((set) => {
   const isBrowser = typeof window !== 'undefined';
@@ -29,6 +31,21 @@ export const useShoppingCart = create<CartStoreInterface>((set) => {
         const updateItems = state.items.filter((item) => item.id !== itemId);
         console.log("itemId", itemId)
         console.log("updateItems", updateItems)
+        if (isBrowser) {
+          localStorage.setItem('cart', JSON.stringify(updateItems))
+        }
+        return {items: updateItems}
+      }),
+    updateItem: (itemId, newValue) =>
+      set((state) => {
+        const updateItems = state.items.map((item) => {
+          if (item.id === itemId) {
+            if(newValue[0].key === 'saisons') {
+              return {...item, saisons: newValue[0].value}
+            }
+          }
+          return item
+        })
         if (isBrowser) {
           localStorage.setItem('cart', JSON.stringify(updateItems))
         }

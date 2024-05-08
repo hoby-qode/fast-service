@@ -30,7 +30,7 @@ const Card: FC<CardProps> = ({
   featuredImage,
   rating,
 }) => {
-  const { items, addItem, removeItem } = useShoppingCart();
+  const { items, addItem, removeItem, updateItem } = useShoppingCart();
   const cart = {id, title, category, nbSaison}
   const [isMobile, setIsMobile] = useState(false)
   useEffect(() => {
@@ -54,7 +54,9 @@ const Card: FC<CardProps> = ({
               item={cart}
               isInCart={items.some((i) => i.id === id)}
               onAdd={() => addItem(cart)}
-              onRemove={() => removeItem(id)} />
+              onRemove={() => removeItem(id)} 
+              onUpdate={() => updateItem(id, [1,2,3,4,5,6])}
+              />
           </div>
         </div>
         <div className={styles.cardPicture}>

@@ -12,6 +12,7 @@ import { useShoppingCart } from '@/src/store/useShoppingCart'
 import { useFormStatus, useFormState } from 'react-dom'
 import { validateCommandeApiRest } from '@/src/actions/commandeApiRest.action'
 import { toast } from 'react-toastify'
+import { AiFillEdit } from 'react-icons/ai'
 
 const TableProductList = ({ products }: { products: any }) => {
   const { subTotal, total, reduction, infoReduction } = useCommande(products)
@@ -28,6 +29,7 @@ const TableProductList = ({ products }: { products: any }) => {
     if (state) {
       clearCart();
     }
+    console.log(items)
   }, [state, clearCart]);
 
   console.log("products", products)
@@ -68,6 +70,9 @@ const TableProductList = ({ products }: { products: any }) => {
                     }}
                     isInCart={true}
                     onRemove={() => removeItem(post.databaseId)} />
+                    <Button style={{padding: 0}}>
+                      <AiFillEdit />
+                    </Button>
                 </div>
               </td>
               <td className={styles.table_td_card}>
@@ -82,6 +87,7 @@ const TableProductList = ({ products }: { products: any }) => {
                   }
                   slug={post.slug}
                   rating={post.acf_product.rating}
+                  saisons={items.filter((i) => i.id === post.databaseId)[0].saisons}
                 />
               </td>
               <td className={styles.table_td_category}>

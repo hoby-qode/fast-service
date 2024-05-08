@@ -17,21 +17,28 @@ interface CartItem {
   id: number,
   title: string,
   nbSaison?: number,
-  category: string
+  category: string,
+  saisons?: []
 }
 interface AddCartProps {
   item: CartItem,
   isInCart?: boolean | undefined,
   onAdd?: () => void,
   onRemove?: () => void
+  onUpdate?: () => void
 }
-const AddCart:FC<AddCartProps> = ({ item, isInCart, onAdd, onRemove }) => {
+const AddCart:FC<AddCartProps> = ({ item, isInCart, onAdd, onRemove, onUpdate }) => {
   const ArrayNbSaison = item.nbSaison ? Array.from({ length: item.nbSaison }, (v, i) => i + 1) : [];
   const [selectedSaisons, setSelectedSaisons] = useState<number[]>([]);
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // Ajouter les saisons sélectionnées au panier ici
     console.log("Saisons sélectionnées :", selectedSaisons);
+    //add selectedSaison in array item 
+    if(item) {
+      item['saisons'] = selectedSaisons
+    }
+    !isInCart ? onAdd() : onUpdate()
   };
   const handleSaisonSelect = (saison: number) => {
     setSelectedSaisons(prevSaisons => {
