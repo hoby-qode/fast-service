@@ -109,7 +109,7 @@ const FormAnonyme = () => {
               fontFamily: "var(--raleway)",
               lineHeight: "120%",
               marginBottom: "20px"}}>
-              Entrez un pseudo pour votre commande. Il sera effacé après validation pour protéger votre anonymat.
+              Entrez un pseudo pour ton commande. Il sera effacé après validation pour protéger ton anonymat.
               </p>
               <span style={{color:"#fff", fontSize: '1rem',  fontWeight: "100",lineHeight: "120%"}}>Pour profiter de nos promotions et suivre vos achats, inscrivez-vous ou connectez-vous. Merci ! </span>
             </DialogTitle>
@@ -118,7 +118,7 @@ const FormAnonyme = () => {
             <form onSubmit={handleSubmit(onSubmit)}>
               <div className="input-group">
                 <label htmlFor="usernameInput" style={{color: "#fff"}}>Pseudo</label>
-                <input type="text" id="usernameInput" {...register("username", { required: true, maxLength: 20 })} className='bg-secondary' placeholder="Votre pseudo" />
+                <input type="text" id="usernameInput" {...register("username", { required: true, maxLength: 20 })} className='bg-secondary' placeholder="ton pseudo" />
                 {errors.username && <span>Le pseudo est obligatoire</span>}
               </div>
               <Button type="submit" btn="primary" disabled={!loading}>

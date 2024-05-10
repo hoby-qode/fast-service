@@ -2,14 +2,15 @@ import { GetProductsAndCategories } from '@/src/query/productsCategories.query'
 import Content from '../../component/Content'
 const SingleCategory = async ({ params }: { params: { slug: string } }) => {
   const data = await GetProductsAndCategories(params.slug)
-  const products = data.categoriesProduct.nodes
+  const products = data.categoriesProduct.nodes[0].products.nodes
+  const pageInfo = data.categoriesProduct.nodes[0].products.pageInfo
   const tags = data.hqTags.nodes
   return (
     <div>
       <Content
-        products={products[0].products.nodes}
+        products={products}
         tags={tags}
-        pageInfo={products[0].products.pageInfo}
+        pageInfo={pageInfo}
         category={params.slug ? params.slug : 'all'}
       />
     </div>

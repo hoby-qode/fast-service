@@ -44,7 +44,7 @@ const FormLostPassword = () => {
         fontWeight: "500",
         fontFamily: "var(--raleway)",
         lineHeight: "120%"}}>
-        On va recherche votre identité dans notre base de donnée afin de vous donner une nouvelle mot de passe.</p>
+        On va recherche ton identité dans notre base de donnée afin de vous donner une nouvelle mot de passe.</p>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="input-group">
           <label htmlFor="usernameInput" style={{color: "#fff"}}>Nom d&apos;utilisateur*</label>

@@ -9,9 +9,9 @@ interface Props {
 function Provider({ children }: Props){
   return (
     <SessionProvider>
-      <ApolloProviderWrapper>
+      {/* <ApolloProviderWrapper> */}
         {children}
-      </ApolloProviderWrapper>
+      {/* </ApolloProviderWrapper> */}
     </SessionProvider>
   )
 }

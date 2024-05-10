@@ -55,7 +55,7 @@ const CardInline: FC<CardInlineProps> = ({
         <p className={styles.cardInlne__date}>{date}</p>
         {
           saisons && <p>
-            <div className={styles.cardInline__serie}>Saisons : {saisons.join(', ')}</div>
+            <div className={styles.cardInline__serie}>Saisons : {saisons.sort((a,b) => a - b ).join(', ')}</div>
           </p>
         }
         <div className={styles.cardInline__stars}>

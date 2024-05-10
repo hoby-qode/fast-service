@@ -11,6 +11,7 @@ import { Separator } from '@/components/ui/separator'
 import { FC, useState } from 'react'
 import { Button } from '../ui/button'
 import styles from './AddCart.module.css'
+import { useToast } from "@/components/ui/use-toast"
 interface CartItem {
   id: number
   title: string
@@ -36,13 +37,23 @@ const AddCart: FC<AddCartProps> = ({
     ? Array.from({ length: item.nbSaison }, (v, i) => i + 1)
     : []
   const [selectedSaisons, setSelectedSaisons] = useState<number[]>([])
+  const { toast } = useToast()
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     if (item && selectedSaisons.length > 0) {
       item['saisons'] = selectedSaisons
       !isInCart ? onAdd() : onUpdate()
+
+      toast({
+        title: `Le ${item.category} ${item.title} ${selectedSaisons ? 'saison ' + selectedSaisons : ''} est ajouté dans ton panier`,
+        variant: "success"
+      })
     } else {
-      alert('Vous devez choisir un ou plusieurs saisons')
+      // alert('Vous devez choisir un ou plusieurs saisons')
+      toast({
+        title: "Vous devez choisir un ou plusieurs saisons",
+        variant: "destructive",
+      })
     }
   }
   const handleSaisonSelect = (saison: number) => {

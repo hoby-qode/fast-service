@@ -22,7 +22,63 @@
     "path": "K:\\SERIES\\2 Broke Girls -- 2,3,4",
     "folder": "2 Broke Girls -- 2,3,4",
     "category": "series",
-    "size": "11 Go"
+    "size": "11 Go",
+    "overview": "Max est une serveuse un peu désabusée qui n'a jamais eu beaucoup d'argent mais assez de malice pour s'en sortir dans la vie. Caroline est une fille à papa d'apparence superficielle, qui se retrouve du jour au lendemain sans un sou mais qui reste optimiste. Ce drôle de duo va alors devoir travailler ensemble et partager un appartement pour le meilleur et pour le pire, en attendant de réaliser leurs rêves...",
+    "release_date": "2011-09-19",
+    "genre_ids": [
+      35
+    ],
+    "vote_average": 7.191,
+    "original_language": "en",
+    "original_title": "2 Broke Girls",
+    "director": "Brian Rubenstein",
+    "popularity": 1516.589,
+    "vote_count": 1455,
+    "actors": [
+      {
+        "name": "Kat Dennings",
+        "actorName": "Max Black",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/rrfyo9z1wW5nY9ZsFlj1Ozfj9g2.jpg"
+      },
+      {
+        "name": "Beth Behrs",
+        "actorName": "Caroline Channing",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/7sk9gybgQCZmPut3T85oMohkfEu.jpg"
+      },
+      {
+        "name": "Garrett Morris",
+        "actorName": "Earl Washington",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/sQKZT393FfkiKLwerDV3Yki0C3b.jpg"
+      },
+      {
+        "name": "Jonathan Kite",
+        "actorName": "Oleg Golishevsky",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/nmewoEDiQs8uNqvL2uzem9w1pqt.jpg"
+      },
+      {
+        "name": "Matthew Moy",
+        "actorName": "Han Lee",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/w9DiMbXov2nRgfgfxZg00spGQDf.jpg"
+      },
+      {
+        "name": "Jennifer Coolidge",
+        "actorName": "Sophie Kachinsky",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/fU3MWqENdkD3Gkw59UtxB19cOD1.jpg"
+      }
+    ],
+    "id": 39340
   },
   {
     "titreHdd": "24 heures chrono ",
@@ -77,7 +133,134 @@
     "path": "K:\\SERIES\\24 heures chrono -- 1,2,3,4,5,6",
     "folder": "24 heures chrono -- 1,2,3,4,5,6",
     "category": "series",
-    "size": "40 Go"
+    "size": "40 Go",
+    "overview": "Agent fédéral et responsable de la Cellule Anti-Terroriste de Los Angeles, Jack Bauer a 24 heures pour mener à bien sa mission, empêcher que des terroristes ne mettent leur plan à exécution, protéger les siens du danger qui les menace et sauver États-Unis. Chaque saison correspond à 24 heures dans la vie de Jack Bauer, en temps réel.",
+    "release_date": "2001-11-06",
+    "genre_ids": [
+      10759,
+      18,
+      80
+    ],
+    "vote_average": 7.784,
+    "original_language": "en",
+    "original_title": "24",
+    "popularity": 1393.996,
+    "vote_count": 1439,
+    "actors": [
+      {
+        "name": "Kiefer Sutherland",
+        "actorName": "Jack Bauer",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/tK5zjdvao2NELns3bqT7PPqPeJI.jpg"
+      },
+      {
+        "name": "Kim Raver",
+        "actorName": "Audrey Boudreau",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/o9OYkG0b48125tim78ebyGeC4lO.jpg"
+      },
+      {
+        "name": "Mary Lynn Rajskub",
+        "actorName": "Chloe O'Brian",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/oi94VPrp5Ur0nkIqyk6jRu8Eayz.jpg"
+      },
+      {
+        "name": "William Devane",
+        "actorName": "President James Heller",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/opWtw9Or6cIWor0VIUdjB5Ujowq.jpg"
+      },
+      {
+        "name": "Yvonne Strahovski",
+        "actorName": "Kate Morgan",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/giUmbTd2Kw5BSWHHSFLgVjJqIGl.jpg"
+      },
+      {
+        "name": "Gbenga Akinnagbe",
+        "actorName": "Erik Ritter",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/vFcVgkew7ign5utNWycKvUiBb75.jpg"
+      },
+      {
+        "name": "Benjamin Bratt",
+        "actorName": "Steve Navarro",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/y1yVEcSwJS8HtuQmOxk0vAvyGbH.jpg"
+      },
+      {
+        "name": "Michelle Fairley",
+        "actorName": "Margot Al-Harazi",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/pRyQR6BTp4oQG9mSbrHfBUVQZ4n.jpg"
+      },
+      {
+        "name": "Emily Berrington",
+        "actorName": "Simone Al-Harazi",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/t6zbOJjAFmMVgRQbcFLZnux8prD.jpg"
+      },
+      {
+        "name": "Miranda Raison",
+        "actorName": "Caroline Fowlds",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/eEZi02e07nZ3qG6DA8dYRAVVEHh.jpg"
+      },
+      {
+        "name": "Ross McCall",
+        "actorName": "Ron Clark",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/6l3lARiyHHISOIntSlvYv0JgTHz.jpg"
+      },
+      {
+        "name": "Colin Salmon",
+        "actorName": "Général Coburn",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/mLlAU6Zl2MIL5znp5UHdX3sVTN7.jpg"
+      },
+      {
+        "name": "Michael Wincott",
+        "actorName": "Adrian Cross",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/z6FtWACKaIivi0khxM6vEHoUH0.jpg"
+      },
+      {
+        "name": "Tate Donovan",
+        "actorName": "Mark Boudreau",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/uYgYbd842mtRY66Ehw441aKkOC5.jpg"
+      },
+      {
+        "name": "Stephen Fry",
+        "actorName": "Alastair Davies P.M.",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/dH7GuUZ8QPM9RN99ak9KKOkSkdS.jpg"
+      },
+      {
+        "name": "Giles Matthey",
+        "actorName": "Jordan Reed",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/aoVphKnWthaRKJRrpqOPS1LmUeW.jpg"
+      }
+    ],
+    "id": 1973
   },
   {
     "titreHdd": "all american 1 2 3 4",
@@ -108,7 +291,19 @@
     "folder": "All American 1 2 3 4",
     "category": "series",
     "size": "20 Go",
-    "poster_path": "K:\\SERIES\\All American 1 2 3 4\\311001555_497780542360647_6379226270922999553_n.jpg"
+    "poster_path": "K:\\SERIES\\All American 1 2 3 4\\311001555_497780542360647_6379226270922999553_n.jpg",
+    "overview": "Spencer James, un jeune athlète issu des quartiers difficiles de la banlieue de Los Angeles, est recruté par le prestigieux Beverly Hills High, afin qu'il rejoigne l'équipe de football américain du lycée. Tout en tentant de s'adapter à ce nouvel environnement très aisé, au sein duquel il n'est pas forcément le bienvenu, Spencer débute alors une nouvelle vie, qui le mènera petit à petit, mais non sans embûches, vers son rêve : devenir footballeur professionnel.\n\nInspirée de la vie du joueur de football américain Spencer Paysinger",
+    "release_date": "2018-10-10",
+    "genre_ids": [
+      18
+    ],
+    "vote_average": 8.197,
+    "original_language": "en",
+    "original_title": "All American",
+    "popularity": 270.336,
+    "vote_count": 433,
+    "actors": [],
+    "id": 82428
   },
   {
     "titreHdd": "all american homecoming",
@@ -128,7 +323,62 @@
     "path": "K:\\SERIES\\all american homecoming",
     "folder": "all american homecoming",
     "category": "series",
-    "size": "8 Go"
+    "size": "8 Go",
+    "overview": "Le spin-off de la série All American suit Simone, une jeune espoir du tennis de Beverly Hills et Damon un joueur de baseball d'élite de Chicago. Alors qu'ils doivent faire face à leur carrière sportive dans le monde universitaire, ces deux jeunes entrent dans l’âge adulte avec des histoires d’amour et des challenges qui les attendent, tout ceci au sein d’une prestigieuse HBCU (Historically Black Colleges and Universities). .",
+    "release_date": "2022-02-21",
+    "genre_ids": [
+      18
+    ],
+    "vote_average": 8,
+    "original_language": "en",
+    "original_title": "All American: Homecoming",
+    "popularity": 405.348,
+    "vote_count": 51,
+    "actors": [
+      {
+        "name": "Geffri Maya",
+        "actorName": "Simone Hicks",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/xikjZRchEw3l7USZ8SvPTgmq7jh.jpg"
+      },
+      {
+        "name": "Cory Hardrict",
+        "actorName": "Marcus Turner",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/rxQr8r8GKumZQOLHXBL6CIpif0H.jpg"
+      },
+      {
+        "name": "Sylvester Powell",
+        "actorName": "Jessie 'JR' Raymond",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/bFxEReB2Napmo4Sbzw2av8fkBIJ.jpg"
+      },
+      {
+        "name": "Camille Hyde",
+        "actorName": "Thea Mays",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/4hvQiKQIoajXtWY0Kz3U0O001bP.jpg"
+      },
+      {
+        "name": "Mitchell Edwards",
+        "actorName": "Cam Watkins",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/87UbAJUPNIEuRMntC29JdjB1kRU.jpg"
+      },
+      {
+        "name": "Netta Walker",
+        "actorName": "Keisha McCalla",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/xg1t5F19bkrFaI0O2HJ98QqW0l8.jpg"
+      }
+    ],
+    "id": 153723
   },
   {
     "titreHdd": "avatar le dernier maitre  s01",
@@ -138,7 +388,100 @@
     "folder": "AVATAR LE DERNIER MAITRE 2024 S01",
     "category": "series",
     "size": "3 Go",
-    "poster_path": "K:\\SERIES\\AVATAR LE DERNIER MAITRE 2024 S01\\FB_IMG_17086099878503171.jpg"
+    "poster_path": "K:\\SERIES\\AVATAR LE DERNIER MAITRE 2024 S01\\FB_IMG_17086099878503171.jpg",
+    "overview": "Ang est un jeune Maître de l'Air, mais c'est surtout l'Avatar, un être unique qui maîtrise tous les éléments - Feu, Air, Eau et Terre. Lors d'un terrible orage, il sombre dans la mer et hiberne grâce à ses pouvoirs d'Avatar, pour se réveiller un siècle plus tard dans un monde tyrannisé par la puissante Nation du Feu et où il est le dernier représentant de son peuple. Aidé de ses deux amis de la Tribu de l'Eau, Ang va devoir réveiller l'Avatar en lui, apprendre à contrôler tous les éléments et se battre contre la menace que les Maîtres du Feu font peser sur le monde.",
+    "release_date": "2005-02-21",
+    "genre_ids": [
+      16,
+      10759,
+      10765
+    ],
+    "vote_average": 8.726,
+    "original_language": "en",
+    "original_title": "Avatar: The Last Airbender",
+    "director": "Michael Dante DiMartino",
+    "popularity": 471.559,
+    "vote_count": 3895,
+    "actors": [
+      {
+        "name": "Zach Tyler",
+        "actorName": "Aang (voice)",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/ifHd2Yoovlvu6FFEIxUsXVyrYUf.jpg"
+      },
+      {
+        "name": "Mae Whitman",
+        "actorName": "Katara (voice)",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/zuBG3jBfjfIoeY6gQeVMqrqPWGO.jpg"
+      },
+      {
+        "name": "Jack De Sena",
+        "actorName": "Sokka (voice)",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/i9VlMsPol6XIicnRZRiwmYSyE4P.jpg"
+      },
+      {
+        "name": "Dante Basco",
+        "actorName": "Zuko (voice)",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/2bfQho7MEo4wAQTmC687FkXUoKU.jpg"
+      },
+      {
+        "name": "Michaela Jill Murphy",
+        "actorName": "Toph Beifong (voice)",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/wAq18B8phzkvqJY16CP47Ygt7hV.jpg"
+      },
+      {
+        "name": "Greg Baldwin",
+        "actorName": "Iroh (voice)",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/e8uUOVj8l2ZWY1RapVoQH0SES2a.jpg"
+      },
+      {
+        "name": "Dee Bradley Baker",
+        "actorName": "Appa / Momo (voice)",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/9oFnToDZWp0I484s7Ua1EzNQQ2m.jpg"
+      },
+      {
+        "name": "Grey DeLisle",
+        "actorName": "Azula (voice)",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/vrUHaXe1pG56yZkgH7Hs3LGRLTT.jpg"
+      },
+      {
+        "name": "Cricket Leigh",
+        "actorName": "Mai (voice)",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/aEzjB7HIX3FXVy9jwWe5ofuWwlA.jpg"
+      },
+      {
+        "name": "Olivia Hack",
+        "actorName": "Ty Lee (voice)",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/vHiz3YSzQfnPAvqVt0W3f3eERWK.jpg"
+      },
+      {
+        "name": "André Sogliuzzo",
+        "actorName": "Hakoda (voice)",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/lrebAFDCMthLuq6Oyzraac8MzQL.jpg"
+      }
+    ],
+    "id": 246
   },
   {
     "titreHdd": "black ish ",
@@ -163,7 +506,90 @@
     "path": "K:\\SERIES\\Black Ish -- 1,2,3",
     "folder": "Black Ish -- 1,2,3",
     "category": "series",
-    "size": "12 Go"
+    "size": "12 Go",
+    "overview": "Dre Johnson, marié, quatre enfants, vient d'être promu dans son agence de publicité. Il devrait logiquement tout avoir pour être heureux mais il ne l'est pas à cause... de sa couleur de peau ! Afro-américain, il déplore que les valeurs de son identité culturelle se soient diluées peu à peu dans la société. Sa femme, très libérale, et son père, très vieux jeu, ont bien du mal à le comprendre, sans parler de ses enfants...",
+    "release_date": "2014-09-24",
+    "genre_ids": [
+      35
+    ],
+    "vote_average": 7.3,
+    "original_language": "en",
+    "original_title": "black-ish",
+    "popularity": 202.919,
+    "vote_count": 281,
+    "actors": [
+      {
+        "name": "Anthony Anderson",
+        "actorName": "Andre Johnson",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/reO1OjwFdtXmiO4LMDaBj6eatzK.jpg"
+      },
+      {
+        "name": "Tracee Ellis Ross",
+        "actorName": "Rainbow Johnson",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/dIaX2VojiARhVpxDkOG9ozvsBB.jpg"
+      },
+      {
+        "name": "Marcus Scribner",
+        "actorName": "Junior Johnson",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/mm7f9MssRDDAphGPp2OJE6Ial01.jpg"
+      },
+      {
+        "name": "Marsai Martin",
+        "actorName": "Diane Johnson",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/hYErUiiesrm9jmiY1JTbwlxcN7l.jpg"
+      },
+      {
+        "name": "Miles Brown",
+        "actorName": "Jack Johnson",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/emQj2h72FGwK5nBOao0yXFFZvHt.jpg"
+      },
+      {
+        "name": "Jenifer Lewis",
+        "actorName": "Ruby Johnson",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/bdeUHXY4cXvhOW2nCblNachBYsM.jpg"
+      },
+      {
+        "name": "Deon Cole",
+        "actorName": "Charlie Telphy",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/3QTNxodSEL6HLDuv7Ub3vQzcNij.jpg"
+      },
+      {
+        "name": "Peter MacKenzie",
+        "actorName": "Leslie Stevens",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/cIh0AFTpukyo7O7I4AeWpGnFpic.jpg"
+      },
+      {
+        "name": "Jeff Meacham",
+        "actorName": "Josh Oppenhol",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/w0qfK8b4Tl4sTeKc5CTUauXZrDj.jpg"
+      },
+      {
+        "name": "Katlyn Nichol",
+        "actorName": "Olivia Lockhart",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/qicYD9eTDX3Ryl2Z2KQcHkvwSQL.jpg"
+      }
+    ],
+    "id": 61381
   },
   {
     "titreHdd": "bmf",
@@ -183,7 +609,20 @@
     "path": "K:\\SERIES\\BMF",
     "folder": "BMF",
     "category": "series",
-    "size": "7 Go"
+    "size": "7 Go",
+    "overview": "Le drame sur le trafic de drogue est inspiré de l'histoire vraie de deux frères qui sont sortis des rues délabrées du sud-ouest de Détroit à la fin des années 1980 et ont donné naissance à l'une des familles criminelles les plus influentes du pays. Il tourne autour des frères Demetrius \"Big Meech\" Flenory et Terry \"Southwest T\" Flenory, qui ont ensemble porté leur vision au-delà du trafic de drogue et dans le monde du hip-hop. Le drame, par Starz, racontera une histoire sur l'amour, la famille et le capitalisme dans la poursuite du rêve américain.",
+    "release_date": "2021-09-26",
+    "genre_ids": [
+      18,
+      80
+    ],
+    "vote_average": 8.1,
+    "original_language": "en",
+    "original_title": "BMF",
+    "popularity": 323.019,
+    "vote_count": 252,
+    "actors": [],
+    "id": 101591
   },
   {
     "titreHdd": "bodies  s01",
@@ -192,7 +631,66 @@
     "path": "K:\\SERIES\\Bodies 2023 S01",
     "folder": "Bodies 2023 S01",
     "category": "series",
-    "size": "3 Go"
+    "size": "3 Go",
+    "overview": "Quatre enquêteurs. Quatre époques. Une victime.\n\nInspirée du roman graphique hallucinant de Si Spencer, Bodies est une série policière unique en son genre. Lorsque le même corps est retrouvé sur Longharvest Lane dans l'East End de Londres en 1890, 1941, 2023 et 2053, quatre détectives doivent mener l'enquête, chacun à son époque. Au fil des décennies, ils découvrent que leurs affaires sont liées, tandis qu'émerge un énigmatique leader politique appelé Elias Mannix (Stephen Graham). A-t-il joué un rôle dans l'un de ces meurtres ? Ou une vérité bien plus sombre se cache-t-elle derrière ces événements ? Pour résoudre le mystère, nos quatre enquêteurs vont devoir collaborer d'une manière ou d'une autre et dévoiler une conspiration qui s'étend sur plus de 150 ans.",
+    "release_date": "2023-10-19",
+    "genre_ids": [
+      80,
+      9648,
+      10765,
+      18
+    ],
+    "vote_average": 7.138,
+    "original_language": "en",
+    "original_title": "Bodies",
+    "director": "Frith Tiplady",
+    "popularity": 230.785,
+    "vote_count": 286,
+    "actors": [
+      {
+        "name": "Jacob Fortune-Lloyd",
+        "actorName": "Charles Whiteman",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/vWP0TglQTAANp4ikgB7CCEBUJoP.jpg"
+      },
+      {
+        "name": "Shira Haas",
+        "actorName": "Iris Maplewood",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/cKwQkJP1kONMMZHkOMSrFi8q7rn.jpg"
+      },
+      {
+        "name": "Amaka Okafor",
+        "actorName": "Shahara Hasan",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/hUi3EuYVqzwyiSftOCZKAa67gn4.jpg"
+      },
+      {
+        "name": "Kyle Soller",
+        "actorName": "Alfred Hillinghead",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/rLzduQpYJnZJKkXv3jRc7MDHwoI.jpg"
+      },
+      {
+        "name": "Greta Scacchi",
+        "actorName": "The Lady",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/mknKHCryWEypmT3kqFwq9X46HKr.jpg"
+      },
+      {
+        "name": "Stephen Graham",
+        "actorName": "Mannix",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/wjDQ7MzciEsRwWDFbemcM1hS0aq.jpg"
+      }
+    ],
+    "id": 233629
   },
   {
     "titreHdd": "breaking bad 1 2 3 4 5",
@@ -227,7 +725,78 @@
     "path": "K:\\SERIES\\Breaking Bad 1 2 3 4 5",
     "folder": "Breaking Bad 1 2 3 4 5",
     "category": "series",
-    "size": "22 Go"
+    "size": "22 Go",
+    "overview": "Walter White, professeur de chimie dans un lycée d'Albuquerque au Nouveau-Mexique, est atteint d'un cancer pulmonaire en phase terminale. Il s'associe à Jesse Pinkman, un ancien élève, cancre, toxicomane et dealer, afin d'assurer l'avenir financier de sa famille après son décès. L'improbable duo va alors synthétiser et commercialiser la plus pure méthamphétamine en cristaux jamais vue dans les Amériques.",
+    "release_date": "2008-01-20",
+    "genre_ids": [
+      18,
+      80
+    ],
+    "vote_average": 8.909,
+    "original_language": "en",
+    "original_title": "Breaking Bad",
+    "director": "Moira Walley-Beckett",
+    "popularity": 3853.796,
+    "vote_count": 13510,
+    "actors": [
+      {
+        "name": "Bryan Cranston",
+        "actorName": "Walter White",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/kNyTXGkiSP8W4Gs60hF7UoxZnWN.jpg"
+      },
+      {
+        "name": "Aaron Paul",
+        "actorName": "Jesse Pinkman",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/8Ac9uuoYwZoYVAIJfRLzzLsGGJn.jpg"
+      },
+      {
+        "name": "Anna Gunn",
+        "actorName": "Skyler White",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/adppyeu1a4REN3khtgmXusrapFi.jpg"
+      },
+      {
+        "name": "Dean Norris",
+        "actorName": "Hank Schrader",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/rHQqo9toD7fgE6HvfJ7oymdY6YO.jpg"
+      },
+      {
+        "name": "Betsy Brandt",
+        "actorName": "Marie Schrader",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/kIbVUpGfLAF1KMn1YvWPnc12DRP.jpg"
+      },
+      {
+        "name": "RJ Mitte",
+        "actorName": "Walter White Jr.",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/aG6NYV2EgzBFLRIl7vvbtd7go1j.jpg"
+      },
+      {
+        "name": "Bob Odenkirk",
+        "actorName": "Saul Goodman",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/rF0Lb6SBhGSTvjRffmlKRSeI3jE.jpg"
+      },
+      {
+        "name": "Jonathan Banks",
+        "actorName": "Mike Ehrmantraut",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/bswk26L13PvY4iMTwUTAsepXCLv.jpg"
+      }
+    ],
+    "id": 1396
   },
   {
     "titreHdd": "celebrity  s01",
@@ -236,7 +805,125 @@
     "path": "K:\\SERIES\\Celebrity 2023 S01",
     "folder": "Celebrity 2023 S01",
     "category": "series",
-    "size": "4 Go"
+    "size": "4 Go",
+    "overview": "Self-proclaimed faith healer T.J. Luther, movie star Mack Crawford and journalist Kleber Cantrell share a fateful reunion in a deserted Texas cabin that was the scene of a night of violence over two decades.",
+    "release_date": "1984-02-12",
+    "genre_ids": [
+      18
+    ],
+    "vote_average": 6,
+    "original_language": "en",
+    "original_title": "Celebrity",
+    "popularity": 49.437,
+    "vote_count": 5,
+    "actors": [
+      {
+        "name": "James Whitmore",
+        "actorName": "Clifford Casey",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/d1nOu22OvPzdwS8euWE0FNHwx8K.jpg"
+      },
+      {
+        "name": "Tess Harper",
+        "actorName": "Susan French",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/8Z770Kk13MK1NP7skWmTxvRGx3V.jpg"
+      },
+      {
+        "name": "Karen Austin",
+        "actorName": "Ceil Shannon",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/yVLh8bsixfTyItpoTSnIl2ikhlc.jpg"
+      },
+      {
+        "name": "Ned Beatty",
+        "actorName": "Otto Leo",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/j71jw78zrLkucqXraEpjb5EN6DN.jpg"
+      },
+      {
+        "name": "Claude Akins",
+        "actorName": "Uncle Bun Luther",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/bPj4MN7pI96WiIp0vK7cyNY0wtX.jpg"
+      },
+      {
+        "name": "Dinah Manoff",
+        "actorName": "Missy Craymore",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/qgY48Zwdpe3QYhEz9XAZwyrhMnS.jpg"
+      },
+      {
+        "name": "Debbie Allen",
+        "actorName": "Regina Brown",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/m5WLlvAakNejhGiG7zjsPvrwxM8.jpg"
+      },
+      {
+        "name": "Jennifer Warren",
+        "actorName": "Martha Dalton",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/s25jyHaenpXXBYU0cvEG2t9GNte.jpg"
+      },
+      {
+        "name": "Hal Holbrook",
+        "actorName": "Calvin Sledge",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/mZw1GUv6B5yvKfy62imbuemxG6p.jpg"
+      },
+      {
+        "name": "Bonnie Bartlett",
+        "actorName": "Mabel Hofmeyer",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/yz1MdbrxCAs5N1o0FouhnDWDAA7.jpg"
+      },
+      {
+        "name": "River Phoenix",
+        "actorName": "Jeffie - Age 11",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/2kAB7jDmPfEa6BTmXlGcidCzMSz.jpg"
+      },
+      {
+        "name": "John Walsh",
+        "actorName": "Newscaster #1",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/2Wc16QVswh8X9DfgHDJ2ubo9UHu.jpg"
+      },
+      {
+        "name": "Ben Masters",
+        "actorName": "Kleber Cantrell",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/9rqrhEPGgacVebCOb5EkhCiTa6f.jpg"
+      },
+      {
+        "name": "Joseph Bottoms",
+        "actorName": "Mack Crawford",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/oKmut8Jd51DIFewZnVdRY67irZS.jpg"
+      },
+      {
+        "name": "Michael Beck",
+        "actorName": "T.J. Luther",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/xWZtbKcLcerfXdprxnA67WluqBz.jpg"
+      }
+    ],
+    "id": 48585
   },
   {
     "titreHdd": "code quantum leap  s01",
@@ -246,7 +933,64 @@
     "folder": "Code Quantum Leap 2023 S01",
     "category": "series",
     "size": "5 Go",
-    "poster_path": "K:\\SERIES\\Code Quantum Leap 2023 S01\\download.jpg"
+    "poster_path": "K:\\SERIES\\Code Quantum Leap 2023 S01\\download.jpg",
+    "overview": "Cela fait près de 30 ans que le Dr Sam Beckett est entré dans l'accélérateur de particules et a disparu. Aujourd’hui, une nouvelle équipe, dirigée par le physicien Ben Song a été constituée pour relancer le projet dans l'espoir de comprendre les mystères derrière la machine et l'homme qui l'a créée. Après avoir effectué un saut non autorisé dans le passé, Ben se retrouve à son tour dans une spirale temporelle, passant de vie en vie et d’époque en époque.",
+    "release_date": "2022-09-19",
+    "genre_ids": [
+      10765,
+      18,
+      9648
+    ],
+    "vote_average": 7.25,
+    "original_language": "en",
+    "original_title": "Quantum Leap",
+    "popularity": 581.52,
+    "vote_count": 116,
+    "actors": [
+      {
+        "name": "Raymond Lee",
+        "actorName": "Dr. Ben Song",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/1wRkhVFgVtEWoO9F61IHYB2FFvg.jpg"
+      },
+      {
+        "name": "Caitlin Bassett",
+        "actorName": "Addison Augustine",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/4gbSMM7mpFbIB3wreEcUvePXOHy.jpg"
+      },
+      {
+        "name": "Mason Alexander Park",
+        "actorName": "Ian Wright",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/3mv8kxFJFUhcg5XQeIjaz7DofXs.jpg"
+      },
+      {
+        "name": "Nanrisa Lee",
+        "actorName": "Jenn Chou",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/zCzJQ9glXNFHzxof5AowzXzuWqf.jpg"
+      },
+      {
+        "name": "Ernie Hudson",
+        "actorName": "Herbert 'Magic' Williams",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/kgAdQA2ItCDVvKXufeDHc6Omiso.jpg"
+      },
+      {
+        "name": "Peter Gadiot",
+        "actorName": "Tom Westfall",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/nYqpTl7uYDVjMt8H0Vxy0x5F3az.jpg"
+      }
+    ],
+    "id": 202102
   },
   {
     "titreHdd": "daily dose of sunshine   s01 vf",
@@ -256,7 +1000,112 @@
     "folder": "Daily Dose of Sunshine  2023 S01 VF",
     "category": "series",
     "size": "5 Go",
-    "poster_path": "K:\\SERIES\\Daily Dose of Sunshine  2023 S01 VF\\398302732_2445313288984191_3915771617900808371_n.jpg"
+    "poster_path": "K:\\SERIES\\Daily Dose of Sunshine  2023 S01 VF\\398302732_2445313288984191_3915771617900808371_n.jpg",
+    "overview": "Une infirmière au grand cœur met tout en œuvre pour apporter un rayon de soleil aux patients de son service de psychiatrie, malgré un certain nombre de difficultés.",
+    "release_date": "2023-11-03",
+    "genre_ids": [
+      18
+    ],
+    "vote_average": 7.9,
+    "original_language": "ko",
+    "original_title": "정신병동에도 아침이 와요",
+    "director": "Park Cheol-su",
+    "popularity": 120.431,
+    "vote_count": 38,
+    "actors": [
+      {
+        "name": "Park Bo-young",
+        "actorName": "Jung Da-eun",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/zqz3Ymdiet0VC5UD0jReoiJMPkw.jpg"
+      },
+      {
+        "name": "Yeon Woo-jin",
+        "actorName": "Dong Go-yun",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/oGOpjHfwifYd3hVohVFbxmA7Aoe.jpg"
+      },
+      {
+        "name": "Jang Dong-yoon",
+        "actorName": "Song Yu-chan",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/caPJ7bSx5Mxy7xV8Tpz4YRswPGZ.jpg"
+      },
+      {
+        "name": "Lee Jung-eun",
+        "actorName": "Song Hyo-sin",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/4r3K47UpSmzZ5t9cyTRRqRl9rdz.jpg"
+      },
+      {
+        "name": "Chang Ryul",
+        "actorName": "Hwang Yeo-hwan",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/ad3JzZUeo9jj3UpRK4NoYioCIxQ.jpg"
+      },
+      {
+        "name": "Lee E-dam",
+        "actorName": "Min Deul-re",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/raND8efeLH0TmIgs6ZSzgp42the.jpg"
+      },
+      {
+        "name": "Lee Sang-hee",
+        "actorName": "Park Soo-yeon",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/lf0RoPOizR5YGBolLwWrHj0WQeB.jpg"
+      },
+      {
+        "name": "Park Ji-yeon",
+        "actorName": "Hong Jung-ran",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/eNrTJiaGMOo7yRfCosJ3Tu1z7gp.jpg"
+      },
+      {
+        "name": "Kim Jong-tae",
+        "actorName": "Im Hyeok-soo",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/vf3R5QU7UCVEr3dOGt3bdFbypzu.jpg"
+      },
+      {
+        "name": "Kong Seong-ha",
+        "actorName": "Cha Min-seo",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/u6qDnQ2EdtA3HDwtHfTrk969DPR.jpg"
+      },
+      {
+        "name": "Lim Jae-hyeok",
+        "actorName": "Kong Cheol-woo",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/bMYeWZ9PvomlMR2ET6sVVihGyGa.jpg"
+      },
+      {
+        "name": "Jeon Bae-soo",
+        "actorName": "Yoon Man-cheon",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/3jH7s2IUz7sgRRYlrd0soBfA8PE.jpg"
+      },
+      {
+        "name": "Roh Jae-won",
+        "actorName": "Kim Seo-wan",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/8M4PRXZGllg3yrwluJraP1bakLO.jpg"
+      }
+    ],
+    "id": 205319
   },
   {
     "titreHdd": "dollface s1 s2",
@@ -277,7 +1126,49 @@
     "folder": "Dollface S1 S2",
     "category": "series",
     "size": "4 Go",
-    "poster_path": "K:\\SERIES\\Dollface S1 S2\\bb.jpg"
+    "poster_path": "K:\\SERIES\\Dollface S1 S2\\bb.jpg",
+    "overview": "Après une relation de longue date, Jules se fait plaquer par son petit ami. Afin de surmonter sa nouvelle réalité de célibataire, il lui faut faire preuve de beaucoup d'imagination pour reprendre contact avec les amies qu'elle avait rayées de sa vie.",
+    "release_date": "2019-11-15",
+    "genre_ids": [
+      35
+    ],
+    "vote_average": 7.055,
+    "original_language": "en",
+    "original_title": "Dollface",
+    "director": "Kristan Berona",
+    "popularity": 216.865,
+    "vote_count": 82,
+    "actors": [
+      {
+        "name": "Kat Dennings",
+        "actorName": "Jules",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/rrfyo9z1wW5nY9ZsFlj1Ozfj9g2.jpg"
+      },
+      {
+        "name": "Brenda Song",
+        "actorName": "Madison Maxwell",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/nJOB9ZbIchbk0omaMq9E2C22J8x.jpg"
+      },
+      {
+        "name": "Shay Mitchell",
+        "actorName": "Stella Cole",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/rO5K4ApMi57RciVd2xIYt6W2m0N.jpg"
+      },
+      {
+        "name": "Esther Povitsky",
+        "actorName": "Izzy",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/v1J9P6H1PAcfWXOq203CuUvhPpa.jpg"
+      }
+    ],
+    "id": 84584
   },
   {
     "titreHdd": "emily in paris s01 s02 s03",
@@ -303,7 +1194,85 @@
     "folder": "Emily in Paris S01 S02 S03",
     "category": "series",
     "size": "5 Go",
-    "poster_path": "K:\\SERIES\\Emily in Paris S01 S02 S03\\Emily in Paris.jpg"
+    "poster_path": "K:\\SERIES\\Emily in Paris S01 S02 S03\\Emily in Paris.jpg",
+    "overview": "Quand elle décroche le boulot de ses rêves à Paris, Emily, jeune cadre ambitieuse de Chicago, adopte une nouvelle vie tout en jonglant entre marketing, amis et amours.",
+    "release_date": "2020-10-02",
+    "genre_ids": [
+      18,
+      35
+    ],
+    "vote_average": 7.702,
+    "original_language": "en",
+    "original_title": "Emily in Paris",
+    "director": "Nicolas Derouet",
+    "popularity": 507.787,
+    "vote_count": 1229,
+    "actors": [
+      {
+        "name": "Lily Collins",
+        "actorName": "Emily Cooper",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/aFSZkMNjmDR07JtkvhcbLAbDAMx.jpg"
+      },
+      {
+        "name": "Philippine Leroy-Beaulieu",
+        "actorName": "Sylvie Grateau",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/1wt9AWB8HQz23VDmcZA0tVQn0vx.jpg"
+      },
+      {
+        "name": "Ashley Park",
+        "actorName": "Mindy Chen",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/vfTM1VUdVEuB81WR9LEWYjPxDzo.jpg"
+      },
+      {
+        "name": "Lucas Bravo",
+        "actorName": "Gabriel",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/uO6vMlJBMASyOQMisvnPehjsfJB.jpg"
+      },
+      {
+        "name": "Camille Razat",
+        "actorName": "Camille",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/KHg73Wl3kiqQCh4O02yXuxwxrE.jpg"
+      },
+      {
+        "name": "Samuel Arnold",
+        "actorName": "Julien",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/r5cHeGdcOXHfNjeGamlJG1WQLRS.jpg"
+      },
+      {
+        "name": "Bruno Gouery",
+        "actorName": "Luc",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/w0JGP6mtph0PAaRmXagD9PcpQ5M.jpg"
+      },
+      {
+        "name": "William Abadie",
+        "actorName": "Antoine Lambert",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/tHOkjNFmASMfq25yipHsKxfCplv.jpg"
+      },
+      {
+        "name": "Lucien Laviscount",
+        "actorName": "Alfie",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/3GndTFV0wMGDwocS4rP5Z194uYu.jpg"
+      }
+    ],
+    "id": 82596
   },
   {
     "titreHdd": "fear the walking dead",
@@ -353,7 +1322,22 @@
     "path": "K:\\SERIES\\fear the Walking Dead",
     "folder": "fear the Walking Dead",
     "category": "series",
-    "size": "40 Go"
+    "size": "40 Go",
+    "overview": "Une anthologie située dans l'univers de \"The Walking Dead\" permettant de retrouver des personnages connus ainsi que de nouveaux visages.",
+    "release_date": "2022-08-14",
+    "genre_ids": [
+      18,
+      10759,
+      10765
+    ],
+    "vote_average": 7.2,
+    "original_language": "en",
+    "original_title": "Tales of the Walking Dead",
+    "director": "Jessica Kelly",
+    "popularity": 192.972,
+    "vote_count": 136,
+    "actors": [],
+    "id": 136248
   },
   {
     "titreHdd": "furies   s01",
@@ -363,7 +1347,99 @@
     "folder": "Furies  2024 S01",
     "category": "series",
     "size": "2 Go",
-    "poster_path": "K:\\SERIES\\Furies  2024 S01\\8sHKc6kNKjdhvHBP2c5zoSS16v5.jpg"
+    "poster_path": "K:\\SERIES\\Furies  2024 S01\\8sHKc6kNKjdhvHBP2c5zoSS16v5.jpg",
+    "overview": "En quête de vengeance après la mort de son père, une jeune femme se retrouve prise dans la toile de la Furie, gardienne de l'ordre au sein du crime organisé parisien.",
+    "release_date": "2024-03-01",
+    "genre_ids": [
+      10759,
+      80
+    ],
+    "vote_average": 7.276,
+    "original_language": "fr",
+    "original_title": "Furies",
+    "director": "Raphaël Rocher",
+    "popularity": 134.929,
+    "vote_count": 67,
+    "actors": [
+      {
+        "name": "Mathieu Kassovitz",
+        "actorName": "Driss",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/3FRBEdKKlxhvPWPt0jzgmSjeHwn.jpg"
+      },
+      {
+        "name": "Fatima Adoum",
+        "actorName": "Amythis",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/btYnOrW3kj6I7KqmEwggpJJSmb7.jpg"
+      },
+      {
+        "name": "Marina Foïs",
+        "actorName": "Furie",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/dLPo5cyKoH4Y8TNRkl2GIrd4Oae.jpg"
+      },
+      {
+        "name": "Lina El Arabi",
+        "actorName": "Lyna",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/sSzeygZyJ9z5walSnY0jAjcOhYO.jpg"
+      },
+      {
+        "name": "Steve Tientcheu",
+        "actorName": "Simon",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/zhKrlGuSLuRPg8Jev18k5z7SHwE.jpg"
+      },
+      {
+        "name": "Quentin Faure",
+        "actorName": "Nico",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/oYfPovcoDA6QzfRvFzL9d2kWiHw.jpg"
+      },
+      {
+        "name": "Jérémy Nadeau",
+        "actorName": "Elie",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/1RtA6OuUZaI2JVFNzZC1mniUleP.jpg"
+      },
+      {
+        "name": "Sandor Funtek",
+        "actorName": "Orso",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/b16fZrwuMtz44Mw8e8EPAGMtQgl.jpg"
+      },
+      {
+        "name": "Axel brendemühl",
+        "actorName": "",
+        "department": "Acting",
+        "job": "",
+        "profile_path": ""
+      },
+      {
+        "name": "Anne Azoulay",
+        "actorName": "",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/eqwsTTjZRXOH0RiWGQWVeiW5R0m.jpg"
+      },
+      {
+        "name": "Eye Haïdara",
+        "actorName": "Keïta",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/2w54fvggGsZbgmL1UKEXGyTKqIf.jpg"
+      }
+    ],
+    "id": 212588
   },
   {
     "titreHdd": "ginny & georgia",
@@ -383,7 +1459,91 @@
     "path": "K:\\SERIES\\Ginny & Georgia",
     "folder": "Ginny & Georgia",
     "category": "series",
-    "size": "5 Go"
+    "size": "5 Go",
+    "overview": "Ginny Miller a quinze ans. Elle se sent parfois plus mature que sa mère, l’irrésistible et dynamique Georgia. Après de nombreuses années d'errance à travers le pays, cette dernière décide enfin de s'implanter quelque part. Ginny va apprendre à quoi ressemble la vie normale d'une adolescente...",
+    "release_date": "2021-02-24",
+    "genre_ids": [
+      35,
+      18
+    ],
+    "vote_average": 8.13,
+    "original_language": "en",
+    "original_title": "Ginny & Georgia",
+    "popularity": 277.286,
+    "vote_count": 1497,
+    "actors": [
+      {
+        "name": "Antonia Gentry",
+        "actorName": "Virginia ‘Ginny’ Miller",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/2XgTZZS6gPqUPN6cSXnFNR1OkxO.jpg"
+      },
+      {
+        "name": "Brianne Howey",
+        "actorName": "Georgia Miller",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/5TMOHWjWoK5xhzIgQkIGzpQ3cM7.jpg"
+      },
+      {
+        "name": "Diesel La Torraca",
+        "actorName": "Austin Miller",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/u1HeT1le89d7aUXgKPwp9fl13kp.jpg"
+      },
+      {
+        "name": "Jennifer Robertson",
+        "actorName": "Ellen Baker",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/rcW3yjiTterP25AB1K2oXnnlvqS.jpg"
+      },
+      {
+        "name": "Felix Mallard",
+        "actorName": "Marcus Baker",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/d4t966dq1GMfXTsqbPHBMjb0YZ2.jpg"
+      },
+      {
+        "name": "Sara Waisglass",
+        "actorName": "Maxine Baker",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/dI625xFV4M78v5mi05PjgcTr08m.jpg"
+      },
+      {
+        "name": "Scott Porter",
+        "actorName": "Mayor Paul Randolph",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/uvkZrnWSwxVn3oau2BwHuvUDzcb.jpg"
+      },
+      {
+        "name": "Raymond Ablack",
+        "actorName": "Joe",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/m8LIuaoivT2LXYkjJS4vGdEvjjy.jpg"
+      },
+      {
+        "name": "Katie Douglas",
+        "actorName": "Abigail ‘Abby’ Littman",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/m6dmjeruXaYjZ6CNHy6yv8jd7XX.jpg"
+      },
+      {
+        "name": "Chelsea Clark",
+        "actorName": "Norah",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/wj6D1umkisH7anLoCQR5BVpmSTg.jpg"
+      }
+    ],
+    "id": 117581
   },
   {
     "titreHdd": "hanna 1 2 3",
@@ -409,7 +1569,50 @@
     "folder": "Hanna 1 2 3",
     "category": "series",
     "size": "8 Go",
-    "poster_path": "K:\\SERIES\\Hanna 1 2 3\\hanna.jpg"
+    "poster_path": "K:\\SERIES\\Hanna 1 2 3\\hanna.jpg",
+    "overview": "À la fois un thriller percutant et un drame sur l'entrée dans l'âge adulte, Hanna suit le périple d'une extraordinaire jeune fille élevée dans la forêt qui tente d'échapper à la traque incessante d'un agent de la CIA en mission officieuse et essaie de découvrir la vérité derrière son identité.",
+    "release_date": "2019-03-28",
+    "genre_ids": [
+      10759,
+      18
+    ],
+    "vote_average": 7.474,
+    "original_language": "en",
+    "original_title": "Hanna",
+    "director": "Shaheen Baig",
+    "popularity": 223.676,
+    "vote_count": 764,
+    "actors": [
+      {
+        "name": "Esme Creed-Miles",
+        "actorName": "Hanna",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/4S3D3TqS847CFLdPyKT9WSlhPmz.jpg"
+      },
+      {
+        "name": "Mireille Enos",
+        "actorName": "Marissa Wiegler",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/zza8XezUz4I5Is55H2totMbGLeG.jpg"
+      },
+      {
+        "name": "Dermot Mulroney",
+        "actorName": "John Carmichael",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/5gJszOF45KMPB5tmAbKdK0qgQBx.jpg"
+      },
+      {
+        "name": "Ray Liotta",
+        "actorName": "Gordon Evans",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/iXKotiB0Xe9iJLCBbjAedHPLb7p.jpg"
+      }
+    ],
+    "id": 54155
   },
   {
     "titreHdd": "la casa de papel 1 2 3 4 5",
@@ -444,7 +1647,126 @@
     "path": "K:\\SERIES\\LA CASA DE PAPEL 1 2 3 4 5",
     "folder": "LA CASA DE PAPEL 1 2 3 4 5",
     "category": "series",
-    "size": "19 Go"
+    "size": "19 Go",
+    "overview": "Huit voleurs font une prise d'otages dans la Maison royale de la Monnaie d'Espagne, tandis qu'un génie du crime manipule la police pour mettre son plan à exécution.",
+    "release_date": "2017-05-02",
+    "genre_ids": [
+      80,
+      18
+    ],
+    "vote_average": 8.25,
+    "original_language": "es",
+    "original_title": "La Casa de Papel",
+    "popularity": 333.454,
+    "vote_count": 18278,
+    "actors": [
+      {
+        "name": "Álvaro Morte",
+        "actorName": "Profesor",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/2TGPhdpRC5wjdFEJqnLYiN5kbwg.jpg"
+      },
+      {
+        "name": "Pedro Alonso",
+        "actorName": "Berlín",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/38HeVKeOBztVYrLJOWzAtEZiB02.jpg"
+      },
+      {
+        "name": "Úrsula Corberó",
+        "actorName": "Tokio",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/rRgkZUNgD68DD7xDsv1XMmQBjld.jpg"
+      },
+      {
+        "name": "Itziar Ituño",
+        "actorName": "Lisboa",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/vnrfL03NwRJ1X82esSNUoYzASGr.jpg"
+      },
+      {
+        "name": "Jaime Lorente",
+        "actorName": "Denver",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/nLaxzU92z14FIbe25sE8jDMIThZ.jpg"
+      },
+      {
+        "name": "Miguel Herrán",
+        "actorName": "Río",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/jJ8UKek4GvQrQUP9q97Kq2MWVqi.jpg"
+      },
+      {
+        "name": "Esther Acebo",
+        "actorName": "Estocolmo",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/2v2eOKCjnQfY3jCsowtH8wLxFMC.jpg"
+      },
+      {
+        "name": "Najwa Nimri",
+        "actorName": "Alicia Sierra",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/hvLbKkDIT4FqSS8djmW5voNd0O4.jpg"
+      },
+      {
+        "name": "Rodrigo de la Serna",
+        "actorName": "Palermo",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/yUngw2JLFYewHJq1oqx5JnNVpnW.jpg"
+      },
+      {
+        "name": "Darko Peric",
+        "actorName": "Helsinki",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/u3WigKj7tUriLC9Z5XbHuTNk4Wx.jpg"
+      },
+      {
+        "name": "Hovik Keuchkerian",
+        "actorName": "Bogotá",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/o5cGKWHlZl4RFROYlT2hD95j0lN.jpg"
+      },
+      {
+        "name": "Luka Peroš",
+        "actorName": "Marsella",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/lfh7959EpR9gAvrjObNGXaUg2qF.jpg"
+      },
+      {
+        "name": "Belén Cuesta",
+        "actorName": "Manila",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/caDd0J8smaQMvVjgJsDYabe4dzk.jpg"
+      },
+      {
+        "name": "Enrique Arce",
+        "actorName": "Arturo Román",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/1lACQepfukuZ0l6FnUpMO03WxcJ.jpg"
+      },
+      {
+        "name": "Fernando Cayo",
+        "actorName": "Luis Tamayo",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/sglfXHNFlzOBBLuRrbDkxghSW4H.jpg"
+      }
+    ],
+    "id": 71446
   },
   {
     "titreHdd": "love alarm",
@@ -464,7 +1786,112 @@
     "path": "K:\\SERIES\\Love alarm",
     "folder": "Love alarm",
     "category": "series",
-    "size": "5 Go"
+    "size": "5 Go",
+    "overview": "Dans un monde où une appli alerte les gens dès qu'ils éveillent l'intérêt de quelqu'un, Kim Jojo découvre l'amour tout en faisant face à des difficultés personnelles.",
+    "release_date": "2019-08-22",
+    "genre_ids": [
+      18,
+      10765
+    ],
+    "vote_average": 8.359,
+    "original_language": "ko",
+    "original_title": "좋아하면 울리는",
+    "popularity": 74.971,
+    "vote_count": 1915,
+    "actors": [
+      {
+        "name": "Kim So-hyun",
+        "actorName": "Kim Jojo",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/sJJbyFp2mu6mZZhN6I0C10vvihW.jpg"
+      },
+      {
+        "name": "Jung Ga-ram",
+        "actorName": "Lee Hye-yeong",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/uZh233j4OTrBf3v4feIvwBePSd6.jpg"
+      },
+      {
+        "name": "Song Kang",
+        "actorName": "Hwang Sun-oh",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/dMUXkMfkTEw3qrJisk0mQCQxmBI.jpg"
+      },
+      {
+        "name": "Go Min-si",
+        "actorName": "Park Gul-mi",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/3LQOaHcTgZoFcZcVMPZ4tf8Ad85.jpg"
+      },
+      {
+        "name": "Lee Jae-eung",
+        "actorName": "Chon Duk-gu",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/eXet0PJzTzYZkmI6yyfVVfOFmzC.jpg"
+      },
+      {
+        "name": "Kim Si-eun",
+        "actorName": "Yuk-jo",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/ffG6awnRhK1IwWsprvpWtwrpwhI.jpg"
+      },
+      {
+        "name": "Ki Do-hun",
+        "actorName": "Brian Chon",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/fXHhGTM8ohtTNkKtbY7aQkHEGIm.jpg"
+      },
+      {
+        "name": "Bae Da-bin",
+        "actorName": "Mon-sun",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/fWMvyN8LjKej5dxGQjuHo1ta5Rr.jpg"
+      },
+      {
+        "name": "Song Sun-mi",
+        "actorName": "Jeong Mi-mi",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/eBqFhQm58VFfghc2l2dv438JyX3.jpg"
+      },
+      {
+        "name": "Sim Yi-young",
+        "actorName": "Bae Gyeong-hee",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/fkIWDrXGH4x8mWEX2eK1kUL8u2n.jpg"
+      },
+      {
+        "name": "Kim Young-pil",
+        "actorName": "Hwang Jae-cheol",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/sjT92A9eK4bF16zrApuXwRVzz7i.jpg"
+      },
+      {
+        "name": "Park Seong-yeon",
+        "actorName": "Jojo's Aunt",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/30aZicvfKu8ey6YCFrThpD2lsLR.jpg"
+      },
+      {
+        "name": "Yoon Na-moo",
+        "actorName": "Kim Min-jae",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/vXQA20pwMw0TwDB3GlW1WBcucJm.jpg"
+      }
+    ],
+    "id": 89641
   },
   {
     "titreHdd": "mayor of kingstown  s01 s02",
@@ -485,7 +1912,92 @@
     "folder": "Mayor Of Kingstown 2022 S01 S02",
     "category": "series",
     "size": "4 Go",
-    "poster_path": "K:\\SERIES\\Mayor Of Kingstown 2022 S01 S02\\Mayor Of Kingstown 2022 S01.jpg"
+    "poster_path": "K:\\SERIES\\Mayor Of Kingstown 2022 S01 S02\\Mayor Of Kingstown 2022 S01.jpg",
+    "overview": "Dans une petite ville du Michigan qui subsiste grâce à la prison locale et la vie policière comme criminelle qui règne autour du centre pénitencier. C'est l'histoire de la famille McClusky...",
+    "release_date": "2021-11-14",
+    "genre_ids": [
+      18,
+      80
+    ],
+    "vote_average": 8,
+    "original_language": "en",
+    "original_title": "Mayor of Kingstown",
+    "director": "Taylor Sheridan",
+    "popularity": 998.759,
+    "vote_count": 340,
+    "actors": [
+      {
+        "name": "Jeremy Renner",
+        "actorName": "Mike McLusky",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/yB84D1neTYXfWBaV0QOE9RF2VCu.jpg"
+      },
+      {
+        "name": "Hugh Dillon",
+        "actorName": "Ian Ferguson",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/npY8dF5b1j5pUqt11sDBi89BDTi.jpg"
+      },
+      {
+        "name": "Tobi Bamtefa",
+        "actorName": "Deverin 'Bunny' Washington",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/cjGQVrqpG7EfpFQz194tuFHHuih.jpg"
+      },
+      {
+        "name": "Taylor Handley",
+        "actorName": "Kyle McClusky",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/m6Q0DtgxxAvqILCxpbXbOQov4TP.jpg"
+      },
+      {
+        "name": "Emma Laird",
+        "actorName": "Iris",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/lcsyb7KZUcg8LRBkiCJScYD2rYT.jpg"
+      },
+      {
+        "name": "Derek Webster",
+        "actorName": "Stevie",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/slGAloje4blYdqtRLKDSv70rqbp.jpg"
+      },
+      {
+        "name": "Hamish Allan-Headley",
+        "actorName": "Robert Sawyer",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/wUi5ldLGBg9zjxFnh46EdulABUV.jpg"
+      },
+      {
+        "name": "Nishi Munshi",
+        "actorName": "Tracy McLusky",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/z1m2Pp8Zy0Cuocb6RyqNWPZQDl7.jpg"
+      },
+      {
+        "name": "Aidan Gillen",
+        "actorName": "Milo Sunter",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/ju5ho6nnwOQ2QLGLnDP9yOZhGpb.jpg"
+      },
+      {
+        "name": "Michael Beach",
+        "actorName": "Kareem",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/7gCBCpK2OSzuUWk5iTZds9NjqkF.jpg"
+      }
+    ],
+    "id": 97951
   },
   {
     "titreHdd": "motherland fort salem",
@@ -510,7 +2022,238 @@
     "path": "K:\\SERIES\\Motherland Fort Salem",
     "folder": "Motherland Fort Salem",
     "category": "series",
-    "size": "7 Go"
+    "size": "7 Go",
+    "overview": "Dans une Amérique alternative où les sorcières ont passé un accord avec le gouvernement trois cents ans plus tôt afin de ne plus être persécutées, trois jeunes femmes entament leur entraînement à Fort Salem pour devenir des combattantes hors pair, avec la magie pour meilleure arme.",
+    "release_date": "2020-03-18",
+    "genre_ids": [
+      10765,
+      18
+    ],
+    "vote_average": 8.037,
+    "original_language": "en",
+    "original_title": "Motherland: Fort Salem",
+    "popularity": 355.341,
+    "vote_count": 474,
+    "actors": [
+      {
+        "name": "Taylor Hickson",
+        "actorName": "Raelle Collar",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/qYc16SYLGSwm31MklUP42oKeTmO.jpg"
+      },
+      {
+        "name": "Amalia Holm Bjelke",
+        "actorName": "Scylla",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/gF5Zy4U8NKwtOWaJAODrlUDt58Z.jpg"
+      },
+      {
+        "name": "Ashley Nicole Williams",
+        "actorName": "Abigail Bellweather",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/qmIon3ilZJAcgtcs5dmj4JL5NvN.jpg"
+      },
+      {
+        "name": "Lyne Renee",
+        "actorName": "Sarah Alder",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/ye1ZuD2ynhrAvVXMibJSXfezTsZ.jpg"
+      },
+      {
+        "name": "Jessica Sutton",
+        "actorName": "Tally Craven",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/dvnNXmOxIEBT61CmkfWCHeONnNx.jpg"
+      },
+      {
+        "name": "Demetria McKinney",
+        "actorName": "Anacostia Quartermain",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/5tlohX3knDvBpxLEkNkv2jYtE15.jpg"
+      },
+      {
+        "name": "Tony Giroux",
+        "actorName": "Adil",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/jUmPyQSYKnqt5NElRTtOiSPXmuc.jpg"
+      },
+      {
+        "name": "Catherine Lough Haggquist",
+        "actorName": "Petra Bellweather",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/3q6uhNYa7Dapl09YtqVrwndmj1l.jpg"
+      },
+      {
+        "name": "Emilie Leclerc",
+        "actorName": "Izadora",
+        "department": "Acting",
+        "job": "",
+        "profile_path": ""
+      },
+      {
+        "name": "Kylee Brown",
+        "actorName": "Khalida",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/uT5IUkHT0Oar8hns8NujaCix9Qn.jpg"
+      },
+      {
+        "name": "Arlen Aguayo-Stewart",
+        "actorName": "Nicte Batan",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/2oockOLP6BVShcdJFkSiqygQY3h.jpg"
+      },
+      {
+        "name": "Kandyse McClure",
+        "actorName": "Nicte Batan",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/1GrvidW5ekjsTdhVKOvDAKXGfOY.jpg"
+      },
+      {
+        "name": "Victor Webster",
+        "actorName": "Blanton Silver",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/16bNzaHZRXLGB8T6nByDCGY6lhI.jpg"
+      },
+      {
+        "name": "Diana Pavlovská",
+        "actorName": "Willa Collar",
+        "department": "Acting",
+        "job": "",
+        "profile_path": ""
+      },
+      {
+        "name": "Mellany Barros",
+        "actorName": "Penelope Silver",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/nmTk7dbfbOGpjNDj8CxHvvDCEw6.jpg"
+      },
+      {
+        "name": "Bob Frazer",
+        "actorName": "Alban Hearst",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/alDdLXo3D0C0b17o85QnZJeFWfn.jpg"
+      },
+      {
+        "name": "Hrothgar Mathews",
+        "actorName": "Edwin Collar",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/sXKbP3XIJjlualQdPwSIHbIcjbW.jpg"
+      },
+      {
+        "name": "Luc Roderique",
+        "actorName": "Sterling Woodlot",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/jeAxcgvhKGTsiGyNnNTfG2qpK1S.jpg"
+      },
+      {
+        "name": "Ess Hodlmoser",
+        "actorName": "M",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/efu1BARYfmCaLyIkmhSrFOBQI5E.jpg"
+      },
+      {
+        "name": "Sheryl Lee Ralph",
+        "actorName": "President Kelly Wade",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/6LlHj35zCnUVNaunPamsHvjQsB5.jpg"
+      },
+      {
+        "name": "Praneet Akilla",
+        "actorName": "Gregorio",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/7f4zXVj6Zg9te81buRQEtR1jvdT.jpg"
+      },
+      {
+        "name": "Linda Ko",
+        "actorName": "Nessa Clarey",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/isAOnbTRrEafiV00aj3zzMETsjg.jpg"
+      },
+      {
+        "name": "Emilie Ullerup",
+        "actorName": "Kara Brandt",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/rMndXrFRMAVknGtoOgid8O0BSN9.jpg"
+      },
+      {
+        "name": "Sandra Ferens",
+        "actorName": "Quinn",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/xg6RqnJHBBFNq9V5ImtKm11Z7Hw.jpg"
+      },
+      {
+        "name": "Olivia Lucas",
+        "actorName": "Thelma Bearkiller",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/riMCPaLmGr09auHFCqlf65UFvPw.jpg"
+      },
+      {
+        "name": "Aaron Douglas",
+        "actorName": "Colonel Jarrett",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/hDAlimxTkFyWORistWPJsvTKDYJ.jpg"
+      },
+      {
+        "name": "Kwesi Ameyaw",
+        "actorName": "Claude",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/34xshC6FVZMfbKIocnBLjqQSLPw.jpg"
+      },
+      {
+        "name": "Michael Horse",
+        "actorName": "The Marshal",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/1rNUmodmdMJz48JNpNrpQkE0W44.jpg"
+      },
+      {
+        "name": "Lina Lecompte",
+        "actorName": "Guadalupe 'Lupe' Cortez",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/dq0opkrSgRmw9kKEVEiL2ofOXZe.jpg"
+      },
+      {
+        "name": "Liza Huget",
+        "actorName": "Minerva Bellweather",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/w0WwVG4zaqwx6RvaWZsyrY9IYiB.jpg"
+      },
+      {
+        "name": "Daniel Bacon",
+        "actorName": "Anton",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/fhonQvc9zI2Vh6sDDpLB8fbvyLH.jpg"
+      }
+    ],
+    "id": 91977
   },
   {
     "titreHdd": "mr flowler brigadier chef s01",
@@ -519,7 +2262,71 @@
     "path": "K:\\SERIES\\MR Flowler brigadier Chef S01",
     "folder": "MR Flowler brigadier Chef S01",
     "category": "series",
-    "size": "1 Go"
+    "size": "1 Go",
+    "overview": "La série se déroule au commissariat de la ville imaginaire de Gasforth dans lequel a lieu une rivalité entre l'équipe en uniforme, menée par l'Inspecteur Fowler et les détectives de police judiciaire, menés par l'Inspecteur de police principal Derek Grim.",
+    "release_date": "1995-11-13",
+    "genre_ids": [
+      35,
+      80
+    ],
+    "vote_average": 7.076,
+    "original_language": "en",
+    "original_title": "The Thin Blue Line",
+    "director": "Ben Elton",
+    "popularity": 134.056,
+    "vote_count": 85,
+    "actors": [
+      {
+        "name": "Rowan Atkinson",
+        "actorName": "Inspector Raymond Fowler",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/wxTgS4SFanVKbnvu9xqOzNJWJwz.jpg"
+      },
+      {
+        "name": "Serena Evans",
+        "actorName": "Sergeant Patricia Dawkins",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/m8MtzA6NzeLaTpz24yfk8a20omi.jpg"
+      },
+      {
+        "name": "David Haig",
+        "actorName": "Detective Inspector Derek Grim",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/dRlqWCY89CRCfDMYRSSPpZbK6f2.jpg"
+      },
+      {
+        "name": "James Dreyfus",
+        "actorName": "Constable Kevin Goody",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/uGtL9yXHyxCiZF07r0CXP07GGJD.jpg"
+      },
+      {
+        "name": "Mina Anwar",
+        "actorName": "Constable Maggie Habib",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/tzADetutPblOzNekn7xWsoNPQhr.jpg"
+      },
+      {
+        "name": "Rudolph Walker",
+        "actorName": "Constable Frank Gladstone",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/b28mC01hzC1S4O7LpvElEbJcNR.jpg"
+      },
+      {
+        "name": "Mark Addy",
+        "actorName": "Detective Constable Gary Boyle",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/xTYkZn5Z1VZ7L7V37hzsVRSyrY2.jpg"
+      }
+    ],
+    "id": 2301
   },
   {
     "titreHdd": "new amsterdam  s1 s2 s3 s4",
@@ -550,7 +2357,55 @@
     "folder": "New Amsterdam 2020 S1 S2 S3 S4",
     "category": "series",
     "size": "21 Go",
-    "poster_path": "K:\\SERIES\\New Amsterdam 2020 S1 S2 S3 S4\\New Amsterdam 2020 S1.jpg"
+    "poster_path": "K:\\SERIES\\New Amsterdam 2020 S1 S2 S3 S4\\New Amsterdam 2020 S1.jpg",
+    "overview": "Un seul hôpital dans le monde est capable de traiter, sous le même toit, des patients souffrant d'Ebola, des prisonniers enfermés au sein de l'établissement de haute sécurité de Rikers, et le président des États-Unis : l'hôpital Bellevue. Un haut lieu médical qui va être bouleversé par l'arrivée à sa tête d'un nouveau directeur, bien décidé à faire bouger les choses au sein de cette institution de Manhattan. Mais ses batailles seront multiples, puisqu'il doit également lutter au quotidien contre le cancer qui le ronge...",
+    "release_date": "2018-09-25",
+    "genre_ids": [
+      18
+    ],
+    "vote_average": 8.4,
+    "original_language": "en",
+    "original_title": "New Amsterdam",
+    "popularity": 225.459,
+    "vote_count": 935,
+    "actors": [
+      {
+        "name": "Ryan Eggold",
+        "actorName": "Dr. Max Goodwin",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/6YZfGMzcugWwMquOIzGlsgx4wYN.jpg"
+      },
+      {
+        "name": "Janet Montgomery",
+        "actorName": "Dr. Lauren Bloom",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/jy2hvsU2Jvf3C89MmVhj6tchsiq.jpg"
+      },
+      {
+        "name": "Jocko Sims",
+        "actorName": "Dr. Floyd Reynolds",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/3SxdW3tSFaZomYbxvxwgbnX8nhX.jpg"
+      },
+      {
+        "name": "Tyler Labine",
+        "actorName": "Dr. Iggy Frome",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/uTg5k0mflhBju9Q1tOYmYDzdBu6.jpg"
+      },
+      {
+        "name": "Sandra Mae Frank",
+        "actorName": "Dr. Elizabeth Wilder",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/giviV3KhxVeem0WhGBm7VlJbR2d.jpg"
+      }
+    ],
+    "id": 80350
   },
   {
     "titreHdd": "penny dreadful s1 s2 s3 fin",
@@ -576,7 +2431,87 @@
     "folder": "Penny Dreadful S1 S2 S3 Fin",
     "category": "series",
     "size": "3 Go",
-    "poster_path": "K:\\SERIES\\Penny Dreadful S1 S2 S3 Fin\\100088696_1213336949008953_3067522400796016640_n.jpg"
+    "poster_path": "K:\\SERIES\\Penny Dreadful S1 S2 S3 Fin\\100088696_1213336949008953_3067522400796016640_n.jpg",
+    "overview": "Londres, 1891, une menace quasi invisible massacre la population. Vanessa Ives, une jeune femme aux pouvoirs puissants et hypnotiques, rencontre et propose à Ethan Chandler, un homme rebelle et violent, de s'allier à elle ainsi qu'à Sir Malcolm Murray, un homme riche d'un certain âge aux ressources intarissables, pour combattre cette nouvelle menace.",
+    "release_date": "2014-05-11",
+    "genre_ids": [
+      10765,
+      18,
+      9648,
+      10759
+    ],
+    "vote_average": 7.839,
+    "original_language": "en",
+    "original_title": "Penny Dreadful",
+    "director": "Sam Mendes",
+    "popularity": 342.859,
+    "vote_count": 1261,
+    "actors": [
+      {
+        "name": "Eva Green",
+        "actorName": "Vanessa Ives",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/kyMwuEg4OJwlSP1ZSw1PzexmPl2.jpg"
+      },
+      {
+        "name": "Josh Hartnett",
+        "actorName": "Ethan Chandler",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/dCfu2EN7FjISACcjilaJu7evwEc.jpg"
+      },
+      {
+        "name": "Timothy Dalton",
+        "actorName": "Sir Malcolm Murray",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/rKYQd6ihqWiOaCHEDrvgV2VPtAo.jpg"
+      },
+      {
+        "name": "Harry Treadaway",
+        "actorName": "Dr. Victor Frankenstein",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/sPHrK9AvAYJY3udd9DcdPIyQZaE.jpg"
+      },
+      {
+        "name": "Reeve Carney",
+        "actorName": "Dorian Gray",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/h9sV3FCHDqxtq4y6LckPovGaojN.jpg"
+      },
+      {
+        "name": "Rory Kinnear",
+        "actorName": "John Clare / The Creature",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/8aEABMeHXOozwE5DrMxUlCM9mpG.jpg"
+      },
+      {
+        "name": "Billie Piper",
+        "actorName": "Lily / Brona Croft",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/gBduwAWEZ1bwuL6f7cjMzBvKlJz.jpg"
+      },
+      {
+        "name": "Patti LuPone",
+        "actorName": "Dr. Seward",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/zesHRkKHL5AFnI4QkZD0dKnHxmk.jpg"
+      },
+      {
+        "name": "Wes Studi",
+        "actorName": "Kaetenay",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/dAO2bY2NCceYLZiJaBjBdY19Hox.jpg"
+      }
+    ],
+    "id": 54671
   },
   {
     "titreHdd": "power book iii raising kanan  s01",
@@ -586,7 +2521,84 @@
     "folder": "Power Book III Raising Kanan 2021 S01",
     "category": "series",
     "size": "3 Go",
-    "poster_path": "K:\\SERIES\\Power Book III Raising Kanan 2021 S01\\raisin ka.jpg"
+    "poster_path": "K:\\SERIES\\Power Book III Raising Kanan 2021 S01\\raisin ka.jpg",
+    "overview": "Préquel de la série originale Power, concernant le passé du personnage Kanan Stark. En 1991, Kanan Stark, tout juste âgé de 15 ans, réside le quartier de South Jamaica dans le Queens. Il nous embarque dans son quotidien mouvementé, aux côtés d'une mère dealeuse de cocaïne et avec un réseau émergent dans tout New York.",
+    "release_date": "2021-07-18",
+    "genre_ids": [
+      18,
+      80
+    ],
+    "vote_average": 8.4,
+    "original_language": "en",
+    "original_title": "Power Book III: Raising Kanan",
+    "popularity": 478.93,
+    "vote_count": 151,
+    "actors": [
+      {
+        "name": "Mekai Curtis",
+        "actorName": "Kanan Stark",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/78Rv0AKBhBqo8IJm7E3dU6EDHmk.jpg"
+      },
+      {
+        "name": "Patina Miller",
+        "actorName": "Raquel 'Raq' Thomas",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/mNYsr2FsjPiFGhzxAOxXJNoYZG5.jpg"
+      },
+      {
+        "name": "Omar Epps",
+        "actorName": "Malcolm Howard",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/wpsrJit3pVEPoyN8Cb0DBWoy2Mm.jpg"
+      },
+      {
+        "name": "Hailey Kilgore",
+        "actorName": "LaVerne 'Jukebox' Ganner",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/vCTuV5F1mIK1rfktfdZo9wooqRg.jpg"
+      },
+      {
+        "name": "Antonio Ortiz",
+        "actorName": "Shawn 'Famous' Figueroa",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/xtXGDqdHWQVro4HqHvSILCWQ7zj.jpg"
+      },
+      {
+        "name": "London Brown",
+        "actorName": "Marvin",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/r25sTboSqbNGNDoSu2Ecgtb3drD.jpg"
+      },
+      {
+        "name": "Malcolm M. Mays",
+        "actorName": "Louis 'Lou-Lou' Thomas",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/oQXq8kql1NxdKB4zrDaQPJ8K3Q4.jpg"
+      },
+      {
+        "name": "Joey Bada$$",
+        "actorName": "Unique",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/qOM3lcfbMIYmEEBPXrRDbgIDXU.jpg"
+      },
+      {
+        "name": "Grantham Coleman",
+        "actorName": "Ronnie Mathis",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/eMxsmosOUiL5HDpr7Ze5HyP03kn.jpg"
+      }
+    ],
+    "id": 124394
   },
   {
     "titreHdd": "prison break s1 -5",
@@ -621,7 +2633,93 @@
     "path": "K:\\SERIES\\Prison Break S1 -5",
     "folder": "Prison Break S1 -5",
     "category": "series",
-    "size": "31 Go"
+    "size": "31 Go",
+    "overview": "Michael Scofield s'engage dans une véritable lutte contre la montre : son frère Lincoln est dans le couloir de la mort, en attente de son exécution. Persuadé de son innocence mais à court de solutions, Michael décide de se faire incarcérer à son tour dans le pénitencier d'état de Fox River pour organiser leur évasion...",
+    "release_date": "2005-08-29",
+    "genre_ids": [
+      10759,
+      80,
+      18
+    ],
+    "vote_average": 8.092,
+    "original_language": "en",
+    "original_title": "Prison Break",
+    "director": "Cathy Mickel Gibson",
+    "popularity": 942.189,
+    "vote_count": 4802,
+    "actors": [
+      {
+        "name": "Wentworth Miller",
+        "actorName": "Michael Scofield",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/js09M98qo6rEyyIlTbRMI6XiZJH.jpg"
+      },
+      {
+        "name": "Dominic Purcell",
+        "actorName": "Lincoln Burrows",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/30giDZ53c8f72pPbXCLK9xMSAnw.jpg"
+      },
+      {
+        "name": "Sarah Wayne Callies",
+        "actorName": "Sara Tancredi",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/uBtFalxNR1O0eARg0lsyLXkoJNG.jpg"
+      },
+      {
+        "name": "Paul Adelstein",
+        "actorName": "Paul Kellerman",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/9qkGnEWPzGayZg9gaB4xbP8UL4g.jpg"
+      },
+      {
+        "name": "Rockmond Dunbar",
+        "actorName": "Benjamin \"C-Note\" Franklin",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/gim7zIrYkbKWsp2Kod7fp74fWyI.jpg"
+      },
+      {
+        "name": "Robert Knepper",
+        "actorName": "Theodore \"T-Bag\" Bagwell",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/w40AttR4OPQvjYyTVanq5Rm5iOb.jpg"
+      },
+      {
+        "name": "Amaury Nolasco",
+        "actorName": "Fernando Sucre",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/djcol6Qn1opxkj5oebTMtOnbOnc.jpg"
+      },
+      {
+        "name": "Inbar Lavi",
+        "actorName": "Sheba",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/sqFiHX6niOU3U7QT5FXGEarvZ1R.jpg"
+      },
+      {
+        "name": "Augustus Prew",
+        "actorName": "David \"Whip\" Martin",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/37cPl9BaiCY24eMMMOxlZuTkGo7.jpg"
+      },
+      {
+        "name": "Mark Feuerstein",
+        "actorName": "Jacob Ness",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/1XsbDSx7hqhaY9Sjjx86iTp43S0.jpg"
+      }
+    ],
+    "id": 2288
   },
   {
     "titreHdd": "ragnarok ",
@@ -646,7 +2744,79 @@
     "path": "K:\\SERIES\\Ragnarok 2020",
     "folder": "Ragnarok 2020",
     "category": "series",
-    "size": "6 Go"
+    "size": "6 Go",
+    "overview": "Dans un village norvégien pollué et troublé par la fonte des glaciers, la fin des temps semble bien réelle. Mais un combat doit opposer une légende à un mal ancestral.",
+    "release_date": "2020-01-31",
+    "genre_ids": [
+      10765,
+      18,
+      9648
+    ],
+    "vote_average": 7.861,
+    "original_language": "no",
+    "original_title": "Ragnarok",
+    "director": "Nina Quist",
+    "popularity": 150.51,
+    "vote_count": 981,
+    "actors": [
+      {
+        "name": "David Alexander Sjøholt",
+        "actorName": "Magne Seier",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/fRXYuDrmFT4x792MeoebK3E9A3A.jpg"
+      },
+      {
+        "name": "Jonas Strand Gravli",
+        "actorName": "Laurits Seier",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/wl1V04jmgUI4a0TzwXrjlFhjlXF.jpg"
+      },
+      {
+        "name": "Herman Tømmeraas",
+        "actorName": "Fjor Jutul",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/aeDmHIqcSbhErPaC676X1VY9Kwk.jpg"
+      },
+      {
+        "name": "Theresa Frostad Eggesbø",
+        "actorName": "Saxa Jutul",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/tkCcmEcnQtjc4bcE4JiurU1neEK.jpg"
+      },
+      {
+        "name": "Henriette Steenstrup",
+        "actorName": "Turid Seier",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/nlWESpEQczr8OwBbxuNTxLcNAkc.jpg"
+      },
+      {
+        "name": "Synnøve Macody Lund",
+        "actorName": "Ran Jutul",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/a5r4MtoL5jU4DtCp0BtzwEAtfyL.jpg"
+      },
+      {
+        "name": "Bjørn Sundquist",
+        "actorName": "Wotan Wagner",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/rcyiS1fiGAngHYZoVor5Xiznewp.jpg"
+      },
+      {
+        "name": "Danu Sunth",
+        "actorName": "Iman Reza",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/mrQx2Kifwg43RaJTPYk4wfX97dC.jpg"
+      }
+    ],
+    "id": 91557
   },
   {
     "titreHdd": "squid game",
@@ -655,7 +2825,86 @@
     "path": "K:\\SERIES\\Squid.Game.S01 MK eps 9",
     "folder": "Squid.Game.S01 MK eps 9",
     "category": "series",
-    "size": "3 Go"
+    "size": "3 Go",
+    "overview": "Tentés par un prix alléchant en cas de victoire, des centaines de joueurs désargentés acceptent de s'affronter lors de jeux pour enfants aux enjeux mortels.",
+    "release_date": "2021-09-17",
+    "genre_ids": [
+      10759,
+      9648,
+      18
+    ],
+    "vote_average": 7.832,
+    "original_language": "ko",
+    "original_title": "오징어 게임",
+    "director": "Kim Ji-yeon",
+    "popularity": 215.23,
+    "vote_count": 13590,
+    "actors": [
+      {
+        "name": "Lee Jung-jae",
+        "actorName": "Seong Gi-hun / 'No. 456'",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/3h5Cfm0X8ohWn7psZkqdNWqXAHH.jpg"
+      },
+      {
+        "name": "Wi Ha-jun",
+        "actorName": "Hwang Jun-ho",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/tEZuIaMESdBw4LfNq3vshGR4VlP.jpg"
+      },
+      {
+        "name": "Park Hae-soo",
+        "actorName": "Cho Sang-woo / 'No. 218'",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/hfejrQ8gjRWCheiKpJANajXT0xi.jpg"
+      },
+      {
+        "name": "Jung Ho-yeon",
+        "actorName": "Kang Sae-byeok / 'No. 067'",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/5340wMwuy4mz0s0Gc6012ReldRi.jpg"
+      },
+      {
+        "name": "Oh Young-soo",
+        "actorName": "Oh Il-nam / 'No. 001'",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/kUzd955UTVnac2sVG0tYmt9w5jb.jpg"
+      },
+      {
+        "name": "Heo Sung-tae",
+        "actorName": "Jang Deok-su / 'No. 101'",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/4GMWPb7YzDyctHiZ1ihUsNgkiyi.jpg"
+      },
+      {
+        "name": "Kim Joo-ryoung",
+        "actorName": "Han Mi-nyeo / 'No. 212'",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/fzAQghaykG5841cvSMogl1Xaafw.jpg"
+      },
+      {
+        "name": "Anupam Tripathi",
+        "actorName": "Ali Abdul / 'No. 199'",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/qiypxSxV93cIv7F4O2MeOpXNlsJ.jpg"
+      },
+      {
+        "name": "Lee You-mi",
+        "actorName": "Ji-young / 'No. 240'",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/jZgjJqr6pGEegyziY10b4SklqbD.jpg"
+      }
+    ],
+    "id": 93405
   },
   {
     "titreHdd": "startup s01",
@@ -665,7 +2914,64 @@
     "folder": "StartUp S01",
     "category": "series",
     "size": "4 Go",
-    "poster_path": "K:\\SERIES\\StartUp S01\\StartUp.2016.S01 Complet.jpg"
+    "poster_path": "K:\\SERIES\\StartUp S01\\StartUp.2016.S01 Complet.jpg",
+    "overview": "Une jeune informaticienne d'origine cubaine met au point une technologie digitale innovante. Révolutionnaire et controversé, le concept ne convainc pas les investisseurs. Pour lancer son affaire, elle va s'allier à un banquier ambitieux et se retrouver malgré elle, coincée entre un agent du FBI peu scrupuleux et un gang.",
+    "release_date": "2016-09-06",
+    "genre_ids": [
+      80,
+      18
+    ],
+    "vote_average": 7.154,
+    "original_language": "en",
+    "original_title": "StartUp",
+    "director": "Edi Gathegi",
+    "popularity": 153.016,
+    "vote_count": 198,
+    "actors": [
+      {
+        "name": "Adam Brody",
+        "actorName": "Nicholas \"Nick\" Talman",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/aBHrdOtolyYkAOjNX0Bpkat5WX5.jpg"
+      },
+      {
+        "name": "Edi Gathegi",
+        "actorName": "Ronald \"Ronnie\" Dacey",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/nOkjzPRI2y3uDlWT5bGoRtEtcII.jpg"
+      },
+      {
+        "name": "Otmara Marrero",
+        "actorName": "Isabelle \"Izzy\" Morales",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/n9x3D82mzFopkiVJpOPNrgF0B1H.jpg"
+      },
+      {
+        "name": "Addison Timlin",
+        "actorName": "Mara Chandler",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/oDIiXPWhHO188gsvspgeHTe9WUc.jpg"
+      },
+      {
+        "name": "Ron Perlman",
+        "actorName": "Wes Chandler",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/9riPBfsWpzEzh2y9ucxTW22iakI.jpg"
+      },
+      {
+        "name": "Mira Sorvino",
+        "actorName": "Rebecca Stroud",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/11raFiNo7QfisH44v3NIfpVvIz5.jpg"
+      }
+    ],
+    "id": 66310
   },
   {
     "titreHdd": "supersex",
@@ -675,7 +2981,42 @@
     "folder": "Supersex.S012024",
     "category": "series",
     "size": "2 Go",
-    "poster_path": "K:\\SERIES\\Supersex.S012024\\Super sex saison 1.JPG"
+    "poster_path": "K:\\SERIES\\Supersex.S012024\\Super sex saison 1.JPG",
+    "overview": "Inspirée de faits réels, cette série raconte l'histoire de Rocco Siffredi, issu d'un milieu populaire et devenu l'une des plus grandes stars mondiales du porno.",
+    "release_date": "2024-03-06",
+    "genre_ids": [
+      18
+    ],
+    "vote_average": 6.591,
+    "original_language": "it",
+    "original_title": "Supersex",
+    "director": "Paolo Lucarini",
+    "popularity": 149.105,
+    "vote_count": 77,
+    "actors": [
+      {
+        "name": "Alessandro Borghi",
+        "actorName": "Rocco Siffredi",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/cRnm7HQ84Ls6b91BONx0BrTUQXy.jpg"
+      },
+      {
+        "name": "Jasmine Trinca",
+        "actorName": "Lucia",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/idxRGFkuTwxKZZNtDBTY84UzAPd.jpg"
+      },
+      {
+        "name": "Adriano Giannini",
+        "actorName": "Tommaso Del Signore",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/kJiwMKAFUgHreid1ES0xrG8r5H0.jpg"
+      }
+    ],
+    "id": 211079
   },
   {
     "titreHdd": "sweet home ",
@@ -696,7 +3037,86 @@
     "folder": "Sweet Home 2020",
     "category": "series",
     "size": "8 Go",
-    "poster_path": "K:\\SERIES\\Sweet Home 2020\\Sweet Home.jpg"
+    "poster_path": "K:\\SERIES\\Sweet Home 2020\\Sweet Home.jpg",
+    "overview": "Comme leurs semblables se transforment en monstres féroces et sèment la terreur, un ado perturbé et ses voisins d'immeuble se battent pour leur vie... et leur humanité !",
+    "release_date": "2020-12-18",
+    "genre_ids": [
+      18,
+      10765,
+      80
+    ],
+    "vote_average": 8.358,
+    "original_language": "ko",
+    "original_title": "스위트홈",
+    "director": "Lee Eung-bok",
+    "popularity": 190.458,
+    "vote_count": 1242,
+    "actors": [
+      {
+        "name": "Song Kang",
+        "actorName": "Cha Hyun-su",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/dMUXkMfkTEw3qrJisk0mQCQxmBI.jpg"
+      },
+      {
+        "name": "Go Min-si",
+        "actorName": "Lee Eun-yu",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/3LQOaHcTgZoFcZcVMPZ4tf8Ad85.jpg"
+      },
+      {
+        "name": "Lee Jin-wook",
+        "actorName": "Pyeon Sang-wook",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/hj3dZBCAvepD7WNCnBrc7MJBLTD.jpg"
+      },
+      {
+        "name": "Lee Si-young",
+        "actorName": "Seo Yi-kyung",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/1u3nngou1VNZ0iOGvUC3b6rKV0B.jpg"
+      },
+      {
+        "name": "Jung Jin-young",
+        "actorName": "Park Chan-young",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/8NHVBNi1Jb7f0RujRLtjD2i05tc.jpg"
+      },
+      {
+        "name": "Yu Oh-seong",
+        "actorName": "Tak In-hwan",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/iNqbeyp8Qoi0Sw2rlKgvwu5rSV2.jpg"
+      },
+      {
+        "name": "Oh Jung-se",
+        "actorName": "Dr. Lim",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/oIqRAdI5e777odhOJl6e4Jc9ADj.jpg"
+      },
+      {
+        "name": "Kim Moo-yul",
+        "actorName": "Kim Young-hoo",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/7SoxNZ826OzxV7WBplJWud8WhOr.jpg"
+      },
+      {
+        "name": "Park Gyu-young",
+        "actorName": "Yoon Ji-su",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/aqfLyqMoNzVwjhGInt6gX6fkIxs.jpg"
+      }
+    ],
+    "id": 96648
   },
   {
     "titreHdd": "the flash",
@@ -751,7 +3171,71 @@
     "path": "K:\\SERIES\\THE FLASH",
     "folder": "THE FLASH",
     "category": "series",
-    "size": "57 Go"
+    "size": "57 Go",
+    "overview": "Jeune expert de la police scientifique de Central City, Barry Allen se retrouve doté d'une vitesse extraordinaire après avoir été frappé par la foudre. Sous le costume de Flash, il utilise ses nouveaux pouvoirs pour combattre le crime.",
+    "release_date": "2014-10-07",
+    "genre_ids": [
+      18,
+      10765
+    ],
+    "vote_average": 7.789,
+    "original_language": "en",
+    "original_title": "The Flash",
+    "director": "Jeff Hersh",
+    "popularity": 1362.932,
+    "vote_count": 10914,
+    "actors": [
+      {
+        "name": "Grant Gustin",
+        "actorName": "Barry Allen / The Flash",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/kEGU1gGySIe63lyL7AnwXEw4rQn.jpg"
+      },
+      {
+        "name": "Candice Patton",
+        "actorName": "Iris West-Allen",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/t9YV7TTQXkDWLmoHx8Mu3OUHqsP.jpg"
+      },
+      {
+        "name": "Danielle Panabaker",
+        "actorName": "Khione",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/dpX6WMQjJDD93YYaC9Wd6tgucuZ.jpg"
+      },
+      {
+        "name": "Danielle Nicolet",
+        "actorName": "Cecile Horton",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/xdXUDutVr67zKQXpH50277R4HbQ.jpg"
+      },
+      {
+        "name": "Kayla Compton",
+        "actorName": "Allegra Garcia",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/s5DQrvszZeLUIGdD9ryl1aMsGQv.jpg"
+      },
+      {
+        "name": "Brandon McKnight",
+        "actorName": "Chester P. Runk",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/inEnfkpRXSVYaOKK2kpgWrqM26i.jpg"
+      },
+      {
+        "name": "Jon Cor",
+        "actorName": "Mark Blaine / Chillblaine",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/6xVyHRK971bIBh4cB7zY1nyxhOe.jpg"
+      }
+    ],
+    "id": 60735
   },
   {
     "titreHdd": "the hot zone  s1 s2",
@@ -772,7 +3256,62 @@
     "folder": "The Hot Zone 2019 S1 S2",
     "category": "series",
     "size": "4 Go",
-    "poster_path": "K:\\SERIES\\The Hot Zone 2019 S1 S2\\117429736_1276411096034871_7439985758974348477_n.jpg"
+    "poster_path": "K:\\SERIES\\The Hot Zone 2019 S1 S2\\117429736_1276411096034871_7439985758974348477_n.jpg",
+    "overview": "La terrifiante histoire vraie des origines du virus Ebola, un virus mortel et hautement infectieux né dans les forêts humides d'Afrique Centrale. En 1989, il apparaît soudainement aux Etats-Unis chez un chimpanzé d'un laboratoire de Washington DC. Aucun remède n'est alors connu. Une équipe va tenter d'empêcher le virus de se propager jusque dans la population...",
+    "release_date": "2019-05-27",
+    "genre_ids": [
+      18
+    ],
+    "vote_average": 7.1,
+    "original_language": "en",
+    "original_title": "The Hot Zone",
+    "popularity": 224.707,
+    "vote_count": 112,
+    "actors": [
+      {
+        "name": "Daniel Dae Kim",
+        "actorName": "Matthew Ryker",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/aXbTKgL4u6oVumQ459B9VkGTn4A.jpg"
+      },
+      {
+        "name": "Tony Goldwyn",
+        "actorName": "Bruce Ivins",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/ptm8SG4MYIMn0hnDl2YJ70Dwal5.jpg"
+      },
+      {
+        "name": "Dylan Baker",
+        "actorName": "Ed Copak",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/4mw6xj8Aj3ixjjeUj9pZdZPTbvz.jpg"
+      },
+      {
+        "name": "Ian Colletti",
+        "actorName": "Agent Chris Moore",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/kJIKGv66uXA5BEP1gLY8vSdKiyC.jpg"
+      },
+      {
+        "name": "Vanessa Matsui",
+        "actorName": "Jody Hall",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/7FjPxobiTy6F92PGlpcTzxD8M7X.jpg"
+      },
+      {
+        "name": "Carlos Gonzalez-Vio",
+        "actorName": "Simon Kurz",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/leuyhQVKrc5Y7KhSSX0YkHMecrc.jpg"
+      }
+    ],
+    "id": 86799
   },
   {
     "titreHdd": "the last ship 1 2 3 4 5",
@@ -807,7 +3346,86 @@
     "path": "K:\\SERIES\\The last ship 1 2 3 4 5",
     "folder": "The last ship 1 2 3 4 5",
     "category": "series",
-    "size": "18 Go"
+    "size": "18 Go",
+    "overview": "Après avoir passé plusieurs mois en Arctique pour une mission ultra-secrète, l'équipage de l'USS Nathan James, un destroyer de la United States Navy de classe Arleigh Burke, découvre avec horreur qu'une épidémie a décimé la majeure partie de la population mondiale. Le gouvernement des États-Unis n'existe plus. Protégés par les océans, le commandant et les 200 personnes sous ses ordres font partie des derniers survivants de la planète. Une scientifique présente à bord doit absolument trouver un vaccin avant l'extinction totale de l'espèce humaine…",
+    "release_date": "2014-06-22",
+    "genre_ids": [
+      10759,
+      18,
+      10765
+    ],
+    "vote_average": 6.814,
+    "original_language": "en",
+    "original_title": "The Last Ship",
+    "director": "Michael Bay",
+    "popularity": 525.606,
+    "vote_count": 888,
+    "actors": [
+      {
+        "name": "Eric Dane",
+        "actorName": "CO CDR Tom Chandler",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/wlL8P2Oe56UOZSXaxjqy9ujscCN.jpg"
+      },
+      {
+        "name": "Adam Baldwin",
+        "actorName": "XO Mike Slattery",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/rtRCD2rl9k3RVgyv3cHaUJer0Ms.jpg"
+      },
+      {
+        "name": "Charles Parnell",
+        "actorName": "CMC Jeter",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/nBpkNLRm6v6Yw99GxCkHCMwA2Zg.jpg"
+      },
+      {
+        "name": "Travis Van Winkle",
+        "actorName": "Lt. Danny Green",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/thanvrjfpP9h8E9QmPbtutZoEHa.jpg"
+      },
+      {
+        "name": "Christina Elmore",
+        "actorName": "Lt. Alisha Granderson",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/fhFhOQLV2JZNIZLaPsIYuWOVbL9.jpg"
+      },
+      {
+        "name": "Jocko Sims",
+        "actorName": "LT. Carlton Burk",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/3SxdW3tSFaZomYbxvxwgbnX8nhX.jpg"
+      },
+      {
+        "name": "Kevin Michael Martin",
+        "actorName": "Miller",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/upN0fGVyzJKHLSmyJQl2lO7QzqL.jpg"
+      },
+      {
+        "name": "Michael Curran-Dorsano",
+        "actorName": "Gator",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/ni3whYxZCKyh0giOf5IbSvUjJdD.jpg"
+      },
+      {
+        "name": "Jodie Turner-Smith",
+        "actorName": "Sgt. Azima Kandie",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/70w93LWJqpt0Ibw0mqNc6NKNA8U.jpg"
+      }
+    ],
+    "id": 60802
   },
   {
     "titreHdd": "the walking dead- the ones who live  s01",
@@ -816,7 +3434,43 @@
     "path": "K:\\SERIES\\The Walking Dead- The Ones Who Live 2024 S01",
     "folder": "The Walking Dead- The Ones Who Live 2024 S01",
     "category": "series",
-    "size": "2 Go"
+    "size": "2 Go",
+    "overview": "Séparés par la distance et par les fantômes de ceux qu'ils étaient avant, Rick et Michonne tentent de se retrouver dans un autre monde régi par la guerre contre les morts.",
+    "release_date": "2024-02-25",
+    "genre_ids": [
+      10765,
+      18
+    ],
+    "vote_average": 8.19,
+    "original_language": "en",
+    "original_title": "The Walking Dead: The Ones Who Live",
+    "director": "Christie Colliopoulos",
+    "popularity": 454.496,
+    "vote_count": 310,
+    "actors": [
+      {
+        "name": "Andrew Lincoln",
+        "actorName": "Rick Grimes",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/gwUZjA4GOxalzxqn1gi9VgRiZOu.jpg"
+      },
+      {
+        "name": "Danai Gurira",
+        "actorName": "Michonne",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/wpvo1vZosUOSRONP5u8SxrCY18s.jpg"
+      },
+      {
+        "name": "Pollyanna McIntosh",
+        "actorName": "Jadis Stokes",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/n9jfF6pEutTz6qeofHFz2mxh95e.jpg"
+      }
+    ],
+    "id": 206586
   },
   {
     "titreHdd": "vampires diaries",
@@ -866,7 +3520,71 @@
     "path": "K:\\SERIES\\Vampires diaries",
     "folder": "Vampires diaries",
     "category": "series",
-    "size": "57 Go"
+    "size": "57 Go",
+    "overview": "Quatre mois après le tragique accident de voiture qui a tué leurs parents, Elena Gilbert, 17 ans, et son frère Jeremy, 15 ans, essaient encore de s'adapter à cette nouvelle réalité. Belle et populaire, l'adolescente poursuit ses études au Mystic Falls High en s'efforçant de masquer son chagrin. Elena est immédiatement fascinée par Stefan et Damon Salvatore, deux frères que tout oppose. Elle ne tarde pas à découvrir qu'ils sont en fait des vampires...",
+    "release_date": "2009-09-10",
+    "genre_ids": [
+      18,
+      10765
+    ],
+    "vote_average": 8.337,
+    "original_language": "en",
+    "original_title": "The Vampire Diaries",
+    "director": "Julie Plec",
+    "popularity": 1769.693,
+    "vote_count": 8711,
+    "actors": [
+      {
+        "name": "Paul Wesley",
+        "actorName": "Stefan Salvatore / Silas",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/hBQ8yYZpjRNDbzfR0r83VTmPooJ.jpg"
+      },
+      {
+        "name": "Ian Somerhalder",
+        "actorName": "Damon Salvatore",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/x0pfPTV0ryFmhz4fju3Depx4NLp.jpg"
+      },
+      {
+        "name": "Kat Graham",
+        "actorName": "Bonnie Bennett",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/wQVfxes4aYuAMnc4kkkTTW2akDs.jpg"
+      },
+      {
+        "name": "Candice King",
+        "actorName": "Caroline Forbes",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/qDbwM5IQhriaYELdb4xOJALMoxV.jpg"
+      },
+      {
+        "name": "Zach Roerig",
+        "actorName": "Matt Donovan",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/mxWxwVzx5vG6wwg2z9ELtbqtz7e.jpg"
+      },
+      {
+        "name": "Michael Malarkey",
+        "actorName": "Enzo St. John",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/731hKJr8wnFf2OEx6wMcAQyO1g6.jpg"
+      },
+      {
+        "name": "Matthew Davis",
+        "actorName": "Alaric Saltzman",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/9QsCJBQ45iR5R36F0LAuzvY1zuO.jpg"
+      }
+    ],
+    "id": 18165
   },
   {
     "titreHdd": "vikings",
@@ -906,7 +3624,65 @@
     "path": "K:\\SERIES\\Vikings",
     "folder": "Vikings",
     "category": "series",
-    "size": "33 Go"
+    "size": "33 Go",
+    "overview": "Les exploits d'un groupe de vikings de la fin du 8ème siècle jusqu'au milieu du 11ème, mené par Ragnar Lodbrok, l'un des plus populaires héros viking de tous les temps, qui a régné quelques temps sur le Danemark et la Suède...",
+    "release_date": "2013-03-03",
+    "genre_ids": [
+      10759,
+      18,
+      10768
+    ],
+    "vote_average": 8.092,
+    "original_language": "en",
+    "original_title": "Vikings",
+    "director": "Michael Hirst",
+    "popularity": 1022.877,
+    "vote_count": 6688,
+    "actors": [
+      {
+        "name": "Alex Høgh Andersen",
+        "actorName": "Ivar Lothbrok / Ivar the Boneless",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/wqtvSvC80cSbFCExptqC2s1DZO5.jpg"
+      },
+      {
+        "name": "Jordan Patrick Smith",
+        "actorName": "Ubbe Lothbrok",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/bGPLRUkjCHm2j8VspCOgL6mti4b.jpg"
+      },
+      {
+        "name": "Marco Ilsø",
+        "actorName": "Hvitserk Lothbrok",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/4p6Mz91vuUugQHNw4Zv2bmw5liJ.jpg"
+      },
+      {
+        "name": "Peter Franzén",
+        "actorName": "King Harald Finehair",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/8ltJpmctAnBxCuG725N2GclwWMZ.jpg"
+      },
+      {
+        "name": "Georgia Hirst",
+        "actorName": "Torvi",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/lnUhfcYBq1iCC5g8M6YmH4fhhTl.jpg"
+      },
+      {
+        "name": "Danila Kozlovsky",
+        "actorName": "Prince Oleg of Novgorod",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/3dlTFMCwr3OdWqfmPhRlcFAIh00.jpg"
+      }
+    ],
+    "id": 44217
   },
   {
     "titreHdd": "vikings valhalla 1 2",
@@ -926,7 +3702,64 @@
     "path": "K:\\SERIES\\Vikings Valhalla 1 2",
     "folder": "Vikings Valhalla 1 2",
     "category": "series",
-    "size": "8 Go"
+    "size": "8 Go",
+    "overview": "100 ans après les premiers vikings, l'histoire de leurs descendants, parmi lesquels les légendaires Leif Erikson, Freydis, Harald Harada et William Le Conquérant, des hommes et des femmes prêts à tout pour survivre dans une Europe en pleine mutation...  Spin-off de Vikings.",
+    "release_date": "2022-02-25",
+    "genre_ids": [
+      10759,
+      18,
+      10768
+    ],
+    "vote_average": 7.8,
+    "original_language": "en",
+    "original_title": "Vikings: Valhalla",
+    "popularity": 340.805,
+    "vote_count": 758,
+    "actors": [
+      {
+        "name": "Sam Corlett",
+        "actorName": "Leif Eriksson",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/9SQHs53DKbyn0JwdyxIeuiCiuYb.jpg"
+      },
+      {
+        "name": "Frida Gustavsson",
+        "actorName": "Freydis Eriksdotter",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/jtD5lJSSAc61AWCNKGlQmlyYNWv.jpg"
+      },
+      {
+        "name": "Leo Suter",
+        "actorName": "Harald Sigurdsson",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/1lnGDK8v6Is20aYxbJZyxk8Xmnl.jpg"
+      },
+      {
+        "name": "Jóhannes Haukur Jóhannesson",
+        "actorName": "Olaf Haraldson",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/oqZftP0WS1rD5NFpR7vLp6JU52I.jpg"
+      },
+      {
+        "name": "Laura Berlin",
+        "actorName": "Emma of Normandy",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/3mRCBVYZi0412PmS8IkrjXhXFmp.jpg"
+      },
+      {
+        "name": "David Oakes",
+        "actorName": "Earl Godwin",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/7NtAET6hvuQTGFAzfchTr3Z4iJ.jpg"
+      }
+    ],
+    "id": 116135
   },
   {
     "titreHdd": "virgin river  1 2 3 4",
@@ -962,6 +3795,54 @@
     "folder": "Virgin River 2019 1 2 3 4",
     "category": "series",
     "size": "15 Go",
-    "poster_path": "K:\\SERIES\\Virgin River 2019 1 2 3 4\\Virgin river.jpg"
+    "poster_path": "K:\\SERIES\\Virgin River 2019 1 2 3 4\\Virgin river.jpg",
+    "overview": "En quête d'une nouvelle vie, une infirmière quitte Los Angeles pour une petite ville du nord de la Californie. Elle n'est pas au bout de ses surprises...",
+    "release_date": "2019-12-06",
+    "genre_ids": [
+      18
+    ],
+    "vote_average": 7.968,
+    "original_language": "en",
+    "original_title": "Virgin River",
+    "popularity": 127.988,
+    "vote_count": 483,
+    "actors": [
+      {
+        "name": "Alexandra Breckenridge",
+        "actorName": "Melinda Monroe",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/tyR52cqImLCFwT8otR15Edvih9b.jpg"
+      },
+      {
+        "name": "Martin Henderson",
+        "actorName": "Jack Sheridan",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/avJFARzEPaB24rKQUYLinGQqilL.jpg"
+      },
+      {
+        "name": "Colin Lawrence",
+        "actorName": "John \"Preacher\" Middleton",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/aFAfFIKB10Kem86i5KbAfdUByLK.jpg"
+      },
+      {
+        "name": "Benjamin Hollingsworth",
+        "actorName": "Dan Brady",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/5dR2AbGdWHUsOu1HkW3x5fsTebw.jpg"
+      },
+      {
+        "name": "Lauren Hammersley",
+        "actorName": "Charmaine Roberts",
+        "department": "Acting",
+        "job": "",
+        "profile_path": "/hKBT7ynMe1mKfUWcNYjky2Xqmn9.jpg"
+      }
+    ],
+    "id": 88324
   }
 ]

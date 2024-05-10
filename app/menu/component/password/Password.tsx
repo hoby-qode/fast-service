@@ -34,7 +34,7 @@ const Password = () => {
       <div className={styles.password_state}>
         <Button onClick={() => alert('TODO')} className='w-full'>
           <TbLoader style={{ marginRight: '5px' }} />
-          Changer votre mot de passe
+          Changer ton mot de passe
         </Button>
       </div>
     </div>

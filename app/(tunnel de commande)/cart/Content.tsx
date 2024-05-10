@@ -12,7 +12,7 @@ const Content = ({products}:{products:any}) => {
         products.length > 0 ? (
           <TableProductList products={products} />
         ) : (
-          "Il n&apos;y a pas d&apos;élément dans votre panier, faites vos achats içi"
+          "Il n&apos;y a pas d&apos;élément dans ton panier, faites vos achats içi"
         )
       ) : (
         'loading..'

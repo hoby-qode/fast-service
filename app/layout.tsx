@@ -6,7 +6,7 @@ import FontFamily from './fontFamily'
 import Provider from './next-auth/Provider'
 
 export const metadata: Metadata = {
-  title: 'UIX Dev',
+  title: 'Fast service',
   description: 'Description de la page',
   manifest: '/manifest.json',
 }
@@ -27,7 +27,6 @@ export default function RootLayout({
             {children}
             {modal}
             <div id="modal-root" />
-            {/* <Toaster /> */}
           </Provider>
         </Theme>
       </body>

@@ -99,7 +99,7 @@ const Commande = () => {
                     <Button btn="secondary" href="/produits" isLink={true}>Retour à la boutique</Button>
                   </div>
                 </div>
-                <h3 style={{fontSize: '3rem', lineHeight: '140%'}}>Il n&apos;y a pas d&apos;élément dans votre panier. </h3>
+                <h3 style={{fontSize: '3rem', lineHeight: '140%'}}>Il n&apos;y a pas d&apos;élément dans ton panier. </h3>
               </div>
             </div>
           }

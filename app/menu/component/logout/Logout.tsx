@@ -10,7 +10,7 @@ const Logout = () => {
     <div className={styles.logout}>
       <Button btn="danger" onClick={() => alert('TODO')}>
         <AiOutlineLogout style={{ marginRight: '5px' }} />
-        Déconnecter votre compte
+        Déconnecter ton compte
       </Button>
     </div>
   )
