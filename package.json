@@ -14,8 +14,6 @@
     "@apollo/client": "^3.9.4",
     "@ducanh2912/next-pwa": "^10.2.2",
     "@types/node": "18.15.11",
-    "@types/react": "^18.2.37",
-    "@types/react-dom": "^18.2.18",
     "@vercel/postgres": "^0.5.1",
     "animejs": "^3.2.1",
     "cookies-next": "^4.1.1",
@@ -42,8 +40,15 @@
     "zustand": "^4.4.7"
   },
   "devDependencies": {
+    "@types/animejs": "^3.1.12",
+    "@types/eslint": "^8.56.10",
     "@types/gsap": "^3.0.0",
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.0",
+    "@types/react-infinite-scroll-component": "^5.0.0",
     "@types/react-slick": "^0.23.13",
+    "@types/slick-carousel": "^1.6.40",
+    "@types/sqlite3": "^3.1.11",
     "@types/uuid": "^9.0.7"
   }
 }
