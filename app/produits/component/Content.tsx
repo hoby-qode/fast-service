@@ -1,26 +1,31 @@
 'use client'
-import { useSearchParams } from 'next/navigation'
-import React, {  useEffect,  useState } from 'react'
-import { motion, useAnimation } from 'framer-motion'
-import SearchForm from './SearchForm'
-import InfiniteScrollContent from './InfiniteScrollContent'
-import OrderBy from '@/src/features/OrderBy'
-import Filter from '@/src/features/Filter'
-import { MdSort } from "react-icons/md";
-import { FilterIcon } from 'lucide-react'
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Button } from "@/components/ui/button"
+import { Button } from '@/components/ui/button'
 import {
   Drawer,
   DrawerClose,
   DrawerContent,
-  DrawerDescription,
   DrawerFooter,
-  DrawerHeader,
-  DrawerTitle,
   DrawerTrigger,
-} from "@/components/ui/drawer"
-const Content = ({ products, tags, pageInfo }: { products: any; tags: any;pageInfo:any }) => {
+} from '@/components/ui/drawer'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import Filter from '@/src/features/Filter'
+import OrderBy from '@/src/features/OrderBy'
+import { FilterIcon } from 'lucide-react'
+import { useSearchParams } from 'next/navigation'
+import { useEffect, useState } from 'react'
+import InfiniteScrollContent from './InfiniteScrollContent'
+import SearchForm from './SearchForm'
+const Content = ({
+  products,
+  tags,
+  pageInfo,
+  category,
+}: {
+  products: any
+  tags: any
+  pageInfo: any
+  category: string
+}) => {
   const searchParams = useSearchParams()
   const [datas, setDatas] = useState([...products])
   const [order, setOrder] = useState(searchParams.get('order') ?? null)
@@ -28,7 +33,6 @@ const Content = ({ products, tags, pageInfo }: { products: any; tags: any;pageIn
   const [searchText, setSearchText] = useState('')
   const [showMenuFilter, setShowMenuFilter] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
-  console.log(tags)
   useEffect(() => {
     if (order) {
       handleChangeOrder(order)
@@ -36,8 +40,7 @@ const Content = ({ products, tags, pageInfo }: { products: any; tags: any;pageIn
       handleChangeFilter(genre)
     }
   }, [])
-  
-  
+
   /* TODO: il manque la gestion du filtre au moment ou l'utilisateur actualise la page */
   function handleChangeOrder(orderBy: string) {
     setOrder(orderBy)
@@ -68,8 +71,8 @@ const Content = ({ products, tags, pageInfo }: { products: any; tags: any;pageIn
   }
 
   const handleSubmit = async (event) => {
-    event.preventDefault();
-    const searchTerm = event.target.s.value;
+    event.preventDefault()
+    const searchTerm = event.target.s.value
     if (searchTerm !== '') {
       try {
         const query = `
@@ -107,33 +110,36 @@ const Content = ({ products, tags, pageInfo }: { products: any; tags: any;pageIn
               }
             }
           }
-        }`;
-        const response = await fetch(`${process.env.NEXT_PUBLIC_GRAPHQL_ENDPOINT}`, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json',
+        }`
+        const response = await fetch(
+          `${process.env.NEXT_PUBLIC_GRAPHQL_ENDPOINT}`,
+          {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              Accept: 'application/json',
+            },
+            body: JSON.stringify({
+              query,
+              variables: {
+                searchTerm: searchTerm,
+              },
+            }),
+            cache: 'no-store',
           },
-          body: JSON.stringify({
-            query,
-            variables: {
-              searchTerm: searchTerm
-            }
-          }),
-          cache: 'no-store'
-        });
-        const responseData = await response.json();
-        const products = responseData.data.products.nodes;
-        setDatas(products);
-        pageInfo.hasNextPage = false;
+        )
+        const responseData = await response.json()
+        const products = responseData.data.products.nodes
+        setDatas(products)
+        pageInfo.hasNextPage = false
       } catch (error) {
-        console.error('Erreur lors de la requête AJAX :', error);
+        console.error('Erreur lors de la requête AJAX :', error)
       }
     } else {
       // Remettre les données initiales si le champ de recherche est vide
-      setDatas(products);
+      setDatas(products)
     }
-  };
+  }
   const handleChangeFilter = async (genre: string) => {
     setGenre(genre)
     if (genre) {
@@ -177,61 +183,77 @@ const Content = ({ products, tags, pageInfo }: { products: any; tags: any;pageIn
               }
             }
           }
-        }`;
-  
-        const response = await fetch(`${process.env.NEXT_PUBLIC_GRAPHQL_ENDPOINT}`, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json',
+        }`
+
+        const response = await fetch(
+          `${process.env.NEXT_PUBLIC_GRAPHQL_ENDPOINT}`,
+          {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              Accept: 'application/json',
+            },
+            body: JSON.stringify({
+              query,
+            }),
+            cache: 'no-store',
           },
-          body: JSON.stringify({
-            query,
-          }),
-          cache: 'no-store'
-        });
-  
-        const responseData = await response.json();
-        const filteredProducts = responseData.data.hqTags.nodes[0].products.nodes;
-        setDatas(filteredProducts);
-        pageInfo.hasNextPage = false;
+        )
+
+        const responseData = await response.json()
+        const filteredProducts =
+          responseData.data.hqTags.nodes[0].products.nodes
+        setDatas(filteredProducts)
+        pageInfo.hasNextPage = false
       } catch (error) {
-        console.error('Erreur lors de la requête AJAX :', error);
+        console.error('Erreur lors de la requête AJAX :', error)
       }
     } else {
       // Remettre les données initiales si le champ de recherche est vide
-      setDatas(products);
+      setDatas(products)
     }
   }
-  
+
   return (
     <div className="container mt-0 mt-md-5">
       <div className="row">
-        
         <div className="col-md-3">
-          <div className='d-flex justify-content-between mb-5 space-x-4'>
+          <div className="d-flex justify-content-between mb-5 space-x-4">
             {/* <button onClick={() => setShowMenuFilter(!showMenuFilter)} className={styles.menuFilter}><TbArrowsSort />Trier par </button>*/}
-            <SearchForm handleSubmit={handleSubmit}  />
+            <SearchForm handleSubmit={handleSubmit} />
             <Drawer open={isOpen} onOpenChange={setIsOpen}>
               <DrawerTrigger asChild>
-                <Button style={{minHeight: '45px',boxShadow: "var(--shadow)"}} className='bg-background'><FilterIcon color="hsl(var(--primary))"/></Button> 
+                <Button
+                  style={{ minHeight: '45px', boxShadow: 'var(--shadow)' }}
+                  className="bg-background"
+                >
+                  <FilterIcon color="hsl(var(--primary))" />
+                </Button>
               </DrawerTrigger>
               <DrawerContent>
                 <div className="mx-auto w-full mt-5">
                   <div className="container mb-5">
                     <Tabs defaultValue="filter">
                       <TabsList className="w-full">
-                        <TabsTrigger value="filter" className="w-50">Filtrer : </TabsTrigger>
-                        <TabsTrigger value="order" className="w-50">Trier: </TabsTrigger>
+                        <TabsTrigger value="filter" className="w-50">
+                          Filtrer :{' '}
+                        </TabsTrigger>
+                        <TabsTrigger value="order" className="w-50">
+                          Trier:{' '}
+                        </TabsTrigger>
                       </TabsList>
                       <TabsContent value="filter">
                         <Filter
-                        onChangeFilter={handleChangeFilter}
-                        tags={tags}
-                        genre={genre}/>
+                          onChangeFilter={handleChangeFilter}
+                          tags={tags}
+                          genre={genre}
+                        />
                       </TabsContent>
                       <TabsContent value="order">
-                        <OrderBy onChangeOrder={handleChangeOrder} order={order} />
+                        <OrderBy
+                          onChangeOrder={handleChangeOrder}
+                          order={order}
+                        />
                       </TabsContent>
                     </Tabs>
                   </div>
@@ -244,18 +266,21 @@ const Content = ({ products, tags, pageInfo }: { products: any; tags: any;pageIn
               </DrawerContent>
             </Drawer>
           </div>
-          
         </div>
         <div className="col-md-9">
           {datas.length > 0 ? (
-            <InfiniteScrollContent datas={datas} pageInfo={pageInfo} onSetDatas={setDatas} />
+            <InfiniteScrollContent
+              datas={datas}
+              pageInfo={pageInfo}
+              onSetDatas={setDatas}
+              category={category}
+            />
           ) : (
             "Il n'y a pas d'éléments dans cette catégorie"
           )}
         </div>
       </div>
     </div>
-
   )
 }
 

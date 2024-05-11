@@ -1,62 +1,71 @@
 'use client'
 
-import styles from './AddCart.module.css'
-import { FC } from 'react'
-import { ScrollArea } from "@/components/ui/scroll-area"
-import { Separator } from "@/components/ui/separator"
-import { useState } from 'react'
+import { Checkbox } from '@/components/ui/checkbox'
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/components/ui/popover"
-import { Button, buttonVariants } from '../ui/button'
-import { Checkbox } from "@/components/ui/checkbox"
-
+} from '@/components/ui/popover'
+import { ScrollArea } from '@/components/ui/scroll-area'
+import { Separator } from '@/components/ui/separator'
+import { FC, useState } from 'react'
+import { Button } from '../ui/button'
+import styles from './AddCart.module.css'
 interface CartItem {
-  id: number,
-  title: string,
-  nbSaison?: number,
-  category: string,
+  id: number
+  title: string
+  nbSaison?: number
+  category: string
   saisons?: []
 }
 interface AddCartProps {
-  item: CartItem,
-  isInCart?: boolean | undefined,
-  onAdd?: () => void,
+  item: CartItem
+  isInCart?: boolean | undefined
+  onAdd?: () => void
   onRemove?: () => void
   onUpdate?: () => void
 }
-const AddCart:FC<AddCartProps> = ({ item, isInCart, onAdd, onRemove, onUpdate }) => {
-  const ArrayNbSaison = item.nbSaison ? Array.from({ length: item.nbSaison }, (v, i) => i + 1) : [];
-  const [selectedSaisons, setSelectedSaisons] = useState<number[]>([]);
+const AddCart: FC<AddCartProps> = ({
+  item,
+  isInCart,
+  onAdd,
+  onRemove,
+  onUpdate,
+}) => {
+  const ArrayNbSaison = item.nbSaison
+    ? Array.from({ length: item.nbSaison }, (v, i) => i + 1)
+    : []
+  const [selectedSaisons, setSelectedSaisons] = useState<number[]>([])
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    // Ajouter les saisons sélectionnées au panier ici
-    console.log("Saisons sélectionnées :", selectedSaisons);
-    //add selectedSaison in array item 
-    if(item) {
+    e.preventDefault()
+    if (item && selectedSaisons.length > 0) {
       item['saisons'] = selectedSaisons
+      !isInCart ? onAdd() : onUpdate()
+    } else {
+      alert('Vous devez choisir un ou plusieurs saisons')
     }
-    !isInCart ? onAdd() : onUpdate()
-  };
+  }
   const handleSaisonSelect = (saison: number) => {
-    setSelectedSaisons(prevSaisons => {
+    setSelectedSaisons((prevSaisons) => {
       if (prevSaisons.includes(saison)) {
-        return prevSaisons.filter(prevSaison => prevSaison !== saison);
+        return prevSaisons.filter((prevSaison) => prevSaison !== saison)
       } else {
-        return [...prevSaisons, saison];
+        return [...prevSaisons, saison]
       }
-    });
-  };
-  return (
-      item.category != 'series' || isInCart ? <button
+    })
+  }
+  return item.category != 'series' || isInCart ? (
+    <button
+      className={`${styles.addCart} ${isInCart && styles.active}`}
+      onClick={!isInCart ? onAdd : onRemove}
+    >
+      <span>+</span>
+    </button>
+  ) : (
+    <Popover>
+      <PopoverTrigger
         className={`${styles.addCart} ${isInCart && styles.active}`}
-        onClick={!isInCart ? onAdd :  onRemove}
       >
-        <span>+</span>
-      </button> : <Popover>
-      <PopoverTrigger className={`${styles.addCart} ${isInCart && styles.active}`}>
         <span>+</span>
       </PopoverTrigger>
       <PopoverContent>
@@ -64,14 +73,16 @@ const AddCart:FC<AddCartProps> = ({ item, isInCart, onAdd, onRemove, onUpdate })
           <h3 className="font-bold mb-2">Saisons disponible</h3>
           <form onSubmit={(e) => handleSubmit(e)}>
             {ArrayNbSaison.map((nombre, index) => (
-              <div className='' key={index}>
-                <Saison saison={index + 1} onSelect={() => handleSaisonSelect(index + 1)} isSelected={selectedSaisons.includes(index + 1)} />
+              <div className="" key={index}>
+                <Saison
+                  saison={index + 1}
+                  onSelect={() => handleSaisonSelect(index + 1)}
+                  isSelected={selectedSaisons.includes(index + 1)}
+                />
                 <Separator className="my-2" />
               </div>
             ))}
-            <Button type='submit'>
-              Ajouter au panier
-            </Button>
+            <Button type="submit">Ajouter au panier</Button>
           </form>
         </ScrollArea>
       </PopoverContent>
@@ -79,15 +90,19 @@ const AddCart:FC<AddCartProps> = ({ item, isInCart, onAdd, onRemove, onUpdate })
   )
 }
 interface SaisonProps {
-  saison: number,
-  onSelect: () => void,
+  saison: number
+  onSelect: () => void
   isSelected: boolean
 }
 
 const Saison: FC<SaisonProps> = ({ saison, onSelect, isSelected }) => {
   return (
     <div className="saison">
-      <Checkbox id={`saison-${saison}`} checked={isSelected} onCheckedChange={onSelect} />
+      <Checkbox
+        id={`saison-${saison}`}
+        checked={isSelected}
+        onCheckedChange={onSelect}
+      />
       <label
         htmlFor={`saison-${saison}`}
         className="text-base font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 position-static m-0 ml-1 bg-inherit pl-1"

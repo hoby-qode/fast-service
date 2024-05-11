@@ -1,13 +1,9 @@
-import React from 'react'
-import Content from './Content'
-import { cookies } from 'next/headers'
-import { redirect } from 'next/navigation'
 import { getCookie } from 'cookies-next'
-import { useSession } from 'next-auth/react'
+import { cookies } from 'next/headers'
 
 const Cart = async () => {
   // const session = cookies().get('session')
-  const session = getCookie("session", {cookies})
+  const session = getCookie('session', { cookies })
   // const { data: session } = useSession();
   // if(!session) {
   //   redirect('/')
@@ -15,7 +11,7 @@ const Cart = async () => {
   const fetchData = async (Ids: any) => {
     // const query = `
     // query QueryProductBySlug{
-    //   products(where: {in: [${Ids}]} 
+    //   products(where: {in: [${Ids}]}
     //     last: 500) {
     //       nodes {
     //           databaseId
@@ -52,7 +48,7 @@ const Cart = async () => {
     //                 prix
     //               }
     //             }
-    //           } 
+    //           }
     //       }
     //   }
     // }`
@@ -81,13 +77,13 @@ const Cart = async () => {
     // }
     try {
       const res = await fetch(
-        `${
-          process.env.NEXT_PUBLIC_GRAPHQL_ENDPOINT
-        }?query=${encodeURIComponent(query)}`
+        `${process.env.NEXT_PUBLIC_GRAPHQL_ENDPOINT}?query=${encodeURIComponent(
+          query,
+        )}`,
       )
-      
+
       if (!res.ok) {
-        throw new Error('Erreur lors de la récupération des données',)
+        throw new Error('Erreur lors de la récupération des données')
       }
       const { data } = await res.json()
       return data
@@ -95,9 +91,7 @@ const Cart = async () => {
       console.error('Erreur lors de la récupération des données')
     }
   }
-  const data = await fetchData([46,45,42,27,47,49,28,44])
-  console.log(data);
-  
+  const data = await fetchData([46, 45, 42, 27, 47, 49, 28, 44])
   // const products = data.products.nodes
   return (
     <div>

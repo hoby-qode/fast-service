@@ -1,67 +1,60 @@
 'use client'
-import React, { useContext, useEffect, useState, useRef } from 'react'
 import Image from 'next/image'
+import React, { useEffect, useRef } from 'react'
 
-import styles from './HeaderTop.module.css'
-import {
-  IoSearchOutline,
-  IoCartOutline,
-  IoLogInOutline,
-  IoLogOutOutline,
-} from 'react-icons/io5'
 import LinkIcon from '@/components/LinkIcon'
-import Link from 'next/link'
-import NavigatorDesktop from '../navigatorDesktop'
-import { signIn, signOut, useSession } from "next-auth/react";
-import { useShoppingCart } from '@/src/store/useShoppingCart'
-import { DropdownMenuCheckboxItemProps } from "@radix-ui/react-dropdown-menu"
-import { createAvatar } from '@dicebear/core';
-import { notionists } from '@dicebear/collection';
-import { Button } from "@/components/ui/button"
 import BtnIcon from '@/components/btnIcon'
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import {
   DropdownMenu,
   DropdownMenuContent,
-  DropdownMenuTrigger,
+  DropdownMenuGroup,
   DropdownMenuItem,
   DropdownMenuSeparator,
-  DropdownMenuLabel,
-  DropdownMenuGroup
-} from "@/components/ui/dropdown-menu"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu'
+import { useShoppingCart } from '@/src/store/useShoppingCart'
+import { notionists } from '@dicebear/collection'
+import { createAvatar } from '@dicebear/core'
+import { DropdownMenuCheckboxItemProps } from '@radix-ui/react-dropdown-menu'
 import { LogOut, Settings } from 'lucide-react'
- 
-type Checked = DropdownMenuCheckboxItemProps["checked"]
+import { signIn, signOut, useSession } from 'next-auth/react'
+import Link from 'next/link'
+import { IoCartOutline, IoLogInOutline, IoSearchOutline } from 'react-icons/io5'
+import NavigatorDesktop from '../navigatorDesktop'
+import styles from './HeaderTop.module.css'
+
+type Checked = DropdownMenuCheckboxItemProps['checked']
 
 const HeaderTop = () => {
-  const { items } = useShoppingCart();
-  const { data: session } = useSession();
-  type Checked = DropdownMenuCheckboxItemProps["checked"]
+  const { items } = useShoppingCart()
+  const { data: session } = useSession()
+  type Checked = DropdownMenuCheckboxItemProps['checked']
   const [showStatusBar, setShowStatusBar] = React.useState<Checked>(true)
   const [showActivityBar, setShowActivityBar] = React.useState<Checked>(false)
   const [showPanel, setShowPanel] = React.useState<Checked>(false)
-  
+
   const avatar = createAvatar(notionists, {
-    seed: session?.user ? session?.user.name :  undefined,
+    seed: session?.user ? session?.user.name : undefined,
     size: 128,
-  }).toDataUriSync();
-  const svg = avatar.toString();
+  }).toDataUriSync()
+  const svg = avatar.toString()
   const header = useRef(null)
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
         // Scrolling down
-        header.current.classList.add('scrolled-down');
+        header.current.classList.add('scrolled-down')
       } else {
         // At the top
-        header.current.classList.remove('scrolled-down');
+        header.current.classList.remove('scrolled-down')
       }
-    };
-    window.addEventListener('scroll', handleScroll);
+    }
+    window.addEventListener('scroll', handleScroll)
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+      window.removeEventListener('scroll', handleScroll)
+    }
   })
   return (
     <header className={styles.header} ref={header}>
@@ -74,8 +67,8 @@ const HeaderTop = () => {
                 alt="fast service"
                 width={185}
                 height={51}
-                priority
                 sizes="(max-width:768px) 100vw, 33vw"
+                style={{ height: 'auto' }}
               />
             </Link>
           </div>
@@ -121,63 +114,83 @@ const HeaderTop = () => {
                   <DropdownMenuTrigger asChild>
                     {session?.user ? (
                       <div className="menu-icon">
-                        <Avatar style={{height: "40px", width: "40px"}}>
-                          <AvatarImage src={svg}  />
+                        <Avatar style={{ height: '40px', width: '40px' }}>
+                          <AvatarImage src={svg} />
                           <AvatarFallback>CN</AvatarFallback>
                         </Avatar>
                       </div>
                     ) : (
-                      <BtnIcon icon={<IoLogInOutline style={{width: '23px',height: '23px',position: 'relative',right: '2px'}}/>}
-                      style="rounded"
-                      bgColor="secondary"
-                      color="primary" onClick={() => signIn()} />
-                    )} 
+                      <BtnIcon
+                        icon={
+                          <IoLogInOutline
+                            style={{
+                              width: '23px',
+                              height: '23px',
+                              position: 'relative',
+                              right: '2px',
+                            }}
+                          />
+                        }
+                        style="rounded"
+                        bgColor="secondary"
+                        color="primary"
+                        onClick={() => signIn()}
+                      />
+                    )}
                   </DropdownMenuTrigger>
-                  {session?.user ? <DropdownMenuContent className="user-account-container">
-                    <DropdownMenuGroup>
-                      <DropdownMenuItem>
-                        <Link href="#" className="menu-item">
-                          <div className="menu-icon">
-                            <Avatar style={{height: "40px", width: "40px"}}>
-                              <AvatarImage src={svg}  />
-                              <AvatarFallback>CN</AvatarFallback>
-                            </Avatar>
-                          </div>
-                          <strong>{session?.user?.name}</strong>
-                        </Link>
-                      </DropdownMenuItem>
-                    </DropdownMenuGroup>
+                  {session?.user ? (
+                    <DropdownMenuContent className="user-account-container">
+                      <DropdownMenuGroup>
+                        <DropdownMenuItem>
+                          <Link href="#" className="menu-item">
+                            <div className="menu-icon">
+                              <Avatar style={{ height: '40px', width: '40px' }}>
+                                <AvatarImage src={svg} />
+                                <AvatarFallback>CN</AvatarFallback>
+                              </Avatar>
+                            </div>
+                            <strong>{session?.user?.name}</strong>
+                          </Link>
+                        </DropdownMenuItem>
+                      </DropdownMenuGroup>
 
-                    <DropdownMenuSeparator />
+                      <DropdownMenuSeparator />
 
-                    <DropdownMenuGroup>
-                      <DropdownMenuItem>
-                        <Link href="#" onClick={() => signOut()} className="menu-item">
-                          <div className="menu-icon">
-                            <Settings />
-                          </div>
-                          <strong>
-                            Paramètres et confidentialité
-                          </strong>
-                        </Link>
-                      </DropdownMenuItem>
-                    </DropdownMenuGroup>
+                      <DropdownMenuGroup>
+                        <DropdownMenuItem>
+                          <Link
+                            href="#"
+                            onClick={() => signOut()}
+                            className="menu-item"
+                          >
+                            <div className="menu-icon">
+                              <Settings />
+                            </div>
+                            <strong>Paramètres et confidentialité</strong>
+                          </Link>
+                        </DropdownMenuItem>
+                      </DropdownMenuGroup>
 
-                    <DropdownMenuSeparator />
+                      <DropdownMenuSeparator />
 
-                    <DropdownMenuGroup>
-                      <DropdownMenuItem>
-                        <Link href="#" onClick={() => signOut()} className="menu-item">
-                          <div className="menu-icon">
-                            <LogOut />
-                          </div>
-                          <strong>
-                            Déconnexion
-                          </strong>
-                        </Link>
-                      </DropdownMenuItem>
-                    </DropdownMenuGroup>
-                  </DropdownMenuContent> : ''}
+                      <DropdownMenuGroup>
+                        <DropdownMenuItem>
+                          <Link
+                            href="#"
+                            onClick={() => signOut()}
+                            className="menu-item"
+                          >
+                            <div className="menu-icon">
+                              <LogOut />
+                            </div>
+                            <strong>Déconnexion</strong>
+                          </Link>
+                        </DropdownMenuItem>
+                      </DropdownMenuGroup>
+                    </DropdownMenuContent>
+                  ) : (
+                    ''
+                  )}
                 </DropdownMenu>
               </div>
             </li>

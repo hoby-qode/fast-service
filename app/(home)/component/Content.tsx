@@ -2,12 +2,10 @@
 import Card from '@/components/card'
 import CardInline from '@/components/cardInline'
 import CategoryFilter from '@/src/features/categoryFilter'
-import React, { useContext, useEffect } from 'react'
-import HeaderPage from './headerPage/HeaderPage'
+import Gender from '@/src/features/gender'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
-import { AuthContext } from '@/src/context/Mycontext'
-import Gender from '@/src/features/gender'
+import HeaderPage from './headerPage/HeaderPage'
 // import '~slick-carousel/slick/slick-theme.css'
 
 //TODO : Ajout de typage sur films, series et tags
@@ -45,8 +43,17 @@ const Content = ({
                   <Card
                     id={post.databaseId}
                     title={post.title}
+                    nbSaison={
+                      post.acf_product?.saisons &&
+                      post.acf_product?.saisons.length
+                    }
+                    category={post.categoriesProduct.nodes[0].slug}
                     slug={post.slug}
-                    date={post.acf_product.dateDeSortie}
+                    date={
+                      post.acf_product?.dateDeSortie
+                        ? post.acf_product.dateDeSortie
+                        : null
+                    }
                     featuredImage={post.featuredImage?.node.sourceUrl}
                     rating={post.acf_product.rating}
                   />
@@ -64,6 +71,11 @@ const Content = ({
                   <Card
                     id={post.databaseId}
                     title={post.title}
+                    nbSaison={
+                      post.acf_product?.saisons &&
+                      post.acf_product?.saisons.length
+                    }
+                    category={post.categoriesProduct.nodes[0].slug}
                     slug={post.slug}
                     date={
                       post.acf_product?.dateDeSortie
@@ -108,6 +120,11 @@ const Content = ({
                   <Card
                     id={post.databaseId}
                     title={post.title}
+                    nbSaison={
+                      post.acf_product?.saisons &&
+                      post.acf_product?.saisons.length
+                    }
+                    category={post.categoriesProduct.nodes[0].slug}
                     slug={post.slug}
                     date={
                       post.acf_product?.dateDeSortie
@@ -131,6 +148,11 @@ const Content = ({
                   <Card
                     id={post.databaseId}
                     title={post.title}
+                    nbSaison={
+                      post.acf_product?.saisons &&
+                      post.acf_product?.saisons.length
+                    }
+                    category={post.categoriesProduct.nodes[0].slug}
                     slug={post.slug}
                     date={
                       post.acf_product?.dateDeSortie
@@ -147,7 +169,7 @@ const Content = ({
         </div>
 
         <div id="genre">
-          <Gender genres={tags}/>
+          <Gender genres={tags} />
         </div>
       </div>
     </main>

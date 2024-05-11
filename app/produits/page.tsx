@@ -1,17 +1,23 @@
-import React from 'react'
+import { GetProductsAndCategories } from '@/src/query/productsCategories.query'
 import Content from './component/Content'
-import { findAllProductByCat } from '@/src/query/product.query'
-import { findAllTags } from '@/src/query/tags.query'
 
 const Products = async () => {
-  const products = await findAllProductByCat('films')
-  const tags = await findAllTags()
+  const data = await GetProductsAndCategories('all')
+  console.log(data)
+  const products = data.products.nodes
+  const tags = data.hqTags.nodes
+  const pageInfo = data.products.pageInfo
+  // console.log(products)
   return (
     <div>
-      <Content products={products[0].products.nodes} tags={tags} pageInfo={products[0].products.pageInfo} />
+      <Content
+        products={products}
+        tags={tags}
+        pageInfo={pageInfo}
+        category="all"
+      />
     </div>
   )
 }
 
 export default Products
-  

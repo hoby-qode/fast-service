@@ -1,40 +1,38 @@
 'use client'
-import React, { useContext, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
-import styles from './TableCommandeList.module.css'
-import CardInline from '@/components/cardInline'
-import useCommande from '@/src/hooks/useCommande'
-import { TbInfoCircle } from 'react-icons/tb'
-import Button from '@/components/button'
-import { AuthContext } from '@/src/context/Mycontext'
 import AddCart from '@/components/addCart'
-import { useShoppingCart } from '@/src/store/useShoppingCart'
-import { useFormStatus, useFormState } from 'react-dom'
+import Button from '@/components/button'
+import CardInline from '@/components/cardInline'
 import { validateCommandeApiRest } from '@/src/actions/commandeApiRest.action'
-import { toast } from 'react-toastify'
+import useCommande from '@/src/hooks/useCommande'
+import { useShoppingCart } from '@/src/store/useShoppingCart'
+import { useFormState, useFormStatus } from 'react-dom'
+import { TbInfoCircle } from 'react-icons/tb'
+import styles from './TableCommandeList.module.css'
 
 const TableCommandeList = ({ products }: { products: any }) => {
   const { subTotal, total, reduction, infoReduction } = useCommande(products)
   const [showInfoReduction, setShowInfoReduction] = useState(false)
-  const { items,removeItem,clearCart } = useShoppingCart();
-  let idsCart = [];
+  const { items, removeItem, clearCart } = useShoppingCart()
+  let idsCart = []
   if (items) {
-    idsCart = items.map(function(element:any) {
-        return element.id;
-    });
-  } 
+    idsCart = items.map(function (element: any) {
+      return element.id
+    })
+  }
   const [state, formAction] = useFormState(validateCommandeApiRest, null)
   useEffect(() => {
     if (state) {
-      clearCart();
+      clearCart()
     }
-  }, [state, clearCart]);
+  }, [state, clearCart])
   return (
     <div className={styles.table}>
       <div className={styles.table_header}>
         <h1>Mon panier</h1>
         <div className="text-right">
-          <form action={formAction} >
+          <form action={formAction}>
             <input type="hidden" name="data" value={idsCart} />
             <Submit />
           </form>
@@ -57,9 +55,10 @@ const TableCommandeList = ({ products }: { products: any }) => {
                 className={styles.table_td_close}
               >
                 <div className={styles.table_td_close_btn_container}>
-                  <AddCart 
-                  isInCart={true}
-                  onRemove={() => removeItem(post.databaseId)} />
+                  <AddCart
+                    isInCart={true}
+                    onRemove={() => removeItem(post.databaseId)}
+                  />
                 </div>
               </td>
               <td className={styles.table_td_card}>
@@ -139,7 +138,11 @@ const TableCommandeList = ({ products }: { products: any }) => {
   )
 }
 function Submit() {
-  const status = useFormStatus();
-  return <Button btn="secondary" isLink={false}>{status.pending ? 'Loading...' : 'Valider mon commande'}</Button>
+  const status = useFormStatus()
+  return (
+    <Button btn="secondary" isLink={false}>
+      {status.pending ? 'Loading...' : 'Valider mon commande'}
+    </Button>
+  )
 }
 export default TableCommandeList

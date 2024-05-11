@@ -1,44 +1,43 @@
 'use client'
-import React, { useContext, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
-import styles from './TableProductList.module.css'
-import CardInline from '@/components/cardInline'
-import useCommande from '@/src/hooks/useCommande'
-import { TbInfoCircle } from 'react-icons/tb'
-import Button from '@/components/button'
-import { AuthContext } from '@/src/context/Mycontext'
 import AddCart from '@/components/addCart'
-import { useShoppingCart } from '@/src/store/useShoppingCart'
-import { useFormStatus, useFormState } from 'react-dom'
+import Button from '@/components/button'
+import CardInline from '@/components/cardInline'
 import { validateCommandeApiRest } from '@/src/actions/commandeApiRest.action'
-import { toast } from 'react-toastify'
+import useCommande from '@/src/hooks/useCommande'
+import { useShoppingCart } from '@/src/store/useShoppingCart'
+import { useFormState, useFormStatus } from 'react-dom'
 import { AiFillEdit } from 'react-icons/ai'
+import { TbInfoCircle } from 'react-icons/tb'
+import styles from './TableProductList.module.css'
 
 const TableProductList = ({ products }: { products: any }) => {
-  const { subTotal, total, reduction, infoReduction } = useCommande(products)
+  const { items, removeItem, clearCart } = useShoppingCart()
+  const { subTotal, total, reduction, infoReduction } = useCommande(
+    products,
+    items,
+  )
   const [showInfoReduction, setShowInfoReduction] = useState(false)
-  const { items,removeItem,clearCart } = useShoppingCart();
-  let idsCart = [];
+  let idsCart = []
   if (items) {
-    idsCart = items.map(function(element:any) {
-        return element.id;
-    });
-  } 
+    idsCart = items.map(function (element: any) {
+      return element.id
+    })
+  }
   const [state, formAction] = useFormState(validateCommandeApiRest, null)
   useEffect(() => {
     if (state) {
-      clearCart();
+      clearCart()
     }
-    console.log(items)
-  }, [state, clearCart]);
+  }, [state, clearCart])
 
-  console.log("products", products)
   return (
     <div className={styles.table}>
       <div className={styles.table_header}>
         <h1>Mon panier</h1>
         <div className="text-right">
-          <form action={formAction} >
+          <form action={formAction}>
             <input type="hidden" name="data" value={idsCart} />
             <Submit />
           </form>
@@ -61,18 +60,21 @@ const TableProductList = ({ products }: { products: any }) => {
                 className={styles.table_td_close}
               >
                 <div className={styles.table_td_close_btn_container}>
-                  <AddCart 
+                  <AddCart
                     item={{
                       id: post.databaseId,
                       title: post.title,
                       category: post.categoriesProduct.nodes[0].slug,
-                      nbSaison: post.acf_product.saisons && post.acf_product.saisons.length
+                      nbSaison:
+                        post.acf_product.saisons &&
+                        post.acf_product.saisons.length,
                     }}
                     isInCart={true}
-                    onRemove={() => removeItem(post.databaseId)} />
-                    <Button style={{padding: 0}}>
-                      <AiFillEdit />
-                    </Button>
+                    onRemove={() => removeItem(post.databaseId)}
+                  />
+                  <Button style={{ padding: 0 }}>
+                    <AiFillEdit />
+                  </Button>
                 </div>
               </td>
               <td className={styles.table_td_card}>
@@ -87,7 +89,9 @@ const TableProductList = ({ products }: { products: any }) => {
                   }
                   slug={post.slug}
                   rating={post.acf_product.rating}
-                  saisons={items.filter((i) => i.id === post.databaseId)[0].saisons}
+                  saisons={
+                    items.filter((i) => i.id === post.databaseId)[0]?.saisons
+                  }
                 />
               </td>
               <td className={styles.table_td_category}>
@@ -95,7 +99,11 @@ const TableProductList = ({ products }: { products: any }) => {
               </td>
               <td className="px-4" style={{ verticalAlign: 'top' }}>
                 <strong>
-                  {`${post.categoriesProduct.nodes[0].prix.prix} Ar`}
+                  {`${
+                    post.categoriesProduct.nodes[0].prix.prix *
+                    items.filter((i) => i.id === post.databaseId)[0]?.saisons
+                      .length
+                  } Ar`}
                 </strong>
               </td>
             </tr>
@@ -153,7 +161,11 @@ const TableProductList = ({ products }: { products: any }) => {
   )
 }
 function Submit() {
-  const status = useFormStatus();
-  return <Button btn="secondary" isLink={false}>{status.pending ? 'Loading...' : 'Valider mon commande'}</Button>
+  const status = useFormStatus()
+  return (
+    <Button btn="secondary" isLink={false}>
+      {status.pending ? 'Loading...' : 'Valider mon commande'}
+    </Button>
+  )
 }
 export default TableProductList

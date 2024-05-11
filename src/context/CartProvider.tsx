@@ -1,8 +1,6 @@
 'use client'
 import React, { useContext, useEffect, useState } from 'react'
 import { AuthContext, CartContext } from './Mycontext'
-import { ToastContainer, toast } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css'
 
 const CartProvider = ({ children }: { children: React.ReactNode }) => {
   const [nbCart, setNbCart] = useState(0)
@@ -19,10 +17,7 @@ const CartProvider = ({ children }: { children: React.ReactNode }) => {
     setNbCart,
   }
   return (
-    <CartContext.Provider value={contextValue}>
-      {children}
-      <ToastContainer />
-    </CartContext.Provider>
+    <CartContext.Provider value={contextValue}>{children}</CartContext.Provider>
   )
 }
 

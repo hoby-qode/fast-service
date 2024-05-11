@@ -6,7 +6,6 @@ import { useSearchParams } from 'next/navigation'
 import React, { useCallback, useEffect, useReducer, useState } from 'react'
 import styles from './Content.module.css'
 import { MdSort } from "react-icons/md";
-import { motion, useAnimation } from 'framer-motion'
 import { TbArrowsSort } from "react-icons/tb";
 import InfiniteScroll from 'react-infinite-scroll-component'
 /* TODO: typage de variable products */
