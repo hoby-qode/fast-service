@@ -1,3 +1,5 @@
+'use client'
+import { Toaster } from '@/components/ui/toaster'
 import HeaderTop from '@/src/features/headerTop'
 import Navigator from '@/src/features/navigator'
 import React from 'react'
@@ -12,6 +14,7 @@ export default function RootLayout({
       <HeaderTop />
       <Navigator />
       {children}
+      <Toaster />
     </main>
   )
 }

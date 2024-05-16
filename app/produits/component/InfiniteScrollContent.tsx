@@ -131,6 +131,7 @@ const InfiniteScrollContent = ({ datas, pageInfo, onSetDatas, category }) => {
       }
     }
   }
+  console.log('datas', datas)
   return (
     <InfiniteScroll
       dataLength={datas.length}
@@ -140,12 +141,15 @@ const InfiniteScrollContent = ({ datas, pageInfo, onSetDatas, category }) => {
     >
       <div className="row">
         {datas.map((post: any, key: number) => (
-          <div className="col-6 col-md-3 mb-4" key={key}>
+          <div className="col-6 col-md-3 mb-4 z-[50]" key={key}>
             <Card
               id={post.databaseId}
               title={post.title}
               nbSaison={
-                post.acf_product?.saisons && post.acf_product?.saisons.length
+                post.categoriesProduct.nodes[0].slug == 'series' &&
+                post.acf_product?.saisons
+                  ? post.acf_product?.saisons.length
+                  : 1
               }
               category={post.categoriesProduct.nodes[0].slug}
               slug={post.slug}

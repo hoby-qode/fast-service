@@ -3,13 +3,13 @@
   margin: 30px auto 80px auto;
 }
 .table table {
-  margin-bottom: 3rem;
-  border-radius: var(--radius);
+  border: 1px solid hsl(var(--border));
   padding: 2rem;
   background: #ffffff36;
   backdrop-filter: blur(50px);
-  border: 0;
   box-shadow: 0 15px 20px hsl(0deg 0% 0% / 5%);
+  border-radius: var(--radius);
+  display: block;
 }
 
 .cartTotal_item {
@@ -30,9 +30,9 @@
   max-width: 400px;
   margin-left: auto;
   padding: 20px;
-  margin-bottom: 20px;
-  background: #ffffff36;
+  margin-top: 40px;
   box-shadow: 0 15px 20px hsl(0deg 0% 0% / 5%);
+  margin-bottom: 20px;
 }
 .table_header {
   margin-top: 10rem;
@@ -49,25 +49,44 @@
 
 .table_td_card {
   vertical-align: baseline;
+  width: 50%;
 }
 .table_td_card > div {
   align-items: flex-start;
 }
+.table_thead {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
 .table_th_close {
   width: 10%;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 .table_th_product {
-  width: 65%;
+  width: 50%;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 .table_th_category {
-  width: 10%;
+  width: 15%;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .table_th_subtotal {
-  width: 15%;
+  width: 20%;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 .table_td_close {
   vertical-align: top;
+  width: 10%;
 }
 .table_td_close_btn_container {
   height: 75px;
@@ -82,19 +101,23 @@
   width: 30px;
   height: 30px;
   border-radius: 5px;
-  color: hsl(var(--light));
-  padding: 0;
+  color: hsl(var(--background));
   display: flex;
   align-items: center;
   justify-content: center;
-  text-decoration: none;
+  min-height: initial;
 }
 .table_td_close_btn_container > button:hover {
-  color: hsl(var(--primary));
+  color: hsl(var(--secondary));
+  border: 1px solid hsl(var(--secondary));
   background-color: hsl(var(--background));
+}
+.table_td_close_btn_container > button:hover span {
+  color: hsl(var(--secondary));
 }
 .table_td_category {
   vertical-align: top;
+  width: 15%;
 }
 @media screen and (max-width: 767px) {
   .table_th_category,

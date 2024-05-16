@@ -1,11 +1,12 @@
 const useCommande = (products, items) => {
   //TODO : Récupération du donnée prix film, animes, dramas et series dans le BO
-  let subTotal = products.reduce((acc, curVal) => {
-    return (
-      acc +
-      parseInt(curVal.categoriesProduct.nodes[0].prix.prix, 10) *
-        items.filter((i) => i.id === curVal.databaseId)[0]?.saisons.length
-    )
+  let subTotal = products.reduce((acc: number, curVal: any) => {
+    const prixUnit = curVal.categoriesProduct.nodes[0].prix.prix
+    const saisons = items?.filter((i: any) => i.id === curVal.databaseId)[0]
+      ?.saisons
+      ? items?.filter((i: any) => i.id === curVal.databaseId)[0]?.saisons.length
+      : 1
+    return acc + parseInt(prixUnit, 10) * saisons
   }, 0)
   let reduction = 0
   let nbBonusAgagner = 4
@@ -18,7 +19,7 @@ const useCommande = (products, items) => {
   }, [])
   newArray['series'] = products.reduce((acc, curVal) => {
     if (curVal.categoriesProduct.nodes[0].slug === 'series') {
-      const lengthSerie = items.filter((i) => i.id === curVal.databaseId)[0]
+      const lengthSerie = items?.filter((i) => i.id === curVal.databaseId)[0]
         ?.saisons.length
       for (let index = 0; index < lengthSerie; index++) {
         acc.push(curVal)

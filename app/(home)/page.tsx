@@ -1,8 +1,6 @@
+import { getAllProducts } from '@/src/query/home.query'
 import { Metadata } from 'next'
-import React from 'react'
-import { findAllTags } from '@/src/query/tags.query'
 import Content from './component/Content'
-import { findAllProductByCat } from '@/src/query/product.query'
 
 export const metadata: Metadata = {
   title: "Page d'Accueil ",
@@ -11,20 +9,18 @@ export const metadata: Metadata = {
 export const revalidate = false
 export const dynamic = 'force-static'
 export default async function Home() {
-  const films = await findAllProductByCat('films')
-  const series = await findAllProductByCat('series')
-  const animes = await findAllProductByCat('animes')
-  const dramas = await findAllProductByCat('dramas')
-
-  const tags = await findAllTags()
-
+  const datas = await getAllProducts()
+  const animes = datas.categoriesProduct.edges[0]?.node
+  const dramas = datas.categoriesProduct.edges[1]?.node
+  const films = datas.categoriesProduct.edges[2]?.node
+  const series = datas.categoriesProduct.edges[3]?.node
   return (
     <Content
       films={films}
       series={series}
       animes={animes}
       dramas={dramas}
-      tags={tags}
+      tags={datas.hqTags.nodes}
     />
   )
 }

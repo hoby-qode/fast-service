@@ -88,7 +88,7 @@ const FormSignin = () => {
           {errors.password && <span>Le mot de passe est obligatoire</span>}
         </div>
 
-        <Button type="submit" btn="primary" disabled={!loading}>
+        <Button type="submit" btn="primary" >
           S&apos;inscrire
         </Button>
         <p className="text-center mt-4" style={{color: '#fff'}}>

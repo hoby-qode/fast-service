@@ -7,7 +7,6 @@ import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import HeaderPage from './headerPage/HeaderPage'
 // import '~slick-carousel/slick/slick-theme.css'
-
 //TODO : Ajout de typage sur films, series et tags
 const Content = ({
   films,
@@ -29,16 +28,15 @@ const Content = ({
     slidesToScroll: 1,
     rows: 3,
   }
-
   return (
     <main>
       <HeaderPage />
       <div className="container">
         <div id="films">
-          <CategoryFilter title={films[0].name} categories={tags} />
-          {films[0].products.nodes.length > 0 && (
+          <CategoryFilter title={films.name} categories={tags} />
+          {films.products.nodes.length > 0 && (
             <div className="row">
-              {films[0].products.nodes.map((post: any, key: number) => (
+              {films.products.nodes.map((post: any, key: number) => (
                 <div className="col-6 col-md-3 mb-4" key={key}>
                   <Card
                     id={post.databaseId}
@@ -63,10 +61,10 @@ const Content = ({
           )}
         </div>
         <div id="series">
-          <CategoryFilter title={series[0].name} categories={tags} />
-          {series[0].products.nodes.length > 0 && (
+          <CategoryFilter title={series.name} categories={tags} />
+          {series.products.nodes.length > 0 && (
             <div className="row">
-              {series[0].products.nodes.map((post: any, key: number) => (
+              {series.products.nodes.map((post: any, key: number) => (
                 <div className="col-6 col-md-3 mb-4" key={key}>
                   <Card
                     id={post.databaseId}
@@ -93,7 +91,7 @@ const Content = ({
         <div id="plus-vendus">
           <h2>Le plus vendus</h2>
           <Slider {...settings}>
-            {films[0].products.nodes.map((post: any, key: number) => (
+            {films.products.nodes.map((post: any, key: number) => (
               <div key={key} className="mb-4">
                 <CardInline
                   featuredImage={post.featuredImage?.node.sourceUrl}
@@ -112,10 +110,9 @@ const Content = ({
           </Slider>
         </div>
         <div id="animes">
-          <CategoryFilter title={animes[0].name} categories={tags} />
-          {animes[0].products.nodes.length > 0 && (
+          {animes.products.nodes.length > 0 && (
             <div className="row">
-              {animes[0].products.nodes.map((post: any, key: number) => (
+              {animes.products.nodes.map((post: any, key: number) => (
                 <div className="col-6 col-md-3 mb-4" key={key}>
                   <Card
                     id={post.databaseId}
@@ -140,10 +137,9 @@ const Content = ({
           )}
         </div>
         <div id="dramas">
-          <CategoryFilter title={dramas[0].name} categories={tags} />
-          {dramas[0].products.nodes.length > 0 && (
+          {dramas.products.nodes.length > 0 && (
             <div className="row">
-              {dramas[0].products.nodes.map((post: any, key: number) => (
+              {dramas.products.nodes.map((post: any, key: number) => (
                 <div className="col-6 col-md-3 mb-4" key={key}>
                   <Card
                     id={post.databaseId}

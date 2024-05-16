@@ -10,8 +10,10 @@ export async function validateCommandeApiRest(prevState: any, formData: FormData
   const data = {
     title: title,
     status: 'draft',
+    author: 1,
     'acf': {
       produits: ids,
+      id_user: session?.user?.name
     }
   }
 

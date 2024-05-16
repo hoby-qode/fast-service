@@ -1,4 +1,4 @@
-import { GetProductsAndCategories } from '@/src/query/productsCategories.query'
+import { GetProductsAndCategories } from '@/src/query/home.query'
 import Content from './component/Content'
 
 const Products = async () => {

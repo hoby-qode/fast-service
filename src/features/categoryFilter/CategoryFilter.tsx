@@ -1,9 +1,8 @@
-import React, { FC } from 'react'
+import { FC } from 'react'
 
-import styles from './CategoryFilter.module.css'
-import Button from '@/components/button'
+import Button from '@/components/button/Button'
 import { useRouter } from 'next/navigation'
-
+import styles from './CategoryFilter.module.css'
 interface CategoryFilterProps {
   title: string
   categories: Array<{
@@ -13,11 +12,12 @@ interface CategoryFilterProps {
   }>
 }
 const CategoryFilter: FC<CategoryFilterProps> = ({ title, categories }) => {
+  console.log('categories', categories)
   const router = useRouter
   return (
     <div className={styles.categories}>
       {title && <h2>{title}</h2>}
-      {categories.length > 0 && (
+      {categories && (
         <ul className={styles.categoriesLists}>
           {categories.map((cat, key) => (
             <li key={key}>

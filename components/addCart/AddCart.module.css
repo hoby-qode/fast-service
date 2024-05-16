@@ -1,43 +1,43 @@
 .addCart {
-    width: 25px;
-    height: 25px;
-    border-radius: 5px;
-    outline: 0;
-    border: 0;
-    background-color: hsl(var(--primary));
-    
-    font-size: 2rem;
-    z-index: 10;
-    cursor: pointer;
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  outline: 0;
+  border: 0;
+  background-color: hsl(var(--primary));
+
+  font-size: 2rem;
+  z-index: 10;
+  cursor: pointer;
 }
 .addCart.active {
-    background-color: hsl(var(--destructive));
+  background-color: hsl(var(--destructive));
 }
 .addCart span {
-    transition: .5s;
-    display: block;
-    transform: rotate(0);
-    color: hsl(var(--background));
-    font-size: 3.5rem;
-    font-weight: 300;
+  transition: 0.5s;
+  display: block;
+  transform: rotate(0);
+  color: hsl(var(--background));
+  font-size: 3.5rem;
+  font-weight: 300;
 }
 .addCart.active span {
-    line-height: 1;
-    transform: rotate(312deg);
-    transition: .5s;
-    color: hsl(var(--background));
-    line-height: 19px;
+  line-height: 1;
+  transform: rotate(312deg);
+  transition: 0.5s;
+  color: hsl(var(--background));
+  line-height: 19px;
 }
-@media screen and (min-width:991px) {
-    .addCart {
-        width: 40px;
-        height: 40px;
-        font-size: 3rem;
-    }
-    .addCart.active span {
-        line-height: 40px;
-    }
-    .addCart span {
-        font-size: 5.5rem;
-    }
+@media screen and (min-width: 991px) {
+  .addCart {
+    width: 40px;
+    height: 40px;
+    font-size: 3rem;
+  }
+  .addCart.active span {
+    line-height: 40px;
+  }
+  .addCart span {
+    font-size: 5.5rem;
+  }
 }

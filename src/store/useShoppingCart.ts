@@ -3,6 +3,8 @@ import { create } from 'zustand'
 interface CartItem {
   id: number
   title: string
+  category: string
+  nbSaison: number | null
   saisons: number[]
 }
 interface CartStoreInterface {

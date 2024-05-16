@@ -1,58 +1,60 @@
 .card {
-    position: relative;
-    border-radius: 10px 20px 10px 10px;
-    overflow: hidden;
-    border: 1px solid hsl(var(--background));
-    box-shadow: 0 3px 20px hsla(26deg 99% 60%/ 40%);
+  position: relative;
+  border-radius: 10px 20px 10px 10px;
+  border: 1px solid hsl(var(--background));
+  box-shadow: 0 3px 20px hsla(26deg 99% 60%/ 40%);
 }
 
 .cardInfo {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    min-height: 35px;
-    backdrop-filter: blur(15px) brightness(0.8);
-    z-index: 10;
-    margin: 0;
-    padding: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  min-height: 35px;
+  backdrop-filter: blur(15px) brightness(0.8);
+  z-index: 10;
+  margin: 0;
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
 }
-.cardInfo h3 {
-    font-size: 1.4rem;
-    margin: 0 0 5px 0;
-    line-height: 1;
-    color: hsl(var(--background));
-    max-width: calc(100% - 30px);
+.cardInfo > h3 {
+  font-size: 1.4rem;
+  margin: 0 0 5px 0;
+  line-height: 1;
+  color: hsl(var(--background));
+  max-width: calc(100% - 30px);
 }
 .cardInfo_date {
-    margin: 0;
-    font-size: 1.2rem;
-    color: hsla(var(--background)/ 50%);
+  margin: 0;
+  font-size: 1.2rem;
+  color: hsla(var(--background) / 50%);
 }
 .cardPicture {
-    position: relative;
-    aspect-ratio: 4 / 5;
+  position: relative;
+  aspect-ratio: 4 / 5;
+  border-radius: 10px 30px 10px 10px;
+  overflow: hidden;
 }
 .cardRating {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    z-index: 10;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 10;
 }
 .addCart {
-    position: absolute;
-    right: 10px;
-    top: 10px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
-@media screen and (min-width:991px) {
-    .card {
-        border-radius: 10px 30px 10px 10px;
-    }
+@media screen and (min-width: 991px) {
+  .card {
+    border-radius: 10px 30px 10px 10px;
+  }
 
-    .cardInfo h3 { 
-        font-size: 1.8rem;
-    }
-    .cardInfo {
-        padding: 20px;
-    }
+  .cardInfo h3 {
+    font-size: 1.8rem;
+  }
+  .cardInfo {
+    padding: 20px;
+  }
 }

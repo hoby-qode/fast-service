@@ -27,6 +27,11 @@ const NavigatorDesktop = () => {
         permalink: '/produits/categorie/animes',
         picto: '/images/picto/menu-item.png',
       },
+      {
+        name: 'Mes commandes',
+        permalink: '/commande',
+        picto: '/images/picto/menu-item.png',
+      },
     ],
     [],
   )

@@ -22,7 +22,9 @@ h2, .like-h2 {
         margin: 0;
     }
 }
-
+.infinite-scroll-component  {
+    overflow: hidden!important;
+}
 .list-style-none {
     list-style: none;
 }
